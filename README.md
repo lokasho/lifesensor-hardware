@@ -19,8 +19,11 @@ https://github.com/cadus/Life-Sensor
         + 3-kanal ekg
     + einsatzort erstmal Krankenbett, nicht rettungseinsatz
 
+
+- meeting 2020-03-26:
+    + defibrillator save
+
 - open:
-    + Defi-fest? (Rev1?)
     + ISO60601-gerecht?
     + double layer möglich?
     + Lizenz?

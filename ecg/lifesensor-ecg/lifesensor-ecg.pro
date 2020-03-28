@@ -1,4 +1,4 @@
-update=Freitag, 27. März 2020 um 03:39:24
+update=Freitag, 27. März 2020 um 17:39:51
 version=1
 last_client=kicad
 [general]
@@ -12,16 +12,6 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -239,7 +229,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.5
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -250,7 +240,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=iso_150V
-Clearance=4
+Clearance=3
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4

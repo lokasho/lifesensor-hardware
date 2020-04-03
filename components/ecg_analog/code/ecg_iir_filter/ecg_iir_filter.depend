@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1576443821 source:c:\users\zenit\desktop\ecg_iir_filter\ecr_iir_filter.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"all_filters.h"
+	"sample_ecg_pulse.h"
+	<windows.h>
+
+1576437002 c:\users\zenit\desktop\ecg_iir_filter\filter_coeffs.h
+
+1576434387 c:\users\zenit\desktop\ecg_iir_filter\constants.h
+
+1576436999 c:\users\zenit\desktop\ecg_iir_filter\sample_ecg_pulse.h
+
+1576443031 c:\users\zenit\desktop\ecg_iir_filter\all_filters.h
+
+1576443040 source:c:\users\zenit\desktop\ecg_iir_filter\all_filters.c
+	"filter_coeffs.h"
+	"constants.h"
+	"all_filters.h"
+

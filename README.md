@@ -26,14 +26,22 @@ https://github.com/cadus/Life-Sensor
 - open:
     + ISO60601-gerecht?
     + double layer möglich?
-    + Lizenz?
+    + Lizenz? 
+    + Cadus symbol auf Leiterplatten und in schematics?
+    + welche diagnosen sollen möglich werden? -> zB. Implikationen auf Auflösung bei "late potentials"
 
 
 - Switch to KiCAD
+- https://github.com/kitspace/kitspace : Für kitspace verfügbar machen?
 
 
-## similar Projekte / Resourcen:
+## similar projetcs / resources
 - https://github.com/GliaX
+- https://github.com/kitspace/awesome-electronics
+- https://github.com/kitspace/kicad_footprints
+- https://github.com/intajay/open-electronics
+
 - ecg
     + https://github.com/xdever/MobilECG-II -> auf ADS1298 basis
     + https://www.olimex.com/Products/Duino/Shields/SHIELD-EKG-EMG/open-source-hardware
+    + https://www.digikey.com/en/articles/design-a-high-resolution-ecg-with-a-fully-differential-amplifier-and-high-resolution-adc (late potentials)

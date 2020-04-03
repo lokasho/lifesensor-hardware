@@ -1,0 +1,48 @@
+### Module positions - created on Freitag, 03. April 2020 um 17:06:34 ###
+### Printed by Pcbnew version pcbnew (5.1.5-0)
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val            Package                                           PosX       PosY       Rot  Side
+C5        3n             C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    61.5092    21.3118   90.0000  top
+C6        3n             C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    61.5092    33.8118   90.0000  top
+C7        3n             C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    61.5092     9.3118   90.0000  top
+C8        2.2u           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    86.0092    14.6868   90.0000  top
+C9        100n           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    84.5092    14.6868   90.0000  top
+C10       n.p.           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    66.2500    28.7250   90.0000  top
+C11       n.p.           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    66.2500    23.9250  270.0000  top
+C12       10n            C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    78.5000    18.0000  180.0000  top
+C13       2.2u           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    77.5092    14.6868   90.0000  top
+C15       4.7n           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    69.8000    29.2000   90.0000  top
+C16       4.7n           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    69.8000    23.5250   90.0000  top
+C18       1u             C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    76.0092    14.6868   90.0000  top
+C19       470p           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    74.0000    37.3118  270.0000  top
+C20       1u             C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    76.0092    33.9368   90.0000  top
+C22       470p           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    72.0000    34.0000   90.0000  top
+C23       1u             C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    74.5092    19.8118  180.0000  top
+C26       100n           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    74.5092    18.0000  180.0000  top
+C27       100n           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    69.8000    20.0000  270.0000  top
+C28       10u            C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    67.5000    20.0000  270.0000  top
+C29       100n           C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    82.5092    30.5618   90.0000  top
+C31       1u             C_0603_1608Metric_Pad1.05x0.95mm_HandSolder    84.5092    30.5618   90.0000  top
+D1        TVS,_5V,_9.2V  D_SMB_Handsoldering                            56.2592    18.8118   90.0000  top
+D2        TVS,_5V,_9.2V  D_SMB_Handsoldering                            56.2592    31.3118   90.0000  top
+D3        TVS,_5V,_9.2V  D_SMB_Handsoldering                            56.2500     6.3118   90.0000  top
+D4        TVS,_5V,_9.2V  D_SMB_Handsoldering                            56.2592    44.0118   90.0000  top
+IC1       ADS1292        LQFP-32_5x5mm_P0.5mm                           75.5092    26.3118    0.0000  top
+L1        MMZ2012R102A   L_0805_2012Metric_Pad1.15x1.40mm_HandSolder    89.5092    13.8118    0.0000  top
+L3        MMZ2012R102A   L_0805_2012Metric_Pad1.15x1.40mm_HandSolder    74.0092    14.8368   90.0000  top
+R1        100k           R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    83.5092    20.8118    0.0000  top
+R2        100k           R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    83.5092    22.8600  180.0000  top
+R15       22k            R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    60.6342    18.8118    0.0000  top
+R16       22k            R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    60.6342    31.3118    0.0000  top
+R17       22k            R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    60.6342     6.3118    0.0000  top
+R18       1M             R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    72.0000    37.3118  270.0000  top
+R19       100k           R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    68.0000    37.3118  270.0000  top
+R20       6.8k           R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    70.0000    37.3118  270.0000  top
+R21       100            R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    83.5000    28.0000  180.0000  top
+R22       100            R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    83.5000    26.5000  180.0000  top
+R23       6.8k           R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    78.5092    33.9368   90.0000  top
+R24       6.8k           R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    80.0092    33.9368  270.0000  top
+R28       100k           R_0603_1608Metric_Pad1.05x0.95mm_HandSolder    83.5092    19.3118  180.0000  top
+U1        TPS73033DBVT   SOT-23-5_HandSoldering                         81.0092    14.7618  180.0000  top
+## End

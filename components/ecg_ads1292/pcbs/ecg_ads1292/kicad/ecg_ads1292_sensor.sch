@@ -551,7 +551,7 @@ Text HLabel 8650 3600 2    60   Output ~ 0
 DOUT
 Text Notes 5000 6200 0    60   ~ 0
 place all 4 capacitors\n as close as possible\n
-Text HLabel 7200 6300 0    60   Input ~ 0
+Text HLabel 8650 850  2    60   Input ~ 0
 3V3
 Text HLabel 900  6550 0    60   Input ~ 0
 5V
@@ -559,11 +559,7 @@ Text Notes 10900 800  2    157  ~ 31
 Digital Interface
 Text Notes 2700 800  2    157  ~ 31
 Analog Frontend
-Text Notes 8200 6150 2    157  ~ 31
-Power Supply\n
-Text Label 8650 850  2    60   ~ 0
-+3V3_CPU
-Text Label 10250 6300 2    60   ~ 0
+Text Label 8400 850  2    60   ~ 0
 +3V3_CPU
 Text Label 4100 850  0    60   ~ 0
 3.3VA
@@ -667,8 +663,6 @@ Wire Wire Line
 	5850 1150 5850 1200
 Wire Wire Line
 	6700 1150 6700 1200
-Wire Wire Line
-	10250 6300 7200 6300
 Wire Wire Line
 	4900 1500 4900 1750
 Wire Wire Line

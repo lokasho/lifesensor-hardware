@@ -347,46 +347,6 @@ F 6 "1669719" H 0   0   50  0001 C CNN "Farnell"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L component:R R15
-U 1 1 590A733E
-P 1200 3250
-F 0 "R15" V 1100 3400 50  0000 C CNN
-F 1 "22k" V 1100 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1130 3250 50  0001 C CNN
-F 3 "" H 1200 3250 50  0001 C CNN
-F 4 "1469825" H -600 -950 50  0001 C CNN "Best.Nr."
-F 5 "Farnell" H -600 -950 50  0001 C CNN "Distributor"
-F 6 "1469825" H -600 -950 50  0001 C CNN "Farnell"
-	1    1200 3250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L component:C_Small C5
-U 1 1 590AD324
-P 1450 3550
-F 0 "C5" H 1450 3650 50  0000 L CNN
-F 1 "3n" H 1450 3450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1450 3550 50  0001 C CNN
-F 3 "" H 1450 3550 50  0001 C CNN
-F 4 "1865491" H -800 -950 50  0001 C CNN "Best.Nr."
-F 5 "C0G/NPO" H -800 -950 50  0001 C CNN "Comment"
-F 6 "Farnell" H -800 -950 50  0001 C CNN "Distributor"
-F 7 "1865491" H -800 -950 50  0001 C CNN "Farnell"
-	1    1450 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L component:GND #PWR010
-U 1 1 590ADA59
-P 1450 3750
-F 0 "#PWR010" H 1450 3500 50  0001 C CNN
-F 1 "GND" H 1450 3600 50  0000 C CNN
-F 2 "" H 1450 3750 50  0001 C CNN
-F 3 "" H 1450 3750 50  0001 C CNN
-	1    1450 3750
-	1    0    0    -1  
-$EndComp
-$Comp
 L component:R R23
 U 1 1 59F006E1
 P 7650 4200
@@ -648,8 +608,6 @@ Wire Wire Line
 Wire Notes Line
 	6300 450  6300 7800
 Wire Wire Line
-	1350 3250 1450 3250
-Wire Wire Line
 	7200 3000 7300 3000
 Wire Wire Line
 	7200 3600 7300 3600
@@ -681,10 +639,6 @@ Wire Wire Line
 	5800 2000 5800 2500
 Wire Wire Line
 	5800 1500 5800 1700
-Wire Wire Line
-	1450 3250 1450 3450
-Wire Wire Line
-	1450 3650 1450 3750
 Wire Notes Line
 	5350 3050 5050 3050
 Wire Wire Line
@@ -782,93 +736,6 @@ F 4 "Lukas Holzapfel" H 5750 3650 60  0001 C CNN "Created"
 	1    5900 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	750  3250 1050 3250
-$Comp
-L component:R R16
-U 1 1 5E9A1879
-P 1200 4100
-F 0 "R16" V 1100 4250 50  0000 C CNN
-F 1 "22k" V 1100 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1130 4100 50  0001 C CNN
-F 3 "" H 1200 4100 50  0001 C CNN
-F 4 "1469825" H -600 -100 50  0001 C CNN "Best.Nr."
-F 5 "Farnell" H -600 -100 50  0001 C CNN "Distributor"
-F 6 "1469825" H -600 -100 50  0001 C CNN "Farnell"
-	1    1200 4100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L component:C_Small C6
-U 1 1 5E9A1883
-P 1450 4400
-F 0 "C6" H 1450 4500 50  0000 L CNN
-F 1 "3n" H 1450 4300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1450 4400 50  0001 C CNN
-F 3 "" H 1450 4400 50  0001 C CNN
-F 4 "1865491" H -800 -100 50  0001 C CNN "Best.Nr."
-F 5 "C0G/NPO" H -800 -100 50  0001 C CNN "Comment"
-F 6 "Farnell" H -800 -100 50  0001 C CNN "Distributor"
-F 7 "1865491" H -800 -100 50  0001 C CNN "Farnell"
-	1    1450 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L component:GND #PWR011
-U 1 1 5E9A1889
-P 1450 4600
-F 0 "#PWR011" H 1450 4350 50  0001 C CNN
-F 1 "GND" H 1450 4450 50  0000 C CNN
-F 2 "" H 1450 4600 50  0001 C CNN
-F 3 "" H 1450 4600 50  0001 C CNN
-	1    1450 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 4100 1450 4100
-Wire Wire Line
-	1450 4100 1450 4300
-Wire Wire Line
-	1450 4500 1450 4600
-Wire Wire Line
-	750  4100 1050 4100
-$Comp
-L component:R R17
-U 1 1 5E9A8BAE
-P 1200 4950
-F 0 "R17" V 1100 5100 50  0000 C CNN
-F 1 "22k" V 1100 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1130 4950 50  0001 C CNN
-F 3 "" H 1200 4950 50  0001 C CNN
-F 4 "1469825" H -600 750 50  0001 C CNN "Best.Nr."
-F 5 "Farnell" H -600 750 50  0001 C CNN "Distributor"
-F 6 "1469825" H -600 750 50  0001 C CNN "Farnell"
-	1    1200 4950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L component:C_Small C7
-U 1 1 5E9A8BB8
-P 1450 5250
-F 0 "C7" H 1450 5350 50  0000 L CNN
-F 1 "3n" H 1450 5150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1450 5250 50  0001 C CNN
-F 3 "" H 1450 5250 50  0001 C CNN
-F 4 "1865491" H -800 750 50  0001 C CNN "Best.Nr."
-F 5 "C0G/NPO" H -800 750 50  0001 C CNN "Comment"
-F 6 "Farnell" H -800 750 50  0001 C CNN "Distributor"
-F 7 "1865491" H -800 750 50  0001 C CNN "Farnell"
-	1    1450 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 4950 1450 4950
-Wire Wire Line
-	1450 4950 1450 5150
-Wire Wire Line
-	1450 5350 1450 5450
-Wire Wire Line
-	750  4950 1050 4950
 Text HLabel 750  4100 0    50   Input ~ 0
 RA
 Text HLabel 750  3250 0    50   Input ~ 0
@@ -977,7 +844,6 @@ Wire Wire Line
 	7200 3100 8650 3100
 Wire Wire Line
 	7200 4500 10350 4500
-Connection ~ 1450 3250
 $Comp
 L component:R R18
 U 1 1 590269E6
@@ -992,14 +858,6 @@ F 6 "1469746" H 0   0   50  0001 C CNN "Farnell"
 	1    5200 1850
 	1    0    0    -1  
 $EndComp
-Connection ~ 1450 4100
-Connection ~ 1450 4950
-Wire Wire Line
-	1450 4100 1950 4100
-Wire Wire Line
-	1450 4950 1950 4950
-Wire Wire Line
-	1450 3250 1950 3250
 Wire Wire Line
 	6700 850  7300 850 
 Wire Wire Line
@@ -1040,17 +898,6 @@ F 6 "1797012" H -1600 800 50  0001 C CNN "Farnell"
 $EndComp
 Wire Wire Line
 	3800 6550 6250 6550
-$Comp
-L component:GND #PWR0102
-U 1 1 5EC2BA6A
-P 1450 5450
-F 0 "#PWR0102" H 1450 5200 50  0001 C CNN
-F 1 "GND" H 1450 5300 50  0000 C CNN
-F 2 "" H 1450 5450 50  0001 C CNN
-F 3 "" H 1450 5450 50  0001 C CNN
-	1    1450 5450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	850  1500 4900 1500
 $Comp
@@ -1088,4 +935,157 @@ Text Label 3950 4350 0    50   ~ 0
 ads_in3_p
 Text Label 3950 4500 0    50   ~ 0
 ads_in3_n
+$Comp
+L component:GND #PWR0102
+U 1 1 5EC2BA6A
+P 1450 5450
+F 0 "#PWR0102" H 1450 5200 50  0001 C CNN
+F 1 "GND" H 1450 5300 50  0000 C CNN
+F 2 "" H 1450 5450 50  0001 C CNN
+F 3 "" H 1450 5450 50  0001 C CNN
+	1    1450 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3250 1950 3250
+Wire Wire Line
+	1450 4950 1950 4950
+Wire Wire Line
+	1450 4100 1950 4100
+Connection ~ 1450 4950
+Connection ~ 1450 4100
+Connection ~ 1450 3250
+Wire Wire Line
+	750  4950 1050 4950
+Wire Wire Line
+	1450 5350 1450 5450
+Wire Wire Line
+	1450 4950 1450 5150
+Wire Wire Line
+	1350 4950 1450 4950
+$Comp
+L component:C_Small C7
+U 1 1 5E9A8BB8
+P 1450 5250
+F 0 "C7" H 1450 5350 50  0000 L CNN
+F 1 "3n" H 1450 5150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1450 5250 50  0001 C CNN
+F 3 "" H 1450 5250 50  0001 C CNN
+F 4 "1865491" H -800 750 50  0001 C CNN "Best.Nr."
+F 5 "C0G/NPO" H -800 750 50  0001 C CNN "Comment"
+F 6 "Farnell" H -800 750 50  0001 C CNN "Distributor"
+F 7 "1865491" H -800 750 50  0001 C CNN "Farnell"
+	1    1450 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L component:R R17
+U 1 1 5E9A8BAE
+P 1200 4950
+F 0 "R17" V 1100 5100 50  0000 C CNN
+F 1 "22k" V 1100 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1130 4950 50  0001 C CNN
+F 3 "" H 1200 4950 50  0001 C CNN
+F 4 "1469825" H -600 750 50  0001 C CNN "Best.Nr."
+F 5 "Farnell" H -600 750 50  0001 C CNN "Distributor"
+F 6 "1469825" H -600 750 50  0001 C CNN "Farnell"
+	1    1200 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	750  4100 1050 4100
+Wire Wire Line
+	1450 4500 1450 4600
+Wire Wire Line
+	1450 4100 1450 4300
+Wire Wire Line
+	1350 4100 1450 4100
+$Comp
+L component:GND #PWR011
+U 1 1 5E9A1889
+P 1450 4600
+F 0 "#PWR011" H 1450 4350 50  0001 C CNN
+F 1 "GND" H 1450 4450 50  0000 C CNN
+F 2 "" H 1450 4600 50  0001 C CNN
+F 3 "" H 1450 4600 50  0001 C CNN
+	1    1450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L component:C_Small C6
+U 1 1 5E9A1883
+P 1450 4400
+F 0 "C6" H 1450 4500 50  0000 L CNN
+F 1 "3n" H 1450 4300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1450 4400 50  0001 C CNN
+F 3 "" H 1450 4400 50  0001 C CNN
+F 4 "1865491" H -800 -100 50  0001 C CNN "Best.Nr."
+F 5 "C0G/NPO" H -800 -100 50  0001 C CNN "Comment"
+F 6 "Farnell" H -800 -100 50  0001 C CNN "Distributor"
+F 7 "1865491" H -800 -100 50  0001 C CNN "Farnell"
+	1    1450 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L component:R R16
+U 1 1 5E9A1879
+P 1200 4100
+F 0 "R16" V 1100 4250 50  0000 C CNN
+F 1 "22k" V 1100 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1130 4100 50  0001 C CNN
+F 3 "" H 1200 4100 50  0001 C CNN
+F 4 "1469825" H -600 -100 50  0001 C CNN "Best.Nr."
+F 5 "Farnell" H -600 -100 50  0001 C CNN "Distributor"
+F 6 "1469825" H -600 -100 50  0001 C CNN "Farnell"
+	1    1200 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	750  3250 1050 3250
+Wire Wire Line
+	1450 3650 1450 3750
+Wire Wire Line
+	1450 3250 1450 3450
+Wire Wire Line
+	1350 3250 1450 3250
+$Comp
+L component:GND #PWR010
+U 1 1 590ADA59
+P 1450 3750
+F 0 "#PWR010" H 1450 3500 50  0001 C CNN
+F 1 "GND" H 1450 3600 50  0000 C CNN
+F 2 "" H 1450 3750 50  0001 C CNN
+F 3 "" H 1450 3750 50  0001 C CNN
+	1    1450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L component:C_Small C5
+U 1 1 590AD324
+P 1450 3550
+F 0 "C5" H 1450 3650 50  0000 L CNN
+F 1 "3n" H 1450 3450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1450 3550 50  0001 C CNN
+F 3 "" H 1450 3550 50  0001 C CNN
+F 4 "1865491" H -800 -950 50  0001 C CNN "Best.Nr."
+F 5 "C0G/NPO" H -800 -950 50  0001 C CNN "Comment"
+F 6 "Farnell" H -800 -950 50  0001 C CNN "Distributor"
+F 7 "1865491" H -800 -950 50  0001 C CNN "Farnell"
+	1    1450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L component:R R15
+U 1 1 590A733E
+P 1200 3250
+F 0 "R15" V 1100 3400 50  0000 C CNN
+F 1 "22k" V 1100 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1130 3250 50  0001 C CNN
+F 3 "" H 1200 3250 50  0001 C CNN
+F 4 "1469825" H -600 -950 50  0001 C CNN "Best.Nr."
+F 5 "Farnell" H -600 -950 50  0001 C CNN "Distributor"
+F 6 "1469825" H -600 -950 50  0001 C CNN "Farnell"
+	1    1200 3250
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

@@ -279,30 +279,6 @@ F 3 "" H 7350 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR?
-U 1 1 5EB18F02
-P 4800 4800
-AR Path="/5E8EE786/5EB18F02" Ref="#PWR?"  Part="1" 
-AR Path="/5EB18F02" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 4800 4550 50  0001 C CNN
-F 1 "GND" H 4800 4650 50  0000 C CNN
-F 2 "" H 4800 4800 50  0001 C CNN
-F 3 "" H 4800 4800 50  0001 C CNN
-	1    4800 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Flag TP5
-U 1 1 5EB28150
-P 4800 4700
-F 0 "TP5" H 5100 4800 50  0000 L CNN
-F 1 " " H 5100 4700 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 5000 4700 50  0001 C CNN
-F 3 "~" H 5000 4700 50  0001 C CNN
-	1    4800 4700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint_Flag TP15
 U 1 1 5EB284C8
 P 7350 5450
@@ -315,8 +291,6 @@ F 3 "~" H 7550 5450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7350 5450 7350 5550
-Wire Wire Line
-	4800 4700 4800 4800
 Text Label 5300 2800 0    50   ~ 0
 protected_LA
 Text Label 5300 3300 0    50   ~ 0
@@ -494,8 +468,6 @@ Wire Wire Line
 Wire Wire Line
 	2250 5850 2300 5850
 Connection ~ 2250 5850
-Wire Wire Line
-	2250 5850 2250 5450
 Wire Wire Line
 	2600 5850 2650 5850
 Connection ~ 2650 5850
@@ -862,4 +834,53 @@ Wire Wire Line
 	7150 3800 10000 3800
 Wire Wire Line
 	8700 2800 9500 2800
+$Comp
+L component:R R31
+U 1 1 5E9D9425
+P 2450 5050
+F 0 "R31" V 2200 5050 50  0000 C CNN
+F 1 "n.p." V 2300 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0815_2038Metric_Pad1.53x4.00mm_HandSolder" V 2380 5050 50  0001 C CNN
+F 3 "" H 2450 5050 50  0001 C CNN
+	1    2450 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 5050 2300 5050
+Wire Wire Line
+	2250 5050 2250 5450
+Connection ~ 2250 5450
+Wire Wire Line
+	2250 5450 2250 5850
+Wire Wire Line
+	4800 4800 4800 4900
+$Comp
+L Connector:TestPoint_Flag TP5
+U 1 1 5EB28150
+P 4800 4800
+F 0 "TP5" H 5100 4900 50  0000 L CNN
+F 1 " " H 5100 4800 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 5000 4800 50  0001 C CNN
+F 3 "~" H 5000 4800 50  0001 C CNN
+	1    4800 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L component:GND #PWR?
+U 1 1 5EB18F02
+P 4800 4900
+AR Path="/5E8EE786/5EB18F02" Ref="#PWR?"  Part="1" 
+AR Path="/5EB18F02" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 4800 4650 50  0001 C CNN
+F 1 "GND" H 4800 4750 50  0000 C CNN
+F 2 "" H 4800 4900 50  0001 C CNN
+F 3 "" H 4800 4900 50  0001 C CNN
+	1    4800 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 5450 2650 5050
+Wire Wire Line
+	2650 5050 2600 5050
+Connection ~ 2650 5450
 $EndSCHEMATC

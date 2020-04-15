@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title ""
+Title "Lifesensor acg_ads1292 Sensor"
 Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Rev "0.1"
+Comp "Cadus"
+Comment1 "n.p.: do not place"
 Comment2 ""
 Comment3 ""
 Comment4 ""

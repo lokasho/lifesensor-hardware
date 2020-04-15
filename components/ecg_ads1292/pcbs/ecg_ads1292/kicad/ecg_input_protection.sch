@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title "ECG Defibrillator Input Protection"
+Title "Lifesensor acg_ads1292 Defibrillator Input Protection"
 Date "2020-03-28"
-Rev "0"
-Comp "Cadus e.V."
-Comment1 ""
+Rev "0.1"
+Comp "Cadus"
+Comment1 "n.p.: do not place"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -405,8 +405,6 @@ Wire Wire Line
 	2450 4400 4000 4400
 Wire Wire Line
 	2450 5850 4000 5850
-Text Notes 8650 2300 0    50   ~ 0
-n.p. -> do not place
 Text Notes 1350 3350 0    50   ~ 10
 5kV isolation
 Text Notes 1350 4850 0    50   ~ 10

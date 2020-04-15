@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
-Title ""
+Title "Lifesensor ecg_ads1292"
 Date "2020-03-28"
-Rev "0"
-Comp ""
-Comment1 ""
+Rev "0.1"
+Comp "Cadus"
+Comment1 "n.p.: do not place"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -27,8 +27,6 @@ F7 "IN_LL" I L 3600 3800 50
 F8 "RLD" I R 4650 4300 50 
 F9 "OUT_RLD" O L 3600 4300 50 
 $EndSheet
-Wire Notes Line rgb(194, 0, 10)
-	1700 3500 3600 3500
 Text Notes 2100 2950 0    50   ~ 10
 5kV isolation
 Text Label 2000 3300 0    50   ~ 0
@@ -91,10 +89,6 @@ F 3 "~" H 1700 4300 50  0001 C CNN
 	1    1700 4300
 	-1   0    0    1   
 $EndComp
-Wire Notes Line rgb(194, 0, 0)
-	1650 3000 3600 3000
-Wire Notes Line rgb(194, 0, 0)
-	1700 4000 3600 4000
 Text Notes 2100 3450 0    50   ~ 10
 5kV isolation
 Text Notes 2100 3950 0    50   ~ 10
@@ -883,4 +877,10 @@ Wire Wire Line
 Wire Wire Line
 	2650 5050 2600 5050
 Connection ~ 2650 5450
+Wire Notes Line rgb(194, 0, 0)
+	1700 4000 3600 4000
+Wire Notes Line rgb(194, 0, 10)
+	1700 3500 3600 3500
+Wire Notes Line rgb(194, 0, 0)
+	1650 3000 3600 3000
 $EndSCHEMATC

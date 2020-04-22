@@ -25,6 +25,7 @@ F 4 "2112849" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "X7R" H 0   0   50  0001 C CNN "Comment"
 F 6 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 7 "2112849" H 0   0   50  0001 C CNN "Farnell"
+F 8 "N" H 4900 1050 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4900 1050
 	1    0    0    -1  
 $EndComp
@@ -40,6 +41,7 @@ F 4 "1907318" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "X7R" H 0   0   50  0001 C CNN "Comment"
 F 6 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 7 "1907318" H 0   0   50  0001 C CNN "Farnell"
+F 8 "N" H 5850 1050 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5850 1050
 	1    0    0    -1  
 $EndComp
@@ -77,6 +79,7 @@ F 4 "1907318" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "X7R" H 0   0   50  0001 C CNN "Comment"
 F 6 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 7 "1907318" H 0   0   50  0001 C CNN "Farnell"
+F 8 "N" H 6700 1050 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    6700 1050
 	1    0    0    -1  
 $EndComp
@@ -92,6 +95,7 @@ F 4 "2112849" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "X7R" H 0   0   50  0001 C CNN "Comment"
 F 6 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 7 "2112849" H 0   0   50  0001 C CNN "Farnell"
+F 8 "N" H 7300 1050 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    7300 1050
 	1    0    0    -1  
 $EndComp
@@ -151,6 +155,7 @@ F 4 "2611918" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "C0G/NPO" H 4400 3000 60  0001 C CNN "Comment"
 F 6 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 7 "2611918" H 0   0   50  0001 C CNN "Farnell"
+F 8 "N" H 4400 3000 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4400 3000
 	0    -1   1    0   
 $EndComp
@@ -166,6 +171,7 @@ F 4 "2611918" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "C0G/NPO" H 4400 3300 60  0001 C CNN "Comment"
 F 6 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 7 "2611918" H 0   0   50  0001 C CNN "Farnell"
+F 8 "N" H 4400 3300 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4400 3300
 	0    -1   1    0   
 $EndComp
@@ -181,6 +187,7 @@ F 4 "2494294" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "C0G/NPO" V 5850 5300 60  0001 C CNN "Comment"
 F 6 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 7 "2494294" H 0   0   50  0001 C CNN "Farnell"
+F 8 "N" H 5850 5300 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5850 5300
 	0    1    1    0   
 $EndComp
@@ -196,6 +203,7 @@ F 4 "1889276" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "X7R" H 0   0   50  0001 C CNN "Comment"
 F 6 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 7 "1889276" H 0   0   50  0001 C CNN "Farnell"
+F 8 "N" H 5850 5650 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5850 5650
 	0    1    1    0   
 $EndComp
@@ -222,6 +230,7 @@ F 4 "2112849" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "X7R" H 5400 5300 60  0001 C CNN "Comment"
 F 6 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 7 "2112849" H 0   0   50  0001 C CNN "Farnell"
+F 8 "N" H 5400 5300 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5400 5300
 	-1   0    0    -1  
 $EndComp
@@ -237,6 +246,7 @@ F 4 "2112849" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "X7R" H 5100 5300 60  0001 C CNN "Comment"
 F 6 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 7 "2112849" H 0   0   50  0001 C CNN "Farnell"
+F 8 "N" H 5100 5300 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5100 5300
 	-1   0    0    -1  
 $EndComp
@@ -273,6 +283,7 @@ F 3 "" H 5800 1850 50  0001 C CNN
 F 4 "1738916" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 6 "1738916" H 0   0   50  0001 C CNN "Farnell"
+F 7 "N" H 5800 1850 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5800 1850
 	1    0    0    -1  
 $EndComp
@@ -287,6 +298,7 @@ F 3 "" H 5500 1850 50  0001 C CNN
 F 4 "1692517" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 6 "1692517" H 0   0   50  0001 C CNN "Farnell"
+F 7 "N" H 5500 1850 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5500 1850
 	1    0    0    -1  
 $EndComp
@@ -301,6 +313,7 @@ F 3 "" H 4900 1850 50  0001 C CNN
 F 4 "" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "C0G/NPO" H 0   0   50  0001 C CNN "Comment"
 F 6 "" H 0   0   50  0001 C CNN "Farnell"
+F 7 "N" H 4900 1850 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4900 1850
 	1    0    0    -1  
 $EndComp
@@ -315,6 +328,7 @@ F 3 "" H 7450 3600 50  0001 C CNN
 F 4 "1739145" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 6 "1739145" H 0   0   50  0001 C CNN "Farnell"
+F 7 "N" H 7450 3600 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    7450 3600
 	0    1    1    0   
 $EndComp
@@ -329,6 +343,7 @@ F 3 "" H 7450 3000 50  0001 C CNN
 F 4 "1739145" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 6 "1739145" H 0   0   50  0001 C CNN "Farnell"
+F 7 "N" H 7450 3000 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    7450 3000
 	0    1    1    0   
 $EndComp
@@ -343,6 +358,7 @@ F 3 "" H 5400 850 50  0001 C CNN
 F 4 "1669719" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 6 "1669719" H 0   0   50  0001 C CNN "Farnell"
+F 7 "N" H 5400 850 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5400 850 
 	0    -1   -1   0   
 $EndComp
@@ -357,6 +373,7 @@ F 3 "" H 1200 3250 50  0001 C CNN
 F 4 "1469825" H -600 -950 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H -600 -950 50  0001 C CNN "Distributor"
 F 6 "1469825" H -600 -950 50  0001 C CNN "Farnell"
+F 7 "N" H 1200 3250 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1200 3250
 	0    -1   -1   0   
 $EndComp
@@ -372,6 +389,7 @@ F 4 "1865491" H -800 -950 50  0001 C CNN "Best.Nr."
 F 5 "C0G/NPO" H -800 -950 50  0001 C CNN "Comment"
 F 6 "Farnell" H -800 -950 50  0001 C CNN "Distributor"
 F 7 "1865491" H -800 -950 50  0001 C CNN "Farnell"
+F 8 "N" H 1450 3550 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1450 3550
 	1    0    0    -1  
 $EndComp
@@ -397,6 +415,7 @@ F 3 "" H 7650 4200 50  0001 C CNN
 F 4 "1738916" H 1850 2350 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H 1850 2350 50  0001 C CNN "Distributor"
 F 6 "1738916" H 1850 2350 50  0001 C CNN "Farnell"
+F 7 "N" H 7650 4200 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    7650 4200
 	0    -1   -1   0   
 $EndComp
@@ -411,6 +430,7 @@ F 3 "" H 7650 4300 50  0001 C CNN
 F 4 "1738916" H 1850 2450 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H 1850 2450 50  0001 C CNN "Distributor"
 F 6 "1738916" H 1850 2450 50  0001 C CNN "Farnell"
+F 7 "N" H 7650 4300 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    7650 4300
 	0    1    1    0   
 $EndComp
@@ -436,6 +456,7 @@ F 3 "" H 2850 6650 50  0001 C CNN
 F 4 "1135395" H -1600 800 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H -1600 800 50  0001 C CNN "Distributor"
 F 6 "1135395" H -1600 800 50  0001 C CNN "Farnell"
+F 7 "N" H 2850 6650 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    2850 6650
 	1    0    0    -1  
 $EndComp
@@ -450,6 +471,7 @@ F 3 "" H 1900 7000 50  0000 C CNN
 F 4 "1907318" H -1600 800 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H -1600 800 50  0001 C CNN "Distributor"
 F 6 "1907318" H -1600 800 50  0001 C CNN "Farnell"
+F 7 "N" H 1900 7000 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1900 7000
 	1    0    0    -1  
 $EndComp
@@ -475,6 +497,7 @@ F 3 "" H 3400 7000 50  0000 C CNN
 F 4 "2496825" H -1600 800 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H -1600 800 50  0001 C CNN "Distributor"
 F 6 "2496825" H -1600 800 50  0001 C CNN "Farnell"
+F 7 "N" H 3400 7000 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    3400 7000
 	1    0    0    -1  
 $EndComp
@@ -511,6 +534,7 @@ F 3 "" H 1400 6550 50  0001 C CNN
 F 4 "1669719" H -1000 800 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H -1000 800 50  0001 C CNN "Distributor"
 F 6 "1669719" H -1000 800 50  0001 C CNN "Farnell"
+F 7 "N" H 1400 6550 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1400 6550
 	0    1    1    0   
 $EndComp
@@ -525,6 +549,7 @@ F 3 "" H 1600 7000 50  0000 C CNN
 F 4 "1797012" H -1600 800 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H -1600 800 50  0001 C CNN "Distributor"
 F 6 "1797012" H -1600 800 50  0001 C CNN "Farnell"
+F 7 "N" H 1600 7000 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1600 7000
 	1    0    0    -1  
 $EndComp
@@ -785,6 +810,7 @@ F 1 "ADS1292" H 5900 3800 60  0000 C CNN
 F 2 "Package_QFP:LQFP-32_5x5mm_P0.5mm" H 6700 3150 60  0001 C CNN
 F 3 "" H 5200 3250 60  0001 C CNN
 F 4 "Lukas Holzapfel" H 5750 3650 60  0001 C CNN "Created"
+F 5 "N" H 5900 3800 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5900 3800
 	1    0    0    -1  
 $EndComp
@@ -801,6 +827,7 @@ F 3 "" H 1200 4100 50  0001 C CNN
 F 4 "1469825" H -600 -100 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H -600 -100 50  0001 C CNN "Distributor"
 F 6 "1469825" H -600 -100 50  0001 C CNN "Farnell"
+F 7 "N" H 1200 4100 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1200 4100
 	0    -1   -1   0   
 $EndComp
@@ -816,6 +843,7 @@ F 4 "1865491" H -800 -100 50  0001 C CNN "Best.Nr."
 F 5 "C0G/NPO" H -800 -100 50  0001 C CNN "Comment"
 F 6 "Farnell" H -800 -100 50  0001 C CNN "Distributor"
 F 7 "1865491" H -800 -100 50  0001 C CNN "Farnell"
+F 8 "N" H 1450 4400 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1450 4400
 	1    0    0    -1  
 $EndComp
@@ -849,6 +877,7 @@ F 3 "" H 1200 4950 50  0001 C CNN
 F 4 "1469825" H -600 750 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H -600 750 50  0001 C CNN "Distributor"
 F 6 "1469825" H -600 750 50  0001 C CNN "Farnell"
+F 7 "N" H 1200 4950 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1200 4950
 	0    -1   -1   0   
 $EndComp
@@ -864,6 +893,7 @@ F 4 "1865491" H -800 750 50  0001 C CNN "Best.Nr."
 F 5 "C0G/NPO" H -800 750 50  0001 C CNN "Comment"
 F 6 "Farnell" H -800 750 50  0001 C CNN "Distributor"
 F 7 "1865491" H -800 750 50  0001 C CNN "Farnell"
+F 8 "N" H 1450 5250 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1450 5250
 	1    0    0    -1  
 $EndComp
@@ -917,6 +947,7 @@ F 4 "1865491" H -300 -800 50  0001 C CNN "Best.Nr."
 F 5 "C0G/NPO" H -300 -800 50  0001 C CNN "Comment"
 F 6 "Farnell" H -300 -800 50  0001 C CNN "Distributor"
 F 7 "1865491" H -300 -800 50  0001 C CNN "Farnell"
+F 8 "N" H 1950 3700 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1950 3700
 	1    0    0    -1  
 $EndComp
@@ -932,6 +963,7 @@ F 4 "1865491" H -300 0   50  0001 C CNN "Best.Nr."
 F 5 "C0G/NPO" H -300 0   50  0001 C CNN "Comment"
 F 6 "Farnell" H -300 0   50  0001 C CNN "Distributor"
 F 7 "1865491" H -300 0   50  0001 C CNN "Farnell"
+F 8 "N" H 1950 4500 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1950 4500
 	1    0    0    -1  
 $EndComp
@@ -967,6 +999,7 @@ F 3 "" H 5350 2200 50  0001 C CNN
 F 4 "" H 450 350 50  0001 C CNN "Best.Nr."
 F 5 "C0G/NPO" H 450 350 50  0001 C CNN "Comment"
 F 6 "" H 450 350 50  0001 C CNN "Farnell"
+F 7 "N" H 5350 2200 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5350 2200
 	0    1    1    0   
 $EndComp
@@ -995,6 +1028,7 @@ F 3 "" H 5200 1850 50  0001 C CNN
 F 4 "1469746" H 0   0   50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H 0   0   50  0001 C CNN "Distributor"
 F 6 "1469746" H 0   0   50  0001 C CNN "Farnell"
+F 7 "N" H 5200 1850 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5200 1850
 	1    0    0    -1  
 $EndComp
@@ -1041,6 +1075,7 @@ F 3 "" H 3800 7000 50  0000 C CNN
 F 4 "1797012" H -1600 800 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H -1600 800 50  0001 C CNN "Distributor"
 F 6 "1797012" H -1600 800 50  0001 C CNN "Farnell"
+F 7 "N" H 3800 7000 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    3800 7000
 	1    0    0    -1  
 $EndComp
@@ -1070,6 +1105,7 @@ F 3 "" H 7450 3900 50  0001 C CNN
 F 4 "1739145" H 0   300 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H 0   300 50  0001 C CNN "Distributor"
 F 6 "1739145" H 0   300 50  0001 C CNN "Farnell"
+F 7 "N" H 7450 3900 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    7450 3900
 	0    1    1    0   
 $EndComp

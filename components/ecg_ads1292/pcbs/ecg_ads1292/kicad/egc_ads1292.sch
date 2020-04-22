@@ -16,7 +16,7 @@ $EndDescr
 $Sheet
 S 3600 2700 1050 1700
 U 5E80F57C
-F0 "ecg input protection" 50
+F0 "ecg_input_protection" 50
 F1 "ecg_input_protection.sch" 50
 F2 "LA" O R 4650 2800 50 
 F3 "RA" O R 4650 3300 50 
@@ -49,6 +49,7 @@ F 0 "J1" H 1550 2550 50  0000 C CNN
 F 1 "n.p." H 1550 2650 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1700 2800 50  0001 C CNN
 F 3 "~" H 1700 2800 50  0001 C CNN
+F 4 "N" H 1700 2800 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1700 2800
 	-1   0    0    1   
 $EndComp
@@ -62,6 +63,7 @@ F 0 "J2" H 1550 3050 50  0000 C CNN
 F 1 "n.p." H 1550 3150 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1700 3300 50  0001 C CNN
 F 3 "~" H 1700 3300 50  0001 C CNN
+F 4 "N" H 1700 3300 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1700 3300
 	-1   0    0    1   
 $EndComp
@@ -75,6 +77,7 @@ F 0 "J3" H 1550 3550 50  0000 C CNN
 F 1 "n.p." H 1550 3650 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1700 3800 50  0001 C CNN
 F 3 "~" H 1700 3800 50  0001 C CNN
+F 4 "N" H 1700 3800 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1700 3800
 	-1   0    0    1   
 $EndComp
@@ -88,6 +91,7 @@ F 0 "J4" H 1550 4050 50  0000 C CNN
 F 1 "n.p." H 1550 4150 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1700 4300 50  0001 C CNN
 F 3 "~" H 1700 4300 50  0001 C CNN
+F 4 "N" H 1700 4300 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1700 4300
 	-1   0    0    1   
 $EndComp
@@ -114,6 +118,7 @@ F 3 "" H 8700 5150 50  0001 C CNN
 F 4 "1738916" H 2900 3300 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H 2900 3300 50  0001 C CNN "Distributor"
 F 6 "1738916" H 2900 3300 50  0001 C CNN "Farnell"
+F 7 "N" H 8700 5150 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    8700 5150
 	-1   0    0    1   
 $EndComp
@@ -134,7 +139,7 @@ Wire Wire Line
 $Sheet
 S 6200 2700 950  2450
 U 5E8EE786
-F0 "ECG Sensor" 50
+F0 "ECG_Sensor" 50
 F1 "ecg_ads1292_sensor.sch" 50
 F2 "LA" I L 6200 2800 50 
 F3 "RA" I L 6200 3300 50 
@@ -167,6 +172,7 @@ F 3 "" H 8700 4250 50  0001 C CNN
 F 4 "1738916" H 2900 2400 50  0001 C CNN "Best.Nr."
 F 5 "Farnell" H 2900 2400 50  0001 C CNN "Distributor"
 F 6 "1738916" H 2900 2400 50  0001 C CNN "Farnell"
+F 7 "N" H 8700 4250 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    8700 4250
 	-1   0    0    1   
 $EndComp
@@ -178,6 +184,7 @@ F 0 "TP1" H 5100 2900 50  0000 L CNN
 F 1 " " H 5100 2800 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 5000 2800 50  0001 C CNN
 F 3 "~" H 5000 2800 50  0001 C CNN
+F 4 "N" H 4800 2800 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4800 2800
 	1    0    0    -1  
 $EndComp
@@ -192,6 +199,7 @@ F 0 "TP2" H 5100 3400 50  0000 L CNN
 F 1 " " H 5100 3300 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 5000 3300 50  0001 C CNN
 F 3 "~" H 5000 3300 50  0001 C CNN
+F 4 "N" H 4800 3300 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4800 3300
 	1    0    0    -1  
 $EndComp
@@ -206,6 +214,7 @@ F 0 "TP3" H 5100 3900 50  0000 L CNN
 F 1 " " H 5100 3800 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 5000 3800 50  0001 C CNN
 F 3 "~" H 5000 3800 50  0001 C CNN
+F 4 "N" H 4800 3800 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4800 3800
 	1    0    0    -1  
 $EndComp
@@ -220,6 +229,7 @@ F 0 "TP4" H 5100 4400 50  0000 L CNN
 F 1 " " H 5100 4300 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 5000 4300 50  0001 C CNN
 F 3 "~" H 5000 4300 50  0001 C CNN
+F 4 "N" H 4800 4300 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4800 4300
 	1    0    0    -1  
 $EndComp
@@ -234,6 +244,7 @@ F 0 "TP12" H 7650 4650 50  0000 L CNN
 F 1 " " H 7650 4550 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 7550 4550 50  0001 C CNN
 F 3 "~" H 7550 4550 50  0001 C CNN
+F 4 "N" H 7350 4550 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    7350 4550
 	1    0    0    -1  
 $EndComp
@@ -248,6 +259,7 @@ F 0 "TP13" H 7650 4850 50  0000 L CNN
 F 1 " " H 7650 4750 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 7550 4750 50  0001 C CNN
 F 3 "~" H 7550 4750 50  0001 C CNN
+F 4 "N" H 7350 4750 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    7350 4750
 	1    0    0    -1  
 $EndComp
@@ -262,6 +274,7 @@ F 0 "TP14" H 7650 5050 50  0000 L CNN
 F 1 " " H 7650 4950 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 7550 4950 50  0001 C CNN
 F 3 "~" H 7550 4950 50  0001 C CNN
+F 4 "N" H 7350 4950 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    7350 4950
 	1    0    0    -1  
 $EndComp
@@ -299,6 +312,7 @@ F 0 "TP5" H 5100 4800 50  0000 L CNN
 F 1 " " H 5100 4700 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 5000 4700 50  0001 C CNN
 F 3 "~" H 5000 4700 50  0001 C CNN
+F 4 "N" H 4800 4700 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4800 4700
 	1    0    0    -1  
 $EndComp
@@ -310,6 +324,7 @@ F 0 "TP15" H 7650 5550 50  0000 L CNN
 F 1 " " H 7650 5450 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 7550 5450 50  0001 C CNN
 F 3 "~" H 7550 5450 50  0001 C CNN
+F 4 "N" H 7350 5450 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    7350 5450
 	1    0    0    -1  
 $EndComp
@@ -395,6 +410,7 @@ F 0 "H1" H 900 6150 50  0000 L CNN
 F 1 "MountingHole" H 900 6100 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 800 6100 50  0001 C CNN
 F 3 "~" H 800 6100 50  0001 C CNN
+F 4 "N" H 800 6100 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    800  6100
 	1    0    0    -1  
 $EndComp
@@ -406,6 +422,7 @@ F 0 "H2" H 900 6450 50  0000 L CNN
 F 1 "MountingHole" H 900 6400 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 800 6400 50  0001 C CNN
 F 3 "~" H 800 6400 50  0001 C CNN
+F 4 "N" H 800 6400 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    800  6400
 	1    0    0    -1  
 $EndComp
@@ -417,6 +434,7 @@ F 0 "H3" H 900 6750 50  0000 L CNN
 F 1 "MountingHole" H 900 6700 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 800 6700 50  0001 C CNN
 F 3 "~" H 800 6700 50  0001 C CNN
+F 4 "N" H 800 6700 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    800  6700
 	1    0    0    -1  
 $EndComp
@@ -428,6 +446,7 @@ F 0 "H4" H 900 7000 50  0000 L CNN
 F 1 "MountingHole" H 900 6950 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 800 6950 50  0001 C CNN
 F 3 "~" H 800 6950 50  0001 C CNN
+F 4 "N" H 800 6950 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    800  6950
 	1    0    0    -1  
 $EndComp
@@ -439,6 +458,7 @@ F 0 "R30" V 2200 7050 50  0000 C CNN
 F 1 "n.p." V 2300 7050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0815_2038Metric_Pad1.53x4.00mm_HandSolder" V 2380 7050 50  0001 C CNN
 F 3 "" H 2450 7050 50  0001 C CNN
+F 4 "N" H 2450 7050 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    2450 7050
 	0    1    1    0   
 $EndComp
@@ -450,6 +470,7 @@ F 0 "R29" V 2200 6650 50  0000 C CNN
 F 1 "n.p." V 2300 6650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0815_2038Metric_Pad1.53x4.00mm_HandSolder" V 2380 6650 50  0001 C CNN
 F 3 "" H 2450 6650 50  0001 C CNN
+F 4 "N" H 2450 6650 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    2450 6650
 	0    1    1    0   
 $EndComp
@@ -461,6 +482,7 @@ F 0 "R27" V 2200 6250 50  0000 C CNN
 F 1 "n.p." V 2300 6250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0815_2038Metric_Pad1.53x4.00mm_HandSolder" V 2380 6250 50  0001 C CNN
 F 3 "" H 2450 6250 50  0001 C CNN
+F 4 "N" H 2450 6250 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    2450 6250
 	0    1    1    0   
 $EndComp
@@ -472,6 +494,7 @@ F 0 "R26" V 2200 5850 50  0000 C CNN
 F 1 "n.p." V 2300 5850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0815_2038Metric_Pad1.53x4.00mm_HandSolder" V 2380 5850 50  0001 C CNN
 F 3 "" H 2450 5850 50  0001 C CNN
+F 4 "N" H 2450 5850 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    2450 5850
 	0    1    1    0   
 $EndComp
@@ -483,6 +506,7 @@ F 0 "R25" V 2200 5450 50  0000 C CNN
 F 1 "n.p." V 2300 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0815_2038Metric_Pad1.53x4.00mm_HandSolder" V 2380 5450 50  0001 C CNN
 F 3 "" H 2450 5450 50  0001 C CNN
+F 4 "N" H 2450 5450 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    2450 5450
 	0    1    1    0   
 $EndComp
@@ -564,6 +588,7 @@ F 0 "H5" H 1800 6850 50  0000 L CNN
 F 1 "n.p." H 1800 6750 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1700 6750 50  0001 C CNN
 F 3 "~" H 1700 6750 50  0001 C CNN
+F 4 "N" H 1700 6750 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1700 6750
 	1    0    0    -1  
 $EndComp
@@ -664,6 +689,7 @@ F 0 "J6" H 10250 2750 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 10250 2850 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical_Lock" H 10200 3500 50  0001 C CNN
 F 3 "~" H 10200 3500 50  0001 C CNN
+F 4 "N" H 10200 3500 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    10200 3500
 	1    0    0    1   
 $EndComp
@@ -805,6 +831,7 @@ F 0 "J5" H 10200 1050 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 10200 1150 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical_Lock" H 10150 1800 50  0001 C CNN
 F 3 "~" H 10150 1800 50  0001 C CNN
+F 4 "N" H 10150 1800 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    10150 1800
 	1    0    0    1   
 $EndComp

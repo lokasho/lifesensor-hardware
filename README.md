@@ -1,39 +1,11 @@
 # lifesensor-hardware
-temporary repository for the next hardware generation of the CADUS Life Sensor:
-https://github.com/cadus/Life-Sensor
+Temporary repository for the next hardware generation of the CADUS Life Sensor.
+Official repository at https://github.com/cadus/Life-Sensor.
 
 
-## requirements
-- from https://github.com/cadus/Life-Sensor:
-    + Standard parts
-    + Repairable & Maintainable
-    + Open source
-
-- mattermost, ecg channel: 
-    + Single-Layer Platinen
-    + stationaere loesung
-    + mit mindestens dem feature set des jetzigen life-sensors
-        + also spo2,
-        + herzschlag,
-        + blutdruck, 
-        + 3-kanal ekg
-    + einsatzort erstmal Krankenbett, nicht rettungseinsatz
-
-
-- meeting 2020-03-26:
-    + defibrillator save
-
-- open:
-    + ISO60601-gerecht?
-    + double layer möglich?
-    + Lizenz?
-
-
-- Switch to KiCAD
-
-
-## similar Projekte / Resourcen:
+## Similar projects and Resources:
 - https://github.com/GliaX
 - ecg
-    + https://github.com/xdever/MobilECG-II -> auf ADS1298 basis
+    + https://github.com/xdever/MobilECG-II -> based on ADS1298
     + https://www.olimex.com/Products/Duino/Shields/SHIELD-EKG-EMG/open-source-hardware
+    + https://www.electronicdesign.com/power-management/article/21798161/choose-the-right-resistors-for-medical-applications

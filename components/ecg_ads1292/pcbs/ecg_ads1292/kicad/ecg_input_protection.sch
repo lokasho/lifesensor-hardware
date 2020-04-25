@@ -467,8 +467,9 @@ F 1 "TVS, 5V, 9.2V" V 5950 1850 50  0000 L CNN
 F 2 "Diode_SMD:D_SMB_Handsoldering" H 5950 1750 50  0001 C CNN
 F 3 "~" H 5950 1750 50  0001 C CNN
 F 4 "Y" H 5950 1750 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "D" H 5950 1750 50  0001 C CNN "Spice_Primitive"
-F 6 "TVS, 5V, 9.2V" H 5950 1750 50  0001 C CNN "Spice_Model"
+F 5 "X" H 5950 1750 50  0001 C CNN "Spice_Primitive"
+F 6 "SMCJ5.0A" H 5950 1750 50  0001 C CNN "Spice_Model"
+F 7 "smcj50a.lib" H 5950 1750 50  0001 C CNN "Spice_Lib_File"
 	1    5950 1750
 	0    1    1    0   
 $EndComp
@@ -568,23 +569,9 @@ F 4 "N" H 4000 3400 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4000 3400
 	1    0    0    -1  
 $EndComp
-$Comp
-L pspice:VSOURCE V1
-U 1 1 5EA496AB
-P 8000 4250
-F 0 "V1" H 8228 4296 50  0000 L CNN
-F 1 "VSOURCE" H 8228 4205 50  0000 L CNN
-F 2 "" H 8000 4250 50  0001 C CNN
-F 3 "~" H 8000 4250 50  0001 C CNN
-F 4 "V" H 8000 4250 50  0001 C CNN "Spice_Primitive"
-F 5 "pulse(0 4.8k 0 10u 10m 10u)" H 8000 4250 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 8000 4250 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    8000 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2450 2900 4000 2900
-Text Notes 8000 3450 0    98   ~ 0
+Text Notes 7800 3250 0    118  ~ 0
 Simulation
 $Comp
 L Device:R R3
@@ -614,16 +601,14 @@ F 6 "10k" H 2300 1300 50  0001 C CNN "Spice_Model"
 	1    2300 1300
 	0    1    1    0   
 $EndComp
-Text Notes 7850 4950 0    50   ~ 0
+Text Notes 7850 5000 0    50   ~ 0
 source is simplication from\nhttps://www.medteq.net/article/defibrillator-proof-testing
 Wire Wire Line
 	4000 2100 5200 2100
 Wire Wire Line
 	1800 1300 2150 1300
-Text Notes 8000 3800 0    50   ~ 0
-.tran 10u 10m 0\n.param Vstrike=150 Vhold=50 Zon=2K Ihold=200u Tau=100u\n.plot tran V(/ecg_input_protection/in2_LA)\n\n
 Wire Wire Line
-	9550 4550 10000 4550
+	9550 4550 9650 4550
 $Comp
 L pspice:R R000
 U 1 1 5EAB5892
@@ -644,16 +629,18 @@ Wire Wire Line
 $Comp
 L component:GND #PWR0112
 U 1 1 5EA64C5C
-P 10000 4550
-F 0 "#PWR0112" H 10000 4300 50  0001 C CNN
-F 1 "GND" H 10005 4377 50  0000 C CNN
-F 2 "" H 10000 4550 50  0001 C CNN
-F 3 "" H 10000 4550 50  0001 C CNN
-	1    10000 4550
+P 9650 4550
+F 0 "#PWR0112" H 9650 4300 50  0001 C CNN
+F 1 "GND" H 9655 4377 50  0000 C CNN
+F 2 "" H 9650 4550 50  0001 C CNN
+F 3 "" H 9650 4550 50  0001 C CNN
+	1    9650 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2450 1300 4000 1300
+Text Notes 7800 3950 0    50   ~ 0
+* Parameters of Helium Lamp\n.param Vstrike=150 Vhold=50 Zon=2K Ihold=200u Tau=100u\n* Simulation Parameters\n.tran 10u 10m 0\n\n\n\n
 Wire Wire Line
 	4000 1300 4000 1600
 $Comp
@@ -671,4 +658,22 @@ F 7 "sim_ne2.lib" H 4000 1800 50  0001 C CNN "Spice_Lib_File"
 	1    4000 1800
 	-1   0    0    1   
 $EndComp
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5EA496AB
+P 8000 4250
+F 0 "V1" H 8228 4296 50  0000 L CNN
+F 1 "VSOURCE" H 8228 4205 50  0000 L CNN
+F 2 "" H 8000 4250 50  0001 C CNN
+F 3 "~" H 8000 4250 50  0001 C CNN
+F 4 "V" H 8000 4250 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 0 pulse(0 4.8k 1m 10u 10m 10u)" H 8000 4250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8000 4250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8000 4250
+	1    0    0    -1  
+$EndComp
+Text Notes 7850 5450 0    50   ~ 0
+due to unavailability of spice model, \nsmcj5.0a (vr 5.0V, vbr 6.4V, vc 9.2V, 1500W)\nwas used instead of \nsmbj5.0a (vr 5.0V, vbr 6.4V, vc 9.2V,  600W)\n
+Text Notes 9600 4450 0    50   ~ 0
+R000 only to connect \nGNDPWR to GND for the simulation\n
 $EndSCHEMATC

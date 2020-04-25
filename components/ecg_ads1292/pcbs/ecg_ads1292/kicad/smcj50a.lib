@@ -1,0 +1,6 @@
+.SUBCKT SMCJ5.0A     1   2
+*       TERMINALS:   A   K
+Done    1            2   Dtvs
+Rleak   1            2   0.013meg
+.MODEL  Dtvs         D   (IS=1.0e-5 RS=0.0104 N=1.5 IBV=10m BV=6.46 CJO=900p)
+.ENDS

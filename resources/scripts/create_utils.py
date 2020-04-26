@@ -131,3 +131,7 @@ def full_board_name(settings: Settings) -> str:
 def board_dir(settings: Settings) -> pathlib.Path:
     board_dir = component_dir(settings) / "pcbs" / full_board_name(settings)
     return board_dir
+
+
+def template_base_dir() -> pathlib.Path:
+    return pathlib.Path(__file__).resolve().parents[1]

@@ -1,10 +1,7 @@
-import pathlib
 import shutil
-
 import create_utils
 
-
-TEMPLATE_DIR = pathlib.Path("../template_pcb").resolve()
+TEMPLATE_DIR = create_utils.template_base_dir() / "template_pcb"
 COMPONENTS_DIR_NAME = "components"
 DEBUG = True
 

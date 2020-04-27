@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 2 2
 Title "lifesensor ecg ads1292 sensor"
 Date "2020-04-27"
-Rev "0.1"
+Rev "0"
 Comp "Cadus e.V."
 Comment1 "n.p.: do not place"
 Comment2 ""
@@ -624,9 +624,9 @@ Wire Wire Line
 Wire Wire Line
 	1600 6850 1600 6550
 Wire Wire Line
-	2250 6750 2450 6750
+	2050 6750 2100 6750
 Wire Wire Line
-	2250 6550 2250 6750
+	2050 6550 2050 6750
 Wire Wire Line
 	7200 3900 7300 3900
 Wire Wire Line
@@ -644,7 +644,7 @@ Connection ~ 5200 2200
 Connection ~ 7850 4250
 Connection ~ 1900 6550
 Connection ~ 1600 6550
-Connection ~ 2250 6550
+Connection ~ 2050 6550
 Connection ~ 7800 850 
 NoConn ~ 7200 4000
 Wire Wire Line
@@ -666,11 +666,11 @@ Wire Wire Line
 Wire Wire Line
 	7850 4250 7850 4300
 Wire Wire Line
-	1900 6550 2250 6550
+	1900 6550 2050 6550
 Wire Wire Line
 	1600 6550 1900 6550
 Wire Wire Line
-	2250 6550 2450 6550
+	2050 6550 2450 6550
 $Comp
 L component:ADS1292 IC?
 U 1 1 5E92F97B
@@ -1039,4 +1039,20 @@ F 6 "1469825" H -600 -950 50  0001 C CNN "Farnell"
 $EndComp
 Wire Wire Line
 	4100 850  5850 850 
+$Comp
+L component:R R4
+U 1 1 5EA9A4D2
+P 2250 6750
+F 0 "R4" V 2150 6650 50  0000 L CNN
+F 1 "100" V 2250 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2180 6750 50  0001 C CNN
+F 3 "" H 2250 6750 50  0001 C CNN
+F 4 "1739145" H -5200 3750 50  0001 C CNN "Best.Nr."
+F 5 "Farnell" H -5200 3750 50  0001 C CNN "Distributor"
+F 6 "1739145" H -5200 3750 50  0001 C CNN "Farnell"
+	1    2250 6750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 6750 2450 6750
 $EndSCHEMATC

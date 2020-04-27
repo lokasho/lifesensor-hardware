@@ -1,0 +1,12 @@
+ERC report (Monday, 27 April 2020 at 23:50:59, Encoding UTF8 )
+
+***** Sheet /
+ErrType(4): Conflict problem between pins. Severity: warning
+    @(342.90 mm, 110.49 mm): Pin 1 (Power output) of component #FLG0105 is connected to 
+    @(144.78 mm, 129.54 mm): pin 10 (Bidirectional) of component IC1 (net 1).
+    Accepted: Negative reference voltage pin of ADS1292 is used as input in this circuit. 
+***** Sheet /ECG_Sensor/
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(62.23 mm, 166.37 mm): Pin 1 (Power input) of component U1 is not driven (Net 53).
+    Accepted: Driven through passive device L1.
+ ** ERC messages: 2  Errors 0  Warnings 2

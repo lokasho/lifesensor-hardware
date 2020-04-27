@@ -468,8 +468,8 @@ F 2 "Diode_SMD:D_SMB_Handsoldering" H 5950 1750 50  0001 C CNN
 F 3 "~" H 5950 1750 50  0001 C CNN
 F 4 "Y" H 5950 1750 50  0001 C CNN "Spice_Netlist_Enabled"
 F 5 "X" H 5950 1750 50  0001 C CNN "Spice_Primitive"
-F 6 "SMCJ5.0A" H 5950 1750 50  0001 C CNN "Spice_Model"
-F 7 "smaj50ac.lib" H 5950 1750 50  0001 C CNN "Spice_Lib_File"
+F 6 "SMAJ5.0CA" H 5950 1750 50  0001 C CNN "Spice_Model"
+F 7 "smaj50ca.lib" H 5950 1750 50  0001 C CNN "Spice_Lib_File"
 	1    5950 1750
 	0    1    1    0   
 $EndComp

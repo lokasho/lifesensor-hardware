@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 2
 Title "lifesensor ecg ads1292 main"
-Date "2020-04-27"
+Date "2020-04-28"
 Rev "1"
 Comp "Cadus e.V."
 Comment1 ""
@@ -113,13 +113,7 @@ Wire Wire Line
 Wire Wire Line
 	14150 4250 15200 4250
 Wire Wire Line
-	14150 3650 15200 3650
-Wire Wire Line
 	14150 3750 15200 3750
-Wire Wire Line
-	14150 3450 15200 3450
-Wire Wire Line
-	14150 3550 15200 3550
 Wire Wire Line
 	14150 3150 15200 3150
 Wire Wire Line
@@ -225,17 +219,6 @@ F 3 "" H 13950 8350 60  0001 C CNN
 $EndComp
 Text Notes 13400 5800 0    50   ~ 0
 Mounting Holes
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even P1
-U 1 1 59AD464A
-P 13850 3350
-F 0 "P1" H 13900 4467 50  0000 C CNN
-F 1 "Conn_02x20_Odd_Even" H 13900 4376 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 9000 2400 50  0001 C CNN
-F 3 "" H 9000 2400 50  0001 C CNN
-	1    13850 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14150 4350 15200 4350
 Text Label 15200 4350 2    50   ~ 0
@@ -488,7 +471,7 @@ SENS_SCLK
 Wire Wire Line
 	11350 3350 11350 3400
 Text Label 11200 3200 2    50   ~ 0
-~SENS_CS_ECG
+~CS
 Text Label 7600 3000 2    50   ~ 0
 LA
 Text Label 7600 3100 2    50   ~ 0
@@ -738,8 +721,6 @@ NoConn ~ 14150 2850
 NoConn ~ 14150 2950
 NoConn ~ 13650 3150
 NoConn ~ 14150 3250
-NoConn ~ 14150 3450
-NoConn ~ 14150 3650
 NoConn ~ 14150 3750
 NoConn ~ 13650 3750
 NoConn ~ 13650 3850
@@ -764,4 +745,85 @@ F 3 "~" H 13500 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13500 4350 13550 4350
+$Comp
+L component:R R?
+U 1 1 5EA92C2C
+P 15500 3450
+AR Path="/5E8EE786/5EA92C2C" Ref="R?"  Part="1" 
+AR Path="/5EA92C2C" Ref="R5"  Part="1" 
+F 0 "R5" V 15450 3150 50  0000 L CNN
+F 1 "100" V 15500 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 15430 3450 50  0001 C CNN
+F 3 "" H 15500 3450 50  0001 C CNN
+F 4 "1739145" H 8050 450 50  0001 C CNN "Best.Nr."
+F 5 "Farnell" H 8050 450 50  0001 C CNN "Distributor"
+F 6 "1739145" H 8050 450 50  0001 C CNN "Farnell"
+	1    15500 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14150 3450 15350 3450
+$Comp
+L component:R R?
+U 1 1 5EA9C980
+P 15500 3550
+AR Path="/5E8EE786/5EA9C980" Ref="R?"  Part="1" 
+AR Path="/5EA9C980" Ref="R6"  Part="1" 
+F 0 "R6" V 15450 3250 50  0000 L CNN
+F 1 "100" V 15500 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 15430 3550 50  0001 C CNN
+F 3 "" H 15500 3550 50  0001 C CNN
+F 4 "1739145" H 8050 550 50  0001 C CNN "Best.Nr."
+F 5 "Farnell" H 8050 550 50  0001 C CNN "Distributor"
+F 6 "1739145" H 8050 550 50  0001 C CNN "Farnell"
+	1    15500 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L component:R R?
+U 1 1 5EA9D0F1
+P 15500 3650
+AR Path="/5E8EE786/5EA9D0F1" Ref="R?"  Part="1" 
+AR Path="/5EA9D0F1" Ref="R20"  Part="1" 
+F 0 "R20" V 15450 3350 50  0000 L CNN
+F 1 "100" V 15500 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 15430 3650 50  0001 C CNN
+F 3 "" H 15500 3650 50  0001 C CNN
+F 4 "1739145" H 8050 650 50  0001 C CNN "Best.Nr."
+F 5 "Farnell" H 8050 650 50  0001 C CNN "Distributor"
+F 6 "1739145" H 8050 650 50  0001 C CNN "Farnell"
+	1    15500 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14150 3550 15350 3550
+Wire Wire Line
+	14150 3650 15350 3650
+Wire Wire Line
+	15650 3650 15700 3650
+Wire Wire Line
+	15700 3650 15700 3550
+Wire Wire Line
+	15700 3450 15950 3450
+Wire Wire Line
+	15700 3450 15650 3450
+Connection ~ 15700 3450
+Wire Wire Line
+	15650 3550 15700 3550
+Connection ~ 15700 3550
+Wire Wire Line
+	15700 3550 15700 3450
+Text Label 15950 3450 2    50   ~ 0
+~CS
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even P1
+U 1 1 59AD464A
+P 13850 3350
+F 0 "P1" H 13900 4467 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 13900 4376 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 9000 2400 50  0001 C CNN
+F 3 "" H 9000 2400 50  0001 C CNN
+	1    13850 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

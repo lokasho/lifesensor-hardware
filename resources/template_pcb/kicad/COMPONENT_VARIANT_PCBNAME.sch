@@ -113,13 +113,11 @@ Wire Wire Line
 Wire Wire Line
 	14150 4250 15200 4250
 Wire Wire Line
-	14150 3650 15200 3650
-Wire Wire Line
 	14150 3750 15200 3750
 Wire Wire Line
-	14150 3450 15200 3450
+	14150 3450 15350 3450
 Wire Wire Line
-	14150 3550 15200 3550
+	14150 3550 15350 3550
 Wire Wire Line
 	14150 3150 15200 3150
 Wire Wire Line
@@ -341,5 +339,56 @@ F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 14450 8350 60  0001 C CNN
 F 3 "" H 14450 8350 60  0001 C CNN
 	1    14450 8350
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5EA7E07E
+P 15450 3450
+F 0 "R1" V 15400 3300 50  0000 C CNN
+F 1 "n.p." V 15400 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 15450 3450 50  0001 C CNN
+F 3 "~" H 15450 3450 50  0001 C CNN
+	1    15450 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14150 3650 15350 3650
+Wire Wire Line
+	15550 3650 15700 3650
+Wire Wire Line
+	15700 3650 15700 3550
+Wire Wire Line
+	15550 3450 15700 3450
+Connection ~ 15700 3450
+Wire Wire Line
+	15700 3450 16000 3450
+Wire Wire Line
+	15550 3550 15700 3550
+Connection ~ 15700 3550
+Wire Wire Line
+	15700 3550 15700 3450
+Text Label 16000 3450 2    50   ~ 0
+~CS
+$Comp
+L Device:R_Small R2
+U 1 1 5EA881A8
+P 15450 3550
+F 0 "R2" V 15400 3400 50  0000 C CNN
+F 1 "n.p." V 15400 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 15450 3550 50  0001 C CNN
+F 3 "~" H 15450 3550 50  0001 C CNN
+	1    15450 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5EA8833D
+P 15450 3650
+F 0 "R3" V 15400 3500 50  0000 C CNN
+F 1 "n.p." V 15400 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 15450 3650 50  0001 C CNN
+F 3 "~" H 15450 3650 50  0001 C CNN
+	1    15450 3650
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

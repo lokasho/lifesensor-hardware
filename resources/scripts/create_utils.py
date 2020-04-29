@@ -9,17 +9,11 @@ COMPONENTS_DIR_NAME = "components"
 DEBUG = True
 
 
-def lower_case_string(name: str) -> str:
+def lower_case_string(string: str) -> str:
     """
-    Convert a name to all lower case. Used in settings as factory
-
-    :param      name:  The name to be converted
-    :type       name:  str
-
-    :returns:   all lower case string
-    :rtype:     str
+    Convert a string to all lower case. Used in settings as factory
     """
-    return name.lower()
+    return string.lower()
 
 
 @dataclass(frozen=True)

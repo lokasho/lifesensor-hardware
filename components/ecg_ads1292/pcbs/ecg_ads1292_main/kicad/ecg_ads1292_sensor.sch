@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L component:C_Small C17
+L ecg_ads1292_main:C_Small C17
 U 1 1 5900C28B
 P 5850 1050
 F 0 "C17" H 5860 1120 50  0000 L CNN
@@ -29,7 +29,7 @@ F 7 "1907318" H 0   0   50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR026
+L ecg_ads1292_main:GND #PWR026
 U 1 1 5900C2FF
 P 5850 1200
 F 0 "#PWR026" H 5850 950 50  0001 C CNN
@@ -40,7 +40,7 @@ F 3 "" H 5850 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:C_Small C20
+L ecg_ads1292_main:C_Small C20
 U 1 1 5900C3E1
 P 6700 1050
 F 0 "C20" H 6710 1120 50  0000 L CNN
@@ -55,7 +55,7 @@ F 7 "1907318" H 0   0   50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:C_Small C21
+L ecg_ads1292_main:C_Small C21
 U 1 1 5900C409
 P 7300 1050
 F 0 "C21" H 7310 1120 50  0000 L CNN
@@ -70,7 +70,7 @@ F 7 "2112849" H 0   0   50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR029
+L ecg_ads1292_main:GND #PWR029
 U 1 1 5900C4E1
 P 6700 1200
 F 0 "#PWR029" H 6700 950 50  0001 C CNN
@@ -81,7 +81,7 @@ F 3 "" H 6700 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR030
+L ecg_ads1292_main:GND #PWR030
 U 1 1 5900C4FB
 P 7300 1200
 F 0 "#PWR030" H 7300 950 50  0001 C CNN
@@ -92,7 +92,7 @@ F 3 "" H 7300 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR027
+L ecg_ads1292_main:GND #PWR027
 U 1 1 5900C7F4
 P 6200 5800
 F 0 "#PWR027" H 6200 5550 50  0001 C CNN
@@ -103,7 +103,7 @@ F 3 "" H 6200 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR028
+L ecg_ads1292_main:GND #PWR028
 U 1 1 5900C81D
 P 6400 5800
 F 0 "#PWR028" H 6400 5550 50  0001 C CNN
@@ -114,7 +114,7 @@ F 3 "" H 6400 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:C_Small C10
+L ecg_ads1292_main:C_Small C10
 U 1 1 5900CC4E
 P 4400 3000
 F 0 "C10" V 4450 3050 50  0000 L CNN
@@ -129,7 +129,7 @@ F 7 "2611918" H 0   0   50  0001 C CNN "Farnell"
 	0    -1   1    0   
 $EndComp
 $Comp
-L component:C_Small C11
+L ecg_ads1292_main:C_Small C11
 U 1 1 5900CC8F
 P 4400 3300
 F 0 "C11" V 4450 3350 50  0000 L CNN
@@ -144,7 +144,7 @@ F 7 "2611918" H 0   0   50  0001 C CNN "Farnell"
 	0    -1   1    0   
 $EndComp
 $Comp
-L component:C_Small C18
+L ecg_ads1292_main:C_Small C18
 U 1 1 5900D6DB
 P 5850 5300
 F 0 "C18" V 5750 5300 50  0000 C CNN
@@ -159,7 +159,7 @@ F 7 "2494294" H 0   0   50  0001 C CNN "Farnell"
 	0    1    1    0   
 $EndComp
 $Comp
-L component:C_Small C19
+L ecg_ads1292_main:C_Small C19
 U 1 1 5900D90D
 P 5850 5650
 F 0 "C19" V 5750 5650 50  0000 C CNN
@@ -174,7 +174,7 @@ F 7 "1889276" H 0   0   50  0001 C CNN "Farnell"
 	0    1    1    0   
 $EndComp
 $Comp
-L component:GND #PWR025
+L ecg_ads1292_main:GND #PWR025
 U 1 1 5900DAEA
 P 5700 5800
 F 0 "#PWR025" H 5700 5550 50  0001 C CNN
@@ -185,7 +185,7 @@ F 3 "" H 5700 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:C_Small C16
+L ecg_ads1292_main:C_Small C16
 U 1 1 5900EB70
 P 5400 5300
 F 0 "C16" H 5410 5370 50  0000 L CNN
@@ -200,7 +200,7 @@ F 7 "2112849" H 0   0   50  0001 C CNN "Farnell"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L component:C_Small C14
+L ecg_ads1292_main:C_Small C14
 U 1 1 5900EDBD
 P 5100 5300
 F 0 "C14" H 5110 5370 50  0000 L CNN
@@ -215,7 +215,7 @@ F 7 "2112849" H 0   0   50  0001 C CNN "Farnell"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR024
+L ecg_ads1292_main:GND #PWR024
 U 1 1 5900F397
 P 5400 5800
 F 0 "#PWR024" H 5400 5550 50  0001 C CNN
@@ -226,7 +226,7 @@ F 3 "" H 5400 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR023
+L ecg_ads1292_main:GND #PWR023
 U 1 1 5900F3C3
 P 5100 5800
 F 0 "#PWR023" H 5100 5550 50  0001 C CNN
@@ -237,7 +237,7 @@ F 3 "" H 5100 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:R R14
+L ecg_ads1292_main:R R14
 U 1 1 5901EEB7
 P 5800 1850
 F 0 "R14" H 5850 1950 50  0000 L CNN
@@ -251,7 +251,7 @@ F 6 "1738916" H 0   0   50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:R R13
+L ecg_ads1292_main:R R13
 U 1 1 59026934
 P 5500 1850
 F 0 "R13" H 5550 1950 50  0000 L CNN
@@ -265,7 +265,7 @@ F 6 "1692517" H 0   0   50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:C_Small C13
+L ecg_ads1292_main:C_Small C13
 U 1 1 59026A9B
 P 4900 1850
 F 0 "C13" H 4900 1950 50  0000 L CNN
@@ -279,7 +279,7 @@ F 6 "" H 0   0   50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:R R16
+L ecg_ads1292_main:R R16
 U 1 1 59018193
 P 7450 3600
 F 0 "R16" V 7400 3750 50  0000 L CNN
@@ -293,7 +293,7 @@ F 6 "1739145" H 0   0   50  0001 C CNN "Farnell"
 	0    1    1    0   
 $EndComp
 $Comp
-L component:R R15
+L ecg_ads1292_main:R R15
 U 1 1 5901747B
 P 7450 3000
 F 0 "R15" V 7400 3150 50  0000 L CNN
@@ -307,7 +307,7 @@ F 6 "1739145" H 0   0   50  0001 C CNN "Farnell"
 	0    1    1    0   
 $EndComp
 $Comp
-L component:R R18
+L ecg_ads1292_main:R R18
 U 1 1 59F006E1
 P 7650 4200
 F 0 "R18" V 7750 4200 50  0000 L CNN
@@ -321,7 +321,7 @@ F 6 "1738916" H 1850 2350 50  0001 C CNN "Farnell"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L component:R R19
+L ecg_ads1292_main:R R19
 U 1 1 59F00D13
 P 7650 4300
 F 0 "R19" V 7750 4100 50  0000 L CNN
@@ -335,7 +335,7 @@ F 6 "1738916" H 1850 2450 50  0001 C CNN "Farnell"
 	0    1    1    0   
 $EndComp
 $Comp
-L component:GND #PWR031
+L ecg_ads1292_main:GND #PWR031
 U 1 1 59F014B8
 P 7900 4250
 F 0 "#PWR031" H 7900 4000 50  0001 C CNN
@@ -346,7 +346,7 @@ F 3 "" H 7900 4250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L component:TPS73033DBVT U1
+L ecg_ads1292_main:TPS73033DBVT U1
 U 1 1 59F2649C
 P 2850 6650
 F 0 "U1" H 2600 6400 50  0000 L CNN
@@ -360,7 +360,7 @@ F 6 "1135395" H -1600 800 50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:C C5
+L ecg_ads1292_main:C C5
 U 1 1 59F264B6
 P 1900 7000
 F 0 "C5" H 1925 7100 50  0000 L CNN
@@ -374,7 +374,7 @@ F 6 "1907318" H -1600 800 50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR018
+L ecg_ads1292_main:GND #PWR018
 U 1 1 59F264BD
 P 1900 7300
 F 0 "#PWR018" H 1900 7050 50  0001 C CNN
@@ -385,7 +385,7 @@ F 3 "" H 1900 7300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:C C8
+L ecg_ads1292_main:C C8
 U 1 1 59F264C6
 P 3400 7000
 F 0 "C8" H 3425 7100 50  0000 L CNN
@@ -399,7 +399,7 @@ F 6 "2496825" H -1600 800 50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR020
+L ecg_ads1292_main:GND #PWR020
 U 1 1 59F264CD
 P 3400 7300
 F 0 "#PWR020" H 3400 7050 50  0001 C CNN
@@ -410,7 +410,7 @@ F 3 "" H 3400 7300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR019
+L ecg_ads1292_main:GND #PWR019
 U 1 1 59F264D3
 P 2850 7300
 F 0 "#PWR019" H 2850 7050 50  0001 C CNN
@@ -421,7 +421,7 @@ F 3 "" H 2850 7300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:Ferrite_Bead_Small L1
+L ecg_ads1292_main:Ferrite_Bead_Small L1
 U 1 1 59F264DC
 P 1400 6550
 F 0 "L1" H 1475 6600 50  0000 L CNN
@@ -435,7 +435,7 @@ F 6 "1669719" H -1000 800 50  0001 C CNN "Farnell"
 	0    1    1    0   
 $EndComp
 $Comp
-L component:C C4
+L ecg_ads1292_main:C C4
 U 1 1 59F264E6
 P 1600 7000
 F 0 "C4" H 1625 7100 50  0000 L CNN
@@ -449,7 +449,7 @@ F 6 "1797012" H -1600 800 50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR017
+L ecg_ads1292_main:GND #PWR017
 U 1 1 59F264ED
 P 1600 7300
 F 0 "#PWR017" H 1600 7050 50  0001 C CNN
@@ -672,7 +672,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 6550 2450 6550
 $Comp
-L component:ADS1292 IC?
+L ecg_ads1292_main:ADS1292 IC?
 U 1 1 5E92F97B
 P 5900 3800
 AR Path="/5E92F97B" Ref="IC?"  Part="1" 
@@ -716,7 +716,7 @@ Wire Wire Line
 	4600 4500 2200 4500
 Connection ~ 2200 3550
 $Comp
-L component:C_Small C6
+L ecg_ads1292_main:C_Small C6
 U 1 1 5EA339FF
 P 1950 3700
 F 0 "C6" H 1950 3800 50  0000 L CNN
@@ -731,7 +731,7 @@ F 7 "1865491" H -300 -800 50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:C_Small C7
+L ecg_ads1292_main:C_Small C7
 U 1 1 5EA33C76
 P 1950 4500
 F 0 "C7" H 1950 4600 50  0000 L CNN
@@ -760,14 +760,12 @@ Wire Wire Line
 Wire Wire Line
 	1950 4600 1950 4950
 Connection ~ 1950 4950
-Wire Wire Line
-	1950 4950 3050 4950
 Text Notes 700  3050 0    50   ~ 0
 resistors of input protection \ncircuit must be included in\nlow pass calculation
 Text HLabel 850  1500 0    50   Output ~ 0
 RLD
 $Comp
-L component:C_Small C15
+L ecg_ads1292_main:C_Small C15
 U 1 1 5EA6E5E4
 P 5350 2200
 F 0 "C15" V 5450 2150 50  0000 L CNN
@@ -794,7 +792,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 4500 10350 4500
 $Comp
-L component:R R12
+L ecg_ads1292_main:R R12
 U 1 1 590269E6
 P 5200 1850
 F 0 "R12" H 5250 1950 50  0000 L CNN
@@ -821,7 +819,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 7150 3800 7300
 $Comp
-L component:GND #PWR021
+L ecg_ads1292_main:GND #PWR021
 U 1 1 59F264AD
 P 3800 7300
 F 0 "#PWR021" H 3800 7050 50  0001 C CNN
@@ -832,7 +830,7 @@ F 3 "" H 3800 7300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:C C9
+L ecg_ads1292_main:C C9
 U 1 1 59F264A6
 P 3800 7000
 F 0 "C9" H 3825 7100 50  0000 L CNN
@@ -850,7 +848,7 @@ Wire Wire Line
 Wire Wire Line
 	850  1500 4900 1500
 $Comp
-L component:R R17
+L ecg_ads1292_main:R R17
 U 1 1 5ECB972D
 P 7450 3900
 F 0 "R17" V 7400 4050 50  0000 L CNN
@@ -885,162 +883,162 @@ ads_in3_p
 Text Label 3950 4500 0    50   ~ 0
 ads_in3_n
 $Comp
-L component:GND #PWR016
+L ecg_ads1292_main:GND #PWR016
 U 1 1 5EC2BA6A
-P 1450 5450
-F 0 "#PWR016" H 1450 5200 50  0001 C CNN
-F 1 "GND" H 1450 5300 50  0000 C CNN
-F 2 "" H 1450 5450 50  0001 C CNN
-F 3 "" H 1450 5450 50  0001 C CNN
-	1    1450 5450
+P 1200 5450
+F 0 "#PWR016" H 1200 5200 50  0001 C CNN
+F 1 "GND" H 1200 5300 50  0000 C CNN
+F 2 "" H 1200 5450 50  0001 C CNN
+F 3 "" H 1200 5450 50  0001 C CNN
+	1    1200 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 3250 1950 3250
+	1200 3250 1950 3250
 Wire Wire Line
-	1450 4950 1950 4950
+	1200 4950 1950 4950
 Wire Wire Line
-	1450 4100 1950 4100
-Connection ~ 1450 4950
-Connection ~ 1450 4100
-Connection ~ 1450 3250
+	1200 4100 1950 4100
+Connection ~ 1200 4950
+Connection ~ 1200 4100
+Connection ~ 1200 3250
 Wire Wire Line
-	750  4950 1050 4950
+	750  4950 800  4950
 Wire Wire Line
-	1450 5350 1450 5450
+	1200 5350 1200 5450
 Wire Wire Line
-	1450 4950 1450 5150
+	1200 4950 1200 5150
 Wire Wire Line
-	1350 4950 1450 4950
+	1100 4950 1200 4950
 $Comp
-L component:C_Small C3
+L ecg_ads1292_main:C_Small C3
 U 1 1 5E9A8BB8
-P 1450 5250
-F 0 "C3" H 1450 5350 50  0000 L CNN
-F 1 "3n" H 1450 5150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1450 5250 50  0001 C CNN
-F 3 "" H 1450 5250 50  0001 C CNN
-F 4 "1865491" H -800 750 50  0001 C CNN "Best.Nr."
-F 5 "C0G/NPO" H -800 750 50  0001 C CNN "Comment"
-F 6 "Farnell" H -800 750 50  0001 C CNN "Distributor"
-F 7 "1865491" H -800 750 50  0001 C CNN "Farnell"
-	1    1450 5250
+P 1200 5250
+F 0 "C3" H 1200 5350 50  0000 L CNN
+F 1 "3n C0G 50V 5%" H 1200 5150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1200 5250 50  0001 C CNN
+F 3 "" H 1200 5250 50  0001 C CNN
+F 4 "1865491" H -1050 750 50  0001 C CNN "Best.Nr."
+F 5 "C0G/NPO" H -1050 750 50  0001 C CNN "Comment"
+F 6 "Farnell" H -1050 750 50  0001 C CNN "Distributor"
+F 7 "1865491" H -1050 750 50  0001 C CNN "Farnell"
+	1    1200 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:R R11
+L ecg_ads1292_main:R R11
 U 1 1 5E9A8BAE
-P 1200 4950
-F 0 "R11" V 1100 5100 50  0000 C CNN
-F 1 "22k" V 1100 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1130 4950 50  0001 C CNN
-F 3 "" H 1200 4950 50  0001 C CNN
-F 4 "1469825" H -600 750 50  0001 C CNN "Best.Nr."
-F 5 "Farnell" H -600 750 50  0001 C CNN "Distributor"
-F 6 "1469825" H -600 750 50  0001 C CNN "Farnell"
-	1    1200 4950
+P 950 4950
+F 0 "R11" V 850 5100 50  0000 C CNN
+F 1 "22k" V 850 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 880 4950 50  0001 C CNN
+F 3 "" H 950 4950 50  0001 C CNN
+F 4 "1469825" H -850 750 50  0001 C CNN "Best.Nr."
+F 5 "Farnell" H -850 750 50  0001 C CNN "Distributor"
+F 6 "1469825" H -850 750 50  0001 C CNN "Farnell"
+	1    950  4950
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	750  4100 1050 4100
+	750  4100 800  4100
 Wire Wire Line
-	1450 4500 1450 4600
+	1200 4500 1200 4600
 Wire Wire Line
-	1450 4100 1450 4300
+	1200 4100 1200 4300
 Wire Wire Line
-	1350 4100 1450 4100
+	1100 4100 1200 4100
 $Comp
-L component:GND #PWR015
+L ecg_ads1292_main:GND #PWR015
 U 1 1 5E9A1889
-P 1450 4600
-F 0 "#PWR015" H 1450 4350 50  0001 C CNN
-F 1 "GND" H 1450 4450 50  0000 C CNN
-F 2 "" H 1450 4600 50  0001 C CNN
-F 3 "" H 1450 4600 50  0001 C CNN
-	1    1450 4600
+P 1200 4600
+F 0 "#PWR015" H 1200 4350 50  0001 C CNN
+F 1 "GND" H 1200 4450 50  0000 C CNN
+F 2 "" H 1200 4600 50  0001 C CNN
+F 3 "" H 1200 4600 50  0001 C CNN
+	1    1200 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:C_Small C2
+L ecg_ads1292_main:C_Small C2
 U 1 1 5E9A1883
-P 1450 4400
-F 0 "C2" H 1450 4500 50  0000 L CNN
-F 1 "3n" H 1450 4300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1450 4400 50  0001 C CNN
-F 3 "" H 1450 4400 50  0001 C CNN
-F 4 "1865491" H -800 -100 50  0001 C CNN "Best.Nr."
-F 5 "C0G/NPO" H -800 -100 50  0001 C CNN "Comment"
-F 6 "Farnell" H -800 -100 50  0001 C CNN "Distributor"
-F 7 "1865491" H -800 -100 50  0001 C CNN "Farnell"
-	1    1450 4400
+P 1200 4400
+F 0 "C2" H 1200 4500 50  0000 L CNN
+F 1 "3n C0G 50V 5%" H 1200 4300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1200 4400 50  0001 C CNN
+F 3 "" H 1200 4400 50  0001 C CNN
+F 4 "1865491" H -1050 -100 50  0001 C CNN "Best.Nr."
+F 5 "C0G/NPO" H -1050 -100 50  0001 C CNN "Comment"
+F 6 "Farnell" H -1050 -100 50  0001 C CNN "Distributor"
+F 7 "1865491" H -1050 -100 50  0001 C CNN "Farnell"
+	1    1200 4400
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:R R10
+L ecg_ads1292_main:R R10
 U 1 1 5E9A1879
-P 1200 4100
-F 0 "R10" V 1100 4250 50  0000 C CNN
-F 1 "22k" V 1100 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1130 4100 50  0001 C CNN
-F 3 "" H 1200 4100 50  0001 C CNN
-F 4 "1469825" H -600 -100 50  0001 C CNN "Best.Nr."
-F 5 "Farnell" H -600 -100 50  0001 C CNN "Distributor"
-F 6 "1469825" H -600 -100 50  0001 C CNN "Farnell"
-	1    1200 4100
+P 950 4100
+F 0 "R10" V 850 4250 50  0000 C CNN
+F 1 "22k" V 850 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 880 4100 50  0001 C CNN
+F 3 "" H 950 4100 50  0001 C CNN
+F 4 "1469825" H -850 -100 50  0001 C CNN "Best.Nr."
+F 5 "Farnell" H -850 -100 50  0001 C CNN "Distributor"
+F 6 "1469825" H -850 -100 50  0001 C CNN "Farnell"
+	1    950  4100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	750  3250 1050 3250
+	750  3250 800  3250
 Wire Wire Line
-	1450 3650 1450 3750
+	1200 3650 1200 3750
 Wire Wire Line
-	1450 3250 1450 3450
+	1200 3250 1200 3450
 Wire Wire Line
-	1350 3250 1450 3250
+	1100 3250 1200 3250
 $Comp
-L component:GND #PWR014
+L ecg_ads1292_main:GND #PWR014
 U 1 1 590ADA59
-P 1450 3750
-F 0 "#PWR014" H 1450 3500 50  0001 C CNN
-F 1 "GND" H 1450 3600 50  0000 C CNN
-F 2 "" H 1450 3750 50  0001 C CNN
-F 3 "" H 1450 3750 50  0001 C CNN
-	1    1450 3750
+P 1200 3750
+F 0 "#PWR014" H 1200 3500 50  0001 C CNN
+F 1 "GND" H 1200 3600 50  0000 C CNN
+F 2 "" H 1200 3750 50  0001 C CNN
+F 3 "" H 1200 3750 50  0001 C CNN
+	1    1200 3750
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:C_Small C1
+L ecg_ads1292_main:C_Small C1
 U 1 1 590AD324
-P 1450 3550
-F 0 "C1" H 1450 3650 50  0000 L CNN
-F 1 "3n" H 1450 3450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1450 3550 50  0001 C CNN
-F 3 "" H 1450 3550 50  0001 C CNN
-F 4 "1865491" H -800 -950 50  0001 C CNN "Best.Nr."
-F 5 "C0G/NPO" H -800 -950 50  0001 C CNN "Comment"
-F 6 "Farnell" H -800 -950 50  0001 C CNN "Distributor"
-F 7 "1865491" H -800 -950 50  0001 C CNN "Farnell"
-	1    1450 3550
+P 1200 3550
+F 0 "C1" H 1200 3650 50  0000 L CNN
+F 1 "3n C0G 50V 5%" H 1200 3450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1200 3550 50  0001 C CNN
+F 3 "" H 1200 3550 50  0001 C CNN
+F 4 "1865491" H -1050 -950 50  0001 C CNN "Best.Nr."
+F 5 "C0G/NPO" H -1050 -950 50  0001 C CNN "Comment"
+F 6 "Farnell" H -1050 -950 50  0001 C CNN "Distributor"
+F 7 "1865491" H -1050 -950 50  0001 C CNN "Farnell"
+	1    1200 3550
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:R R9
+L ecg_ads1292_main:R R9
 U 1 1 590A733E
-P 1200 3250
-F 0 "R9" V 1100 3400 50  0000 C CNN
-F 1 "22k" V 1100 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1130 3250 50  0001 C CNN
-F 3 "" H 1200 3250 50  0001 C CNN
-F 4 "1469825" H -600 -950 50  0001 C CNN "Best.Nr."
-F 5 "Farnell" H -600 -950 50  0001 C CNN "Distributor"
-F 6 "1469825" H -600 -950 50  0001 C CNN "Farnell"
-	1    1200 3250
+P 950 3250
+F 0 "R9" V 850 3400 50  0000 C CNN
+F 1 "22k" V 850 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 880 3250 50  0001 C CNN
+F 3 "" H 950 3250 50  0001 C CNN
+F 4 "1469825" H -850 -950 50  0001 C CNN "Best.Nr."
+F 5 "Farnell" H -850 -950 50  0001 C CNN "Distributor"
+F 6 "1469825" H -850 -950 50  0001 C CNN "Farnell"
+	1    950  3250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4100 850  5850 850 
 $Comp
-L component:R R4
+L ecg_ads1292_main:R R4
 U 1 1 5EA9A4D2
 P 2250 6750
 F 0 "R4" V 2150 6650 50  0000 L CNN
@@ -1055,4 +1053,6 @@ F 6 "1739145" H -5200 3750 50  0001 C CNN "Farnell"
 $EndComp
 Wire Wire Line
 	2400 6750 2450 6750
+Wire Wire Line
+	1950 4950 3050 4950
 $EndSCHEMATC

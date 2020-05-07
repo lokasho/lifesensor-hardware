@@ -308,7 +308,7 @@ SENS_3V3_DIG
 Wire Wire Line
 	11550 4150 11550 4000
 $Comp
-L component:R R?
+L ecg_ads1292_main:R R?
 U 1 1 5EAAA6B2
 P 11550 4750
 AR Path="/5E8EE786/5EAAA6B2" Ref="R?"  Part="1" 
@@ -328,7 +328,7 @@ Wire Wire Line
 Wire Wire Line
 	11550 4350 11550 4600
 $Comp
-L component:R R?
+L ecg_ads1292_main:R R?
 U 1 1 5EAA9ADF
 P 11550 3850
 AR Path="/5E8EE786/5EAA9ADF" Ref="R?"  Part="1" 
@@ -344,7 +344,7 @@ F 6 "1738916" H 5750 2000 50  0001 C CNN "Farnell"
 	-1   0    0    1   
 $EndComp
 $Comp
-L component:GND #PWR?
+L ecg_ads1292_main:GND #PWR?
 U 1 1 5EB1856C
 P 10600 4950
 AR Path="/5E8EE786/5EB1856C" Ref="#PWR?"  Part="1" 
@@ -378,7 +378,7 @@ LL
 Text Label 8150 3900 0    50   ~ 0
 RLD
 $Comp
-L component:GND #PWR?
+L ecg_ads1292_main:GND #PWR?
 U 1 1 5EC2A850
 P 11550 4950
 AR Path="/5E8EE786/5EC2A850" Ref="#PWR?"  Part="1" 
@@ -406,7 +406,7 @@ F 3 "~" H 7850 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L component:GND #PWR?
+L ecg_ads1292_main:GND #PWR?
 U 1 1 5EB18F02
 P 7650 4500
 AR Path="/5E8EE786/5EB18F02" Ref="#PWR?"  Part="1" 
@@ -509,7 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	6800 4050 6800 4450
 $Comp
-L component:R R2
+L ecg_ads1292_main:R R2
 U 1 1 5E89C150
 P 7000 4050
 F 0 "R2" V 6750 4050 50  0000 C CNN
@@ -524,7 +524,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 4050 7200 4050
 $Comp
-L component:R R1
+L ecg_ads1292_main:R R1
 U 1 1 5E9D9425
 P 7000 3650
 F 0 "R1" V 6750 3650 50  0000 C CNN
@@ -542,7 +542,7 @@ Wire Wire Line
 	7200 3650 7150 3650
 Connection ~ 7200 4050
 $Comp
-L component:R R3
+L ecg_ads1292_main:R R3
 U 1 1 5E89BC88
 P 7000 4450
 F 0 "R3" V 6750 4450 50  0000 C CNN
@@ -604,7 +604,7 @@ Wire Wire Line
 	6800 4550 6800 4450
 Connection ~ 6800 4450
 $Comp
-L component:GND #PWR02
+L ecg_ads1292_main:GND #PWR02
 U 1 1 5E899B61
 P 7200 4550
 F 0 "#PWR02" H 7200 4300 50  0001 C CNN
@@ -746,7 +746,7 @@ $EndComp
 Wire Wire Line
 	13500 4350 13550 4350
 $Comp
-L component:R R?
+L ecg_ads1292_main:R R?
 U 1 1 5EA92C2C
 P 15500 3450
 AR Path="/5E8EE786/5EA92C2C" Ref="R?"  Part="1" 
@@ -764,7 +764,7 @@ $EndComp
 Wire Wire Line
 	14150 3450 15350 3450
 $Comp
-L component:R R?
+L ecg_ads1292_main:R R?
 U 1 1 5EA9C980
 P 15500 3550
 AR Path="/5E8EE786/5EA9C980" Ref="R?"  Part="1" 
@@ -780,7 +780,7 @@ F 6 "1739145" H 8050 550 50  0001 C CNN "Farnell"
 	0    1    1    0   
 $EndComp
 $Comp
-L component:R R?
+L ecg_ads1292_main:R R?
 U 1 1 5EA9D0F1
 P 15500 3650
 AR Path="/5E8EE786/5EA9D0F1" Ref="R?"  Part="1" 

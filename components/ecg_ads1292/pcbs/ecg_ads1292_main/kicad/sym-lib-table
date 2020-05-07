@@ -1,4 +1,3 @@
 (sym_lib_table
   (lib (name ecg_ads1292_main)(type Legacy)(uri ${KIPRJMOD}/lib_schematic/ecg_ads1292_main.lib)(options "")(descr ""))
-  (lib (name component)(type Legacy)(uri /Users/Icke/Documents/lifesensor/lifesensor-hardware/components/ecg_ads1292_temp/pcbs/ecg_ads1292_sensor/kicad/component.lib)(options "")(descr ""))
 )

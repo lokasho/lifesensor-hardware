@@ -1,4 +1,4 @@
-# hints
+    # hints
 1. All paths are refered to the kicad project directory.
 
 # check list
@@ -9,7 +9,8 @@
 - [x] The ERC report has been saved to ../manufacture/schematics/ecg_ads1292_main.erc
 - [x] All remaining error messages in the ERC report are followed by a line starting with "Accepted: ... ", explaining why the error/warning can be ignored.
 - [x] The design revision has been incremented compared to the last release or is 0 if at prototyping stage (last: -, now: 0)
-- [x] The library cache ecg_ads1292_main-cache.lib has been copied to lib_schematics/ecg_ads1292_main.lib after the schematic was saved the last time.
+- [ ] The library cache ecg_ads1292_main-cache.lib has been copied to lib_schematics/ecg_ads1292_main.lib after the schematic was saved the last time.
+      **Note: This step was made according to https://hackaday.com/2017/05/18/kicad-best-practises-library-management/. As it is outdated, the method described there is no longer applicable**
 - [x] The schematics have been plotted to ../manufacure/schmeatics/ecg_ads1292_main.pdf after the last edit.
 
 # change log

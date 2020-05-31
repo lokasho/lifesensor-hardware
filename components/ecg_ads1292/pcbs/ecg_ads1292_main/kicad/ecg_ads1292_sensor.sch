@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "lifesensor ecg ads1292 sensor"
-Date "2020-04-28"
+Date "2020-05-31"
 Rev "0"
 Comp "Cadus e.V."
 Comment1 "n.p.: do not place"

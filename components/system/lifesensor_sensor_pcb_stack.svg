@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 979.33899 834.85703"
+   width="97.933899mm"
+   version="1.2"
+   height="83.485703mm"
+   id="svg2399"
+   sodipodi:docname="lifesensor_sensor_pcb_stack.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata2403">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>FreeCAD SVG-Export</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="856"
+     id="namedview2401"
+     showgrid="true"
+     inkscape:zoom="1"
+     inkscape:cx="145.19568"
+     inkscape:cy="161.47587"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2399"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-grids="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2507"
+       units="mm"
+       spacingx="10"
+       spacingy="10" />
+  </sodipodi:namedview>
+  <title
+     id="title2">FreeCAD SVG-Export</title>
+  <desc
+     id="desc4">Zeichnungsseite: Page von FreeCAD Dokument exportiert: lifesensor_platinen</desc>
+  <defs
+     id="defs18">
+    <radialGradient
+       r="19.5714"
+       cx="270.58301"
+       gradientUnits="userSpaceOnUse"
+       cy="33.900002"
+       xml:id="gradient1"
+       fx="270.58301"
+       fy="33.900002"
+       id="radialGradient10">
+      <stop
+         offset="0"
+         stop-opacity="1"
+         stop-color="#ff6d0f"
+         id="stop6" />
+      <stop
+         offset="1"
+         stop-opacity="1"
+         stop-color="#ff1000"
+         id="stop8" />
+    </radialGradient>
+    <radialGradient
+       r="19.5714"
+       cx="282.646"
+       gradientUnits="userSpaceOnUse"
+       cy="29.149"
+       xml:id="gradient2"
+       fx="282.646"
+       fy="29.149"
+       id="radialGradient16">
+      <stop
+         offset="0"
+         stop-opacity="1"
+         stop-color="#71b2f8"
+         id="stop12" />
+      <stop
+         offset="1"
+         stop-opacity="1"
+         stop-color="#002795"
+         id="stop14" />
+    </radialGradient>
+    <radialGradient
+       id="radialGradient7272"
+       fy="33.900002"
+       fx="270.58301"
+       xml:id="gradient1"
+       cy="33.900002"
+       gradientUnits="userSpaceOnUse"
+       cx="270.58301"
+       r="19.5714">
+      <stop
+         id="stop7268"
+         stop-color="#ff6d0f"
+         stop-opacity="1"
+         offset="0" />
+      <stop
+         id="stop7270"
+         stop-color="#ff1000"
+         stop-opacity="1"
+         offset="1" />
+    </radialGradient>
+    <radialGradient
+       id="radialGradient7278"
+       fy="29.149"
+       fx="282.646"
+       xml:id="gradient2"
+       cy="29.149"
+       gradientUnits="userSpaceOnUse"
+       cx="282.646"
+       r="19.5714">
+      <stop
+         id="stop7274"
+         stop-color="#71b2f8"
+         stop-opacity="1"
+         offset="0" />
+      <stop
+         id="stop7276"
+         stop-color="#002795"
+         stop-opacity="1"
+         offset="1" />
+    </radialGradient>
+  </defs>
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     width="0"
+     x="501.6579"
+     y="578.82324"
+     height="0"
+     id="rect734" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     width="0"
+     x="501.6579"
+     y="578.82324"
+     height="0"
+     id="rect1472" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     width="0"
+     x="501.6579"
+     y="578.82324"
+     height="0"
+     id="rect1572" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     width="0"
+     x="501.6579"
+     y="578.82324"
+     height="0"
+     id="rect1672" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     width="0"
+     x="501.6579"
+     y="578.82324"
+     height="0"
+     id="rect1772" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     width="0"
+     x="501.6579"
+     y="578.82324"
+     height="0"
+     id="rect1872" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     width="0"
+     x="501.6579"
+     y="578.82324"
+     height="0"
+     id="rect1972" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     width="0"
+     x="501.6579"
+     y="578.82324"
+     height="0"
+     id="rect2072" />
+  <text
+     font-style="normal"
+     font-size="45.8611"
+     font-weight="400"
+     x="479.35675"
+     xml:space="preserve"
+     y="331.53308"
+     id="text2190"
+     style="font-style:normal;font-weight:400;font-size:16.18896866px;font-family:'.SF NS Text';fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1" />
+  <text
+     font-style="normal"
+     font-size="45.8611"
+     font-weight="400"
+     x="318.1037"
+     xml:space="preserve"
+     y="564.99902"
+     id="text2238"
+     style="font-style:normal;font-weight:400;font-size:16.18896866px;font-family:'.SF NS Text';fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1" />
+  <text
+     font-style="normal"
+     font-size="45.8611"
+     font-weight="400"
+     x="-723.01697"
+     xml:space="preserve"
+     y="442.9837"
+     id="text2286"
+     style="font-style:normal;font-weight:400;font-size:16.18896866px;font-family:'.SF NS Text';fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     transform="rotate(-90)" />
+  <text
+     font-style="normal"
+     font-size="45.8611"
+     font-weight="400"
+     x="-610.35181"
+     xml:space="preserve"
+     y="594.88629"
+     id="text2334"
+     style="font-style:normal;font-weight:400;font-size:16.18896866px;font-family:'.SF NS Text';fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     transform="rotate(-90)" />
+  <text
+     font-style="normal"
+     font-size="45.8611"
+     font-weight="400"
+     x="-702.25659"
+     xml:space="preserve"
+     y="332.80377"
+     id="text2382"
+     style="font-style:normal;font-weight:400;font-size:16.18896866px;font-family:'.SF NS Text';fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     transform="rotate(-90)" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     id="rect7996"
+     height="0"
+     y="698.5564"
+     x="-95.180534"
+     width="0" />
+  <path
+     id="path8080"
+     d="M 900.3901,769.30715 V 287.30616 H 621.3903 v 481.99999 l 49,10e-4 v 8.7 53.299 l 179.9998,10e-4 v -53.3 -8.7 h 50"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8096"
+     d="m 899.5641,273.80716 v 3.55 h -508 v -3.55 -47.25 -3.55 h 508 v 3.55 47.25"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8112"
+     d="m 391.5641,273.80716 h 508 v -47.25 h -508 v 47.25"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8176"
+     d="m 965.5641,483.00766 c 0,16.5685 -13.431,30 -30,30 -16.569,0 -30,-13.4315 -30,-30 0,-16.5685 13.431,-30 30,-30 16.569,0 30,13.4315 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8192"
+     d="m 385.0751,483.00766 c 0,16.5685 -13.431,30 -30,30 -16.568,0 -30,-13.4315 -30,-30 0,-16.5685 13.432,-30 30,-30 16.569,0 30,13.4315 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8208"
+     d="m 385.5641,743.00715 c 0,16.569 -13.431,30 -30,30 -16.569,0 -30,-13.431 -30,-30 0,-16.568 13.431,-30 30,-30 16.569,0 30,13.432 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8224"
+     d="m 965.5641,253.00716 c 0,16.569 -13.431,30 -30,30 -16.569,0 -30,-13.431 -30,-30 0,-16.568 13.431,-30 30,-30 16.569,0 30,13.432 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8240"
+     d="m 385.5641,253.00716 c 0,16.569 -13.431,30 -30,30 -16.569,0 -30,-13.431 -30,-30 0,-16.568 13.431,-30 30,-30 16.569,0 30,13.432 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8256"
+     d="m 965.5641,743.00715 c 0,16.569 -13.431,30 -30,30 -16.569,0 -30,-13.431 -30,-30 0,-16.568 13.431,-30 30,-30 16.569,0 30,13.432 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8272"
+     d="m 899.5641,273.80716 v 3.55 h -508 v -3.55 h 508"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8288"
+     d="m 391.5641,226.55716 h 508 v -3.55 h -508 v 3.55"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8304"
+     d="M 350.5641,778.00715 H 670.3903"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8312"
+     d="m 850.3901,778.00715 h 90.174"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8320"
+     d="m 940.5641,778.00715 c 16.569,0 30,-13.431 30,-30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8328"
+     d="M 970.5641,748.00715 V 248.00716"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8336"
+     d="m 970.5641,248.00716 c 0,-16.568 -13.431,-30 -30,-30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8344"
+     d="m 940.5641,218.00716 h -590"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8352"
+     d="m 350.5641,218.00716 c -16.569,0 -30,13.432 -30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8360"
+     d="M 320.5641,248.00716 V 748.00715"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8368"
+     d="m 320.5641,748.00715 c 0,16.569 13.431,30 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8376"
+     d="m 391.5641,226.55716 h 508"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8384"
+     d="m 899.5641,226.55716 v 50.8"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8392"
+     d="m 899.5641,277.35716 h -508"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8400"
+     d="m 391.5641,277.35716 v -50.8"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8408"
+     d="m 385.0751,483.00766 c 0,16.5685 -13.431,30 -30,30 -16.568,0 -30,-13.4315 -30,-30 0,-16.5685 13.432,-30 30,-30 16.569,0 30,13.4315 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8416"
+     d="m 965.5641,483.00766 c 0,16.5685 -13.431,30 -30,30 -16.569,0 -30,-13.4315 -30,-30 0,-16.5685 13.431,-30 30,-30 16.569,0 30,13.4315 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8424"
+     d="m 965.5641,743.00715 c 0,16.569 -13.431,30 -30,30 -16.569,0 -30,-13.431 -30,-30 0,-16.568 13.431,-30 30,-30 16.569,0 30,13.432 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8432"
+     d="m 385.5641,743.00715 c 0,16.569 -13.431,30 -30,30 -16.569,0 -30,-13.431 -30,-30 0,-16.568 13.431,-30 30,-30 16.569,0 30,13.432 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8440"
+     d="m 385.5641,253.00716 c 0,16.569 -13.431,30 -30,30 -16.569,0 -30,-13.431 -30,-30 0,-16.568 13.431,-30 30,-30 16.569,0 30,13.432 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8448"
+     d="m 965.5641,253.00716 c 0,16.569 -13.431,30 -30,30 -16.569,0 -30,-13.431 -30,-30 0,-16.568 13.431,-30 30,-30 16.569,0 30,13.432 30,30"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8456"
+     d="m 900.3901,769.30715 h -50"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8464"
+     d="M 900.3901,769.30715 V 287.30616"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8472"
+     d="M 900.3901,287.30616 H 621.3903"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8480"
+     d="M 621.3903,287.30616 V 769.30615"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8488"
+     d="m 670.3903,769.30715 -49,-10e-4"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8496"
+     d="m 670.3903,831.30615 v -61.999"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8504"
+     d="m 850.3901,831.30715 -179.9998,-10e-4"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8512"
+     d="m 850.3901,769.30715 v 62"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8520"
+     d="m 391.5641,273.80716 v -50.8"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8528"
+     d="m 899.5641,273.80716 v -50.8"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8536"
+     d="m 391.5641,273.80716 h 508"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8544"
+     d="m 391.5641,223.00716 h 508"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8680"
+     d="m 355.0741,525.00716 v -84 m 42,42 h -84"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8688"
+     d="m 935.5641,525.00716 v -84 m 42,42 h -84"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8696"
+     d="m 935.5641,785.00715 v -84 m 42,42 h -84"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8704"
+     d="m 355.5641,785.00715 v -84 m 42,42 h -84"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8712"
+     d="m 355.5641,295.00811 v -84 m 42,42 h -84"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8720"
+     d="m 935.5641,295.00811 v -84 m 42,42 h -84"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#080808;fill-opacity:1;fill-rule:evenodd;stroke:#080808;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     id="rect8734"
+     height="0"
+     y="698.5564"
+     x="-95.180534"
+     width="0" />
+  <text
+     id="text8770"
+     y="206.21307"
+     xml:space="preserve"
+     x="482.89325"
+     font-weight="400"
+     font-size="123.472"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:28.22222137px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">all mounting holes: M2.5</text>
+  <path
+     id="path8804"
+     d="m 839.2851,188.34016 h 50 l 13.519,28.766"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8812"
+     d="m 902.8044,217.1059 -9.6076,-34.15729 -10.5587,4.96233 20.1663,29.19496"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     id="rect8826"
+     height="0"
+     y="698.5564"
+     x="-95.180534"
+     width="0" />
+  <text
+     id="text8862"
+     y="32.348701"
+     xml:space="preserve"
+     x="533.41608"
+     font-weight="400"
+     font-size="123.472"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:43.58561707px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">65.00 mm</text>
+  <path
+     id="path8904"
+     d="m 970.5641,32.311109 -35,-5.83333 v 11.66666 l 35,-5.83333"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8912"
+     d="m 320.5641,32.311109 35,5.83333 v -11.66666 l -35,5.83333"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     id="rect8926"
+     height="0"
+     y="698.5564"
+     x="-95.180534"
+     width="0" />
+  <text
+     id="text8962"
+     y="32.348701"
+     xml:space="preserve"
+     x="-590.61511"
+     font-weight="400"
+     font-size="123.472"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:43.58561707px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     transform="rotate(-90)">56.00 mm</text>
+  <path
+     id="path8996"
+     d="M 330.5641,778.00715 H 12.311114 M 330.5641,218.00716 H 12.311114 m 19.99999,559.99999 V 508.73496 m 0,-290.7278 v 290.7278"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9004"
+     d="m 32.311104,778.00715 5.8333,-35 h -11.6666 l 5.8333,35"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9012"
+     d="m 32.311104,218.00811 -5.8333,35 h 11.6666 l -5.8333,-35"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     id="rect9026"
+     height="0"
+     y="698.5564"
+     x="-95.180534"
+     width="0" />
+  <text
+     id="text9062"
+     y="258.08429"
+     xml:space="preserve"
+     x="-451.67645"
+     font-weight="400"
+     font-size="123.472"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:43.58561707px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     transform="rotate(-90)">3.50 mm</text>
+  <path
+     id="path9096"
+     d="m 335.5641,253.00716 h -85.661 m 85.661,-35 h -85.661 m 20,35 v 86.254 m 0,-121.254"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9104"
+     d="m 269.9041,253.00811 -5.8333,35 h 11.6666 l -5.8333,-35"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9112"
+     d="m 269.9041,218.00811 5.8333,-35 h -11.6666 l 5.8333,35"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     id="rect9126"
+     height="0"
+     y="698.5564"
+     x="-95.180534"
+     width="0" />
+  <text
+     id="text9162"
+     y="158.94409"
+     xml:space="preserve"
+     x="396.4411"
+     font-weight="400"
+     font-size="123.472"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:43.58561707px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">3.50 mm</text>
+  <path
+     id="path9196"
+     d="m 320.5641,233.00716 v -83.937 m 35,83.937 v -83.937 m 0,20 h 90.622"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9204"
+     d="m 320.5641,169.07011 -35,-5.83333 v 11.66666 l 35,-5.83333"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9212"
+     d="m 355.5641,169.07011 35,5.83333 v -11.66666 l -35,5.83333"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     id="rect9226"
+     height="0"
+     y="698.5564"
+     x="-95.180534"
+     width="0" />
+  <text
+     id="text9262"
+     y="179.62811"
+     xml:space="preserve"
+     x="-458.73883"
+     font-weight="400"
+     font-size="123.472"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:43.58561707px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     transform="rotate(-90)">26.50 mm</text>
+  <path
+     id="path9296"
+     d="m 335.0751,483.00766 h -165.319 m 165.319,-265.0005 h -165.319 m 20,265.0005 v -136.6135 m 0,-128.387 v 128.387"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9304"
+     d="m 189.7541,483.00716 5.8333,-35 h -11.6666 l 5.8333,35"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9312"
+     d="m 189.7541,218.00811 -5.8333,35 h 11.6666 l -5.8333,-35"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     id="rect9326"
+     height="0"
+     y="698.5564"
+     x="-95.180534"
+     width="0" />
+  <text
+     id="text9362"
+     y="114.38374"
+     xml:space="preserve"
+     x="-566.94519"
+     font-weight="400"
+     font-size="123.472"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:43.58561707px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     transform="rotate(-90)">52.50 mm</text>
+  <path
+     id="path9396"
+     d="M 335.5641,743.00715 H 94.346104 M 335.5641,218.00716 H 94.346104 M 114.3461,743.00715 V 485.04126 m 0,-267.0341 v 267.0341"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9404"
+     d="m 114.3461,743.00715 5.8333,-35 h -11.6666 l 5.8333,35"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9412"
+     d="m 114.3461,218.00811 -5.8333,35 h 11.6666 l -5.8333,-35"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <rect
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     id="rect9426"
+     height="0"
+     y="698.5564"
+     x="-95.180534"
+     width="0" />
+  <text
+     id="text9462"
+     y="98.499702"
+     xml:space="preserve"
+     x="537.65607"
+     font-weight="400"
+     font-size="123.472"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:43.58561707px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">61.50 mm</text>
+  <path
+     id="path9496"
+     d="M 320.5641,233.00716 V 78.462159 m 615,154.545001 V 78.462159 m -615,20 h 296.7658 m 318.2342,0 H 617.3299"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9504"
+     d="m 320.5641,98.462109 35,5.833331 V 92.628779 l -35,5.83333"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path9512"
+     d="m 935.5641,98.462109 -35,-5.83333 v 11.666661 l 35,-5.833331"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <text
+     id="text9548"
+     y="256.91553"
+     xml:space="preserve"
+     x="591.28326"
+     font-weight="400"
+     font-size="70.5556"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:24.90612793px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">sensor bus</text>
+  <text
+     id="text9552"
+     y="455.80011"
+     xml:space="preserve"
+     x="-115.22173"
+     font-weight="400"
+     font-size="45.8611"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:16.18896866px;font-family:'.SF NS Text';fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1" />
+  <text
+     id="text9600"
+     y="684.73218"
+     xml:space="preserve"
+     x="-278.7348"
+     font-weight="400"
+     font-size="45.8611"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:16.18896866px;font-family:'.SF NS Text';fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8160"
+     d="m 448.4005,634.05706 v 50.8 H 550 v -50.8 H 448.4005"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     id="path8552"
+     d="M 448.4005,634.05706 H 550"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8560"
+     d="M 448.4005,684.85706 H 550"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8568"
+     d="m 448.4005,634.05706 v 50.8"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <path
+     id="path8576"
+     d="m 550,634.05706 v 50.8"
+     inkscape:connector-curvature="0"
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+  <text
+     id="text9644"
+     y="672.09039"
+     xml:space="preserve"
+     x="458.62067"
+     font-weight="400"
+     font-size="70.5556"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:24.90612793px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">LEDs</text>
+  <text
+     id="text9648"
+     y="-153.85474"
+     xml:space="preserve"
+     x="-842.75012"
+     font-weight="400"
+     font-size="45.8611"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:16.18896866px;font-family:'.SF NS Text';fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     transform="rotate(-90)" />
+  <text
+     id="text9692"
+     y="793.89069"
+     xml:space="preserve"
+     x="-755.25916"
+     font-weight="400"
+     font-size="282.222"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:99.62435913px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     transform="rotate(-90)">Devkit-C</text>
+  <text
+     id="text9696"
+     y="-1.9521421"
+     xml:space="preserve"
+     x="-730.08484"
+     font-weight="400"
+     font-size="45.8611"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:16.18896866px;font-family:'.SF NS Text';fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     transform="rotate(-90)" />
+  <text
+     id="text9744"
+     y="-264.03473"
+     xml:space="preserve"
+     x="-821.98975"
+     font-weight="400"
+     font-size="45.8611"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:16.18896866px;font-family:'.SF NS Text';fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+     transform="rotate(-90)" />
+  <text
+     id="text9792"
+     y="1151.9121"
+     xml:space="preserve"
+     x="-151.60779"
+     font-weight="400"
+     font-size="45.8611"
+     font-style="normal"
+     style="font-style:normal;font-weight:400;font-size:16.18896866px;font-family:'.SF NS Text';fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1" />
+  <g
+     id="g2555"
+     transform="rotate(90,486.6022,504.5545)">
+    <path
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 526.10476,573.5567 v -152.4"
+       id="path8616" />
+    <path
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 576.90476,573.5567 v -152.4"
+       id="path8624" />
+    <path
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 526.10476,573.5567 h 50.8"
+       id="path8632" />
+    <path
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 526.10476,421.1567 h 50.8"
+       id="path8640" />
+    <text
+       transform="rotate(-90)"
+       style="font-style:normal;font-weight:400;font-size:24.90612793px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+       font-style="normal"
+       font-size="70.5556"
+       font-weight="400"
+       x="-569.72772"
+       xml:space="preserve"
+       y="558.4895"
+       id="text9596" />
+  </g>
+  <g
+     id="g2581">
+    <path
+       id="path2439"
+       d="m 420,474.85706 152.4,0 v 50.8 H 420 v -50.8"
+       inkscape:connector-curvature="0"
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:non-scaling-stroke;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" />
+    <path
+       id="path2441"
+       d="m 420,474.85706 152.4,0"
+       inkscape:connector-curvature="0"
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+    <path
+       id="path2443"
+       d="M 420,525.65706 H 572.4"
+       inkscape:connector-curvature="0"
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+    <path
+       id="path2445"
+       d="m 420,474.85706 v 50.8"
+       inkscape:connector-curvature="0"
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+    <path
+       id="path2447"
+       d="m 572.4,474.85706 v 50.8"
+       inkscape:connector-curvature="0"
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+    <text
+       id="text2449"
+       y="507.24185"
+       xml:space="preserve"
+       x="454.62057"
+       font-weight="400"
+       font-size="70.5556"
+       font-style="normal"
+       style="font-style:normal;font-weight:400;font-size:24.90612793px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">power</text>
+  </g>
+  <g
+     id="g2548">
+    <path
+       id="path2525"
+       d="M 420,714.05706 H 572.4"
+       inkscape:connector-curvature="0"
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+    <path
+       id="path2527"
+       d="m 420,764.85706 152.4,0"
+       inkscape:connector-curvature="0"
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+    <path
+       id="path2529"
+       d="m 420,714.05706 v 50.8"
+       inkscape:connector-curvature="0"
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+    <path
+       id="path2531"
+       d="m 572.4,714.05706 v 50.8"
+       inkscape:connector-curvature="0"
+       style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1" />
+    <text
+       id="text2533"
+       y="746.44183"
+       xml:space="preserve"
+       x="424.68427"
+       font-weight="400"
+       font-size="70.5556"
+       font-style="normal"
+       style="font-style:normal;font-weight:400;font-size:24.90612793px;font-family:osifont;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.35299999;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">display bus</text>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:24.69444466px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583349"
+     x="452.2384"
+     y="563.73785"
+     id="text2587"><tspan
+       sodipodi:role="line"
+       x="452.2384"
+       y="563.73785"
+       style="font-size:17.63888931px;line-height:0;stroke-width:2.64583349"
+       id="tspan2593">processor</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:24.69444466px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583349"
+     x="476.18744"
+     y="586.03998"
+     id="text2599"><tspan
+       sodipodi:role="line"
+       id="tspan2597"
+       x="476.18744"
+       y="586.03998"
+       style="font-size:17.63888931px;stroke-width:2.64583349">bus</tspan></text>
+  <path
+     style="font-style:normal;font-weight:400;font-size:medium;font-family:'.SF NS Text';vector-effect:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     d="M 320.5641,166.85611 V 12.311109 M 971.83004,253.24197 V 13.368777 M 320.5641,32.311109 h 296.7658 m 318.2342,0 H 617.3299"
+     id="path2601"
+     sodipodi:nodetypes="cccccccc" />
+</svg>

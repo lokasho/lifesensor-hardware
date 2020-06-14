@@ -4,7 +4,7 @@ The lifesensor ecg_ads1292 component provides a [ECG](https://en.wikipedia.org/w
 WARNING: THIS COMPONENT DOES NOT PROVIDE ANY PROTECTION AGAINST ELECTRICAL SHOCKS! ALWAYS USE APPROPRIATE MEDICAL APPROVED POWER SUPPLIES! USE AT YOUR OWN RISK!
 
 ## Objectives
-This component is developed to quickly provide a first ECG sensor that can deliver reference data for comparison with other self-developed and possibly cheaper ECG frontends. It will also provide the possibility to test other (software) components like the pulse detection and the lifesensors [sensor bus](../system/lifesensor_system.png) with real data.
+This component is developed to quickly provide a first ECG sensor that can deliver reference data for comparison with other self-developed and possibly cheaper ECG frontends. It will also provide the possibility to test other (software) components like the pulse detection and the lifesensors [sensor bus](../system/lifesensor_system.svg) with real data.
 <!-- TODO: link to sensor bus description -->
 
 To minimize the development effort integrated circuits that include all needed analog circuitry are chosen. The ADS1292 is chosen because in a search it was the cheapest one that can provide a three channel ECG found.

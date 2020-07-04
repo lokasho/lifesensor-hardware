@@ -42,5 +42,31 @@ This is a view of the last released version of the board:
 ### Driver
 
 
+The following list describes the Signals this component uses on the sensor bus (apart from GND pins):
 
+#### Power:
 
+| Label           | Pin| Pi Header          |
+|:----------------|:---|:-------------------|
+| SENS_5V_ANA     | 2  | 5V power           |
+| SENS_3V3_DIG    | 17 | 3V3 power          |
+
+#### Signals:
+| Label           | Pin| Pi Header          |
+|:----------------|:---|:-------------------|
+| SENS_ECG_DRDY   | 11 | GPIO17             |
+| SENS_START      | 13 | GPIO27             |
+| SENS_RST_ECG_n  | 16 | GPIO23             |
+| SENS_MOSI       | 19 | GPIO10 (MOSI)      |
+| SENS_MISO       | 21 | GPIO9 (MISO)       |
+| SENS_SCLK       | 23 | GPIO11 (SCLK)      |
+| SENS_CS_ECG_n   | 24 | GPIO8 (CE0)        |
+
+#### Description
+- **SENS_ECG_DRDY** Data ready. Is pulled down by the ADS1292 when a new sample has been taken. -> **ESP:** Interrupt on the falling edge, that triggers fetching the sample via SPI bus.
+- **SENS_START** After configuring the continuos conversion mode the ADS129 starts sampling, when this signal is pulled HIGH. -> **ESP:** output push pull
+- **SENS_RST_ECG_n** After system start the ADS1292 needs two reset pulses by driving this signal LOW. **ESP:** output push pull
+- **SENS_MOSI** SPI bus
+- **SENS_MISO** SPI bus
+- **SENS_SCLK** SPI bus clock, maximum frequency is twice the ADS1292 base clock, so 1.024MHz when running on the internal 512kHz clock. **ESP:** (clock polarity: low, phase: second edge)
+- **SENS_CS_ECG_n** SPI chip select for the ECG (no inter byte pulses, after transmitting data, this signal must not be driven HIGH agian to fast, see data sheet for SPI timing constraints)

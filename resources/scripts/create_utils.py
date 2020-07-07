@@ -128,4 +128,4 @@ def board_dir(settings: Settings) -> pathlib.Path:
 
 
 def template_base_dir() -> pathlib.Path:
-    return pathlib.Path(__file__).resolve().parents[1]
+    return pathlib.Path(__file__).resolve().parents[1] / "templates"

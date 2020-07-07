@@ -69,8 +69,7 @@ def check_new_board_settings(settings: Settings):
 
 
 def add_board_settings(
-        parser: argparse.ArgumentParser=None,
-        settings: Settings=None
+        parser: argparse.ArgumentParser=None
 ) -> argparse.ArgumentParser:
     parser = parser or argparse.ArgumentParser()
     parser.add_argument(

@@ -6,7 +6,6 @@ from typing import Sequence
 
 
 COMPONENTS_DIR_NAME = "components"
-DEBUG = True
 
 
 def lower_case_string(string: str) -> str:
@@ -85,8 +84,6 @@ def add_board_settings(
 
 
 def update_file_name_and_content(path: pathlib.Path, settings: Settings):
-    if DEBUG:
-        print(f"Updating {path}")
     new_name = _replace_template_strings(path.name, settings)
     new_path = path.parent / new_name
     path.rename(new_path)

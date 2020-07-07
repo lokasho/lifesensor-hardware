@@ -3,15 +3,14 @@ import shutil
 import create_utils
 
 TEMPLATE_DIR = create_utils.template_base_dir() / "template_component"
-DEBUG = True
 
 
 def main():
     try:
         settings = collect_settings()
         create_component(settings)
-    except Exception as e:
-        if DEBUG:
+    except BaseException as e:
+        if __debug__:
             raise e
         else:
             print(str(e))

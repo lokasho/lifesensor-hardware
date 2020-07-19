@@ -1,9 +1,27 @@
 import argparse
 import pathlib
 import os
-from dataclasses import dataclass
+import sys
 from typing import Sequence
 
+
+
+if sys.version_info >= (3, 7):
+    from dataclasses import dataclass
+    @dataclass(frozen=True)
+    class Settings:
+        # lifesensor repository directory
+        repo: pathlib.Path
+        # name of the component (e.g. "ecg")
+        component: str
+        # name describing variant of the component
+        # (e.g. "ads1292" when used as ecg sensor)
+        variant: str
+        # name of a board(s)
+        boardname: (str, Sequence[str]) = None
+else:
+    from collections import namedtuple
+    Settings = namedtuple("Settings", ("repo", "component", "variant", "boardname"))
 
 COMPONENTS_DIR_NAME = "components"
 
@@ -13,19 +31,6 @@ def lower_case_string(string: str) -> str:
     Convert a string to all lower case. Used in settings as factory
     """
     return string.lower()
-
-
-@dataclass(frozen=True)
-class Settings:
-    # lifesensor repository directory
-    repo: pathlib.Path
-    # name of the component (e.g. "ecg")
-    component: str
-    # name describing variant of the component
-    # (e.g. "ads1292" when used as ecg sensor)
-    variant: str
-    # name of a board(s)
-    boardname: (str, Sequence[str]) = None
 
 
 def add_component_settings(

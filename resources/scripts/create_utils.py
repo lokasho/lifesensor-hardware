@@ -1,12 +1,29 @@
 import argparse
 import pathlib
 import os
-from dataclasses import dataclass
+import sys
 from typing import Sequence
 
 
+
+if sys.version_info >= (3, 7):
+    from dataclasses import dataclass
+    @dataclass(frozen=True)
+    class Settings:
+        # lifesensor repository directory
+        repo: pathlib.Path
+        # name of the component (e.g. "ecg")
+        component: str
+        # name describing variant of the component
+        # (e.g. "ads1292" when used as ecg sensor)
+        variant: str
+        # name of a board(s)
+        boardname: (str, Sequence[str]) = None
+else:
+    from collections import namedtuple
+    Settings = namedtuple("Settings", ("repo", "component", "variant", "boardname"))
+
 COMPONENTS_DIR_NAME = "components"
-DEBUG = True
 
 
 def lower_case_string(string: str) -> str:
@@ -14,19 +31,6 @@ def lower_case_string(string: str) -> str:
     Convert a string to all lower case. Used in settings as factory
     """
     return string.lower()
-
-
-@dataclass(frozen=True)
-class Settings:
-    # lifesensor repository directory
-    repo: pathlib.Path
-    # name of the component (e.g. "ecg")
-    component: str
-    # name describing variant of the component
-    # (e.g. "ads1292" when used as ecg sensor)
-    variant: str
-    # name of a board(s)
-    boardname: (str, Sequence[str]) = None
 
 
 def add_component_settings(
@@ -70,8 +74,7 @@ def check_new_board_settings(settings: Settings):
 
 
 def add_board_settings(
-        parser: argparse.ArgumentParser=None,
-        settings: Settings=None
+        parser: argparse.ArgumentParser=None
 ) -> argparse.ArgumentParser:
     parser = parser or argparse.ArgumentParser()
     parser.add_argument(
@@ -85,8 +88,6 @@ def add_board_settings(
 
 
 def update_file_name_and_content(path: pathlib.Path, settings: Settings):
-    if DEBUG:
-        print(f"Updating {path}")
     new_name = _replace_template_strings(path.name, settings)
     new_path = path.parent / new_name
     path.rename(new_path)
@@ -128,4 +129,4 @@ def board_dir(settings: Settings) -> pathlib.Path:
 
 
 def template_base_dir() -> pathlib.Path:
-    return pathlib.Path(__file__).resolve().parents[1]
+    return pathlib.Path(__file__).resolve().parents[1] / "templates"

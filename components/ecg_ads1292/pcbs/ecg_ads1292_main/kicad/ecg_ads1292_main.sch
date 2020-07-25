@@ -33,7 +33,7 @@ F13 "5V" I R 6850 5600 50
 F14 "RLD" O L 5900 6100 50
 $EndSheet
 $Comp
-L power:+5VA #PWR012
+L ecg_ads1292_main:+5VA #PWR012
 U 1 1 580C1B61
 P 15200 2400
 F 0 "#PWR012" H 15200 2250 50 0001 C CNN
@@ -44,7 +44,7 @@ F 3 "" H 15200 2400 50 0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR011
+L ecg_ads1292_main:GND #PWR011
 U 1 1 580C1D11
 P 14250 4500
 F 0 "#PWR011" H 14250 4250 50 0001 C CNN
@@ -55,7 +55,7 @@ F 3 "" H 14250 4500 50 0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR010
+L ecg_ads1292_main:GND #PWR010
 U 1 1 580C1E01
 P 13550 4500
 F 0 "#PWR010" H 13550 4250 50 0001 C CNN
@@ -66,7 +66,7 @@ F 3 "" H 13550 4500 50 0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3VA #PWR09
+L ecg_ads1292_main:+3.3VA #PWR09
 U 1 1 580C1BC1
 P 12500 2400
 F 0 "#PWR09" H 12500 2250 50 0001 C CNN
@@ -77,7 +77,7 @@ F 3 "" H 12500 2400 50 0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole MK1
+L ecg_ads1292_main:MountingHole MK1
 U 1 1 5834FB2E
 P 13400 8100
 F 0 "MK1" H 13500 8146 50 0000 L CNN
@@ -88,7 +88,7 @@ F 3 "" H 13400 8100 60 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole MK3
+L ecg_ads1292_main:MountingHole MK3
 U 1 1 5834FBEF
 P 13950 8100
 F 0 "MK3" H 14050 8146 50 0000 L CNN
@@ -99,7 +99,7 @@ F 3 "" H 13950 8100 60 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole MK2
+L ecg_ads1292_main:MountingHole MK2
 U 1 1 5834FC19
 P 13400 8350
 F 0 "MK2" H 13500 8396 50 0000 L CNN
@@ -110,7 +110,7 @@ F 3 "" H 13400 8350 60 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole MK4
+L ecg_ads1292_main:MountingHole MK4
 U 1 1 5834FC4F
 P 13950 8350
 F 0 "MK4" H 14050 8396 50 0000 L CNN
@@ -121,7 +121,7 @@ F 3 "" H 13950 8350 60 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR013
+L ecg_ads1292_main:+5VD #PWR013
 U 1 1 5EA6E5C1
 P 15550 2400
 F 0 "#PWR013" H 15550 2250 50 0001 C CNN
@@ -132,7 +132,7 @@ F 3 "" H 15550 2400 50 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR08
+L ecg_ads1292_main:+3.3V #PWR08
 U 1 1 5EA72FFE
 P 12150 2400
 F 0 "#PWR08" H 12150 2250 50 0001 C CNN
@@ -190,7 +190,7 @@ F 3 "" H 7450 7150 50 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint_Flag TP15
+L ecg_ads1292_main:TestPoint_Flag TP15
 U 1 1 5EB284C8
 P 7450 7050
 F 0 "TP15" H 7750 7150 50 0000 L CNN
@@ -215,7 +215,7 @@ F 3 "" H 8400 7150 50 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint_Flag TP5
+L ecg_ads1292_main:TestPoint_Flag TP5
 U 1 1 5EB28150
 P 4500 6600
 F 0 "TP5" H 4800 6700 50 0000 L CNN
@@ -240,7 +240,7 @@ F 3 "" H 4500 6700 50 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VA #PWR05
+L ecg_ads1292_main:+5VA #PWR05
 U 1 1 5EB064ED
 P 8200 5550
 F 0 "#PWR05" H 8200 5400 50 0001 C CNN
@@ -251,7 +251,7 @@ F 3 "" H 8200 5550 50 0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR06
+L ecg_ads1292_main:+3.3V #PWR06
 U 1 1 5EB0751F
 P 8400 4550
 F 0 "#PWR06" H 8400 4400 50 0001 C CNN
@@ -295,7 +295,7 @@ F 3 "" H 3850 6650 50 0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x04_Odd_Even J1
+L ecg_ads1292_main:Conn_02x04_Odd_Even J1
 U 1 1 5EB3B000
 P 4000 5300
 F 0 "J1" H 4050 4850 50 0000 C CNN
@@ -311,7 +311,7 @@ F 8 "2856699" H 4050 4950 50 0001 C CNN "PN Farnell"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG01
+L ecg_ads1292_main:PWR_FLAG #FLG01
 U 1 1 5E91687C
 P 3500 6150
 F 0 "#FLG01" H 3500 6225 50 0001 C CNN
@@ -322,7 +322,7 @@ F 3 "~" H 3500 6150 50 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDPWR #PWR01
+L ecg_ads1292_main:GNDPWR #PWR01
 U 1 1 5E898834
 P 3650 6750
 F 0 "#PWR01" H 3650 6550 50 0001 C CNN
@@ -344,7 +344,7 @@ F 3 "" H 4050 6750 50 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0101
+L ecg_ads1292_main:PWR_FLAG #FLG0101
 U 1 1 5EAAEF5C
 P 14650 2450
 F 0 "#FLG0101" H 14650 2525 50 0001 C CNN
@@ -355,7 +355,7 @@ F 3 "~" H 14650 2450 50 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0102
+L ecg_ads1292_main:PWR_FLAG #FLG0102
 U 1 1 5EAAFB53
 P 14650 2550
 F 0 "#FLG0102" H 14650 2625 50 0001 C CNN
@@ -366,7 +366,7 @@ F 3 "~" H 14650 2550 50 0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0103
+L ecg_ads1292_main:PWR_FLAG #FLG0103
 U 1 1 5EAAFE25
 P 13150 2450
 F 0 "#FLG0103" H 13150 2525 50 0001 C CNN
@@ -377,7 +377,7 @@ F 3 "~" H 13150 2450 50 0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0104
+L ecg_ads1292_main:PWR_FLAG #FLG0104
 U 1 1 5EAB0869
 P 13100 3250
 F 0 "#FLG0104" H 13100 3325 50 0001 C CNN
@@ -388,7 +388,7 @@ F 3 "~" H 13100 3250 50 0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0105
+L ecg_ads1292_main:PWR_FLAG #FLG0105
 U 1 1 5EB05147
 P 13500 4350
 F 0 "#FLG0105" H 13500 4425 50 0001 C CNN
@@ -446,7 +446,7 @@ F 3 "" H 15500 3650 50 0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x20_Odd_Even P1
+L ecg_ads1292_main:Conn_02x20_Odd_Even P1
 U 1 1 59AD464A
 P 13850 3350
 F 0 "P1" H 13900 4467 50 0000 C CNN

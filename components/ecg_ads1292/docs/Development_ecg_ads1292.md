@@ -13,7 +13,6 @@ To minimize the development effort integrated circuits that include all needed a
 
 Due to the prototype characteristics the development of the ecg_ads1292 compontent is not focusing on low prizes, availability or repairability.
 
-
 ## Subcomponents
 
 This component consists of one PCB [ecg_ads1292_main](../pcbs/ecg_ads1292_main) and a [driver](../firmware).
@@ -33,7 +32,6 @@ The schematics can be found in
 
 The main sources for the circuit design are
 - the ADS1292 data sheet: http://www.ti.com/lit/ds/symlink/ads1292.pdf
-- TI Bio-Signal Monitor Reference Design: https://www.ti.com/tool/TIDM-BIOSIGNMONITOR
 - the ADS1x9xECG-FE Demonstration Kit User's Guide: https://www.ti.com/lit/ug/slau384a/slau384a.pdf
 
 The development of the circuits is straight forward as the ADS1292 only needs a few passive components and an optional LDO for the analog frontend, and a few others for connecting it to the [sensor bus](../../system). Most components can be directly derived from the data sheet or the other links given above.

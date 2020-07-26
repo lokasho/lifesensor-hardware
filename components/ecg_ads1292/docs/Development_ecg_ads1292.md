@@ -115,11 +115,14 @@ The constraints for the layout are
 - 2 Layer
 - best signal quality
 - form factor (maximum) and mounting holes for RPi HAT:
+
 <p>
 
 ![(see sensor stack)](../../system/lifesensor_sensor_pcb_stack.svg)
 
 </p>
+
+---
 
 The board is not intended to be etched by a maker space or hobbyist, therefore vias and small structures can be used.
 For the layout the hints in the datasheet are followed.

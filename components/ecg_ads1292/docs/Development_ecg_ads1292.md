@@ -35,7 +35,7 @@ The main sources for the circuit design are
 - TI Bio-Signal Monitor Reference Design: https://www.ti.com/tool/TIDM-BIOSIGNMONITOR
 - the ADS1x9xECG-FE Demonstration Kit User's Guide: https://www.ti.com/lit/ug/slau384a/slau384a.pdf
 
-The development of the circuits is straight forward as the ADS1292 only needs a few passive components and an optional LDO for the analog frontend, and a few others for connecting it to the [sensor bus](../../system/). Most components can be directly derived from the data sheet or the other links given above.
+The development of the circuits is straight forward as the ADS1292 only needs a few passive components and an optional LDO for the analog frontend, and a few others for connecting it to the [sensor bus](../../system/interconnect.md). Most components can be directly derived from the data sheet or the other links given above.
 
 Nevertheless the following  will describe the circuits and components that differ from the references.
 

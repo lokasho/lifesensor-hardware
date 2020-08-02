@@ -136,4 +136,31 @@ Here is a view of the layout:
 
 ### Prototypes 1 and 2
 
-Two prototypes have been produced
+Two prototypes have been produced July 2020.
+As no LDO where ordered the analog supply voltage is directly using the 5V from the interconnect. This is done by shorting the appropriate pads for the LDO. (The ADS1292 allows the analog supply voltage to be 5V).
+
+For the first tests a STM32 based NUCLEO-L476RG dev board was used.
+Both power and digital signals where connected to that board.
+The test program streams the data via UART to the included virtual serial port of the NUCLEO-L476RG which is connected to a PC.
+
+To test the boards, the internal test signals of the ADS1292 are used.
+With prototype 1 also a real ECG signal was successfully recorded.
+
+#### Prototype 1
+The tests show that the internal 2.4V reference voltage is not stable.
+This leads to intermittent changes in the measured signal: at somw point they start to drift and sometimes saturate shortly just before recovering again.
+
+After switching to the 4V reference these issues are gone. This is (only) possible because a 5V analog supply voltage is used.
+This means that
+**the 2.4V reference voltage of prototype 1 can not be used.**
+
+While recording the real ECG signal the host PC (notebook) was detached from the mains adapter for safety reasons.
+The result was visually ok. One channel had a little bit more noise which is due to the RLD input not beeing connected to one of the inputs of that channel. This can be improved at a later point.
+
+#### Prototype 2
+This device worked as expeceted.
+But while testing the external analog input circuits, the signals saturated. The reason was, that the 2.4V internal reference was used, but the RLD pushes the potential to $V_{DDA} / 2 = 5V / 2 = 2.5V$, which is then outside  of the ADC range.
+It should therefore be noted that, when using 5V as analog supply voltage, the internal reference voltage must be set to 4V or the RLD reference voltage must be supplied from an external voltage devider that provides a voltage below 2.4V (ideally 1.2V).
+
+
+

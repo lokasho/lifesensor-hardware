@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name esp32_devkitc_main)(type Legacy)(uri ${KIPRJMOD}/lib_schematic/esp32_devkitc_main.lib)(options "")(descr ""))
+)

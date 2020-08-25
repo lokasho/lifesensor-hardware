@@ -18,10 +18,19 @@ if sys.version_info >= (3, 7):
         # (e.g. "ads1292" when used as ecg sensor)
         variant: str
         # name of a board(s)
-        boardname: (str, Sequence[str]) = None
+        boardname: (str, Sequence[str], None) = None
 else:
-    from collections import namedtuple
-    Settings = namedtuple("Settings", ("repo", "component", "variant", "boardname"))
+    class Settings:
+
+        def __init__(self, 
+                repo: pathlib.Path,
+                component: str,
+                variant: str,
+                boardname: (str, Sequence[str], None)=None):
+            self.repo = repo
+            self.component = component
+            self.variant = variant
+            self.boardname = boardname
 
 COMPONENTS_DIR_NAME = "components"
 

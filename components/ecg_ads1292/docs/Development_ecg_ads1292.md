@@ -1,30 +1,19 @@
-# lifesensor ecg_ads1292
-This document describes the [ECG](https://en.wikipedia.org/wiki/Electrocardiography) component based on Texas Instruments integrated ECG front end [ADS1292](http://www.ti.com/lit/ds/symlink/ads1292.pdf).
+# Development lifesensor ecg_ads1292
 
-**WARNING: THIS CIRCUIT DOES NOT PROVIDE ANY PROTECTION AGAINST ELECTRICAL SHOCKS! ALWAYS USE APPROPRIATE MEDICAL APPROVED POWER SUPPLIES! USE AT YOUR OWN RISK!**
 
----
 
-## Objectives
-This component is developed to quickly provide a first ECG sensor that can deliver reference data for comparison with other self-developed and possibly cheaper ECG frontends. It will also provide the possibility to test other (software) components like the pulse detection and the lifesensors [sensor bus]() with real data.
-<!-- TODO: link to sensor bus description -->
-
-To minimize the development effort integrated circuits that include all needed analog circuitry are chosen. The ADS1292 is chosen because in a search it was the cheapest one that can provide a three channel ECG found.
-
+## Requirements and constraints
+To minimize the development effort integrated circuits that include all needed analog circuitry are chosen. The ADS1292 is chosen because in a search it was the cheapest one that can provide a three channel ECG.
 Due to the prototype characteristics the development of the ecg_ads1292 compontent is not focusing on low prizes, availability or repairability.
 
+
+
 ## Subcomponents
+This component consists of one PCB [ecg_ads1292_main](../pcbs/ecg_ads1292_main) and a [driver](../code).
 
-This component consists of one PCB [ecg_ads1292_main](../pcbs/ecg_ads1292_main) and a [driver](../firmware).
 
-For a description of the development of the PCB see [../pcbs/ecg_ads1292_main/docs/README.md](../pcbs/ecg_ads1292_main/docs/README.md)
 
-For a description of the driver see [../firmware/README.md](../firmware/README.md)
-
-<!-- ## Usage -->
-<!-- TODO: links and explanations  -->
-
-## Development
+## PCB ecg_ads1292_main Rev. 0
 
 ### Schematics
 The schematics can be found in 
@@ -107,8 +96,6 @@ The following list describes the nets of the sensor bus this component accesses.
 - **SENS_SCLK** SPI bus clock, maximum frequency is twice the ADS1292 base clock, so 1.024MHz when running on the internal 512kHz clock. **ESP:** (clock polarity: low, phase: second edge)
 - **SENS_CS_ECG_n** SPI chip select for the ECG (no inter byte pulses, after transmitting data, this signal must not be driven HIGH agian to fast, see data sheet for SPI timing constraints)
 
-
-
 ### Layout
 
 The constraints for the layout are
@@ -134,10 +121,9 @@ Here is a view of the layout:
 <img src="../pcbs/ecg_ads1292_main/manufacture/images/ecg_ads1292_main-brd.svg" alt="layout of ecg_ads1292_main" width="400"/>
 </p>
 
-(*1*) This section is based on a translation of a documentation for a project at Technische Universität Berlin
+(*1*) This section is based on the translation of a project documentation at Technische Universität Berlin
 
-
-### Prototypes 1 and 2
+### Start-up of first prototypes Rev. 0.1
 
 Two prototypes have been produced July 2020.
 As no LDO where ordered the analog supply voltage is directly using the 5V from the interconnect. This is done by shorting the appropriate pads for the LDO. (The ADS1292 allows the analog supply voltage to be 5V).
@@ -165,5 +151,8 @@ This device worked as expeceted.
 But while testing the external analog input circuits, the signals saturated. The reason was, that the 2.4V internal reference was used, but the RLD pushes the potential to $V_{DDA} / 2 = 5V / 2 = 2.5V$, which is then outside  of the ADC range.
 It should therefore be noted that, when using 5V as analog supply voltage, the internal reference voltage must be set to 4V or the RLD reference voltage must be supplied from an external voltage devider that provides a voltage below 2.4V (ideally 1.2V).
 
+## ESP32 component driver 
+The main IC ADS1292 needs to controlled from the ESP32 via SPI and several IO/interrupt lines.
+The following describes the development of the driver.
 
-
+To be continued.

@@ -1,4 +1,4 @@
-# Interconnect
+<# Interconnect
 
 The interconnect is the main bus between the PCBs of the different components of the lifesensor.
 It is based on the 40-pin Raspberry Pi header.

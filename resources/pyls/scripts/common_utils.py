@@ -1,7 +1,4 @@
-
-
 class ExceptionGuard(object):
-
     def __init__(self, message, guards=(BaseException,), msg_handler=print):
         self.message = message
         self.guards = guards

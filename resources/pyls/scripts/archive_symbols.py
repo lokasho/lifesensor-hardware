@@ -23,21 +23,20 @@ deleted after asking for your permission.
 
 
 import argparse
-import pathlib
-from collections import namedtuple
-import kicad_utils
 import logging
 import os
+import pathlib
 import sys
+from collections import namedtuple
+from typing import Dict, Sequence
 
-from typing import Sequence, Dict
 import common_utils
-
+import kicad_utils
 
 root = logging.getLogger()
 handler = logging.StreamHandler(sys.stdout)
 handler.setLevel(logging.DEBUG)
-formatter = logging.Formatter('%(levelname)s:%(funcName)s: %(message)s')
+formatter = logging.Formatter("%(levelname)s:%(funcName)s: %(message)s")
 handler.setFormatter(formatter)
 root.addHandler(handler)
 
@@ -50,7 +49,9 @@ def main(args=None):
             path = pathlib.Path(settings.path)
             assert path.exists(), "The path {} does not exist.".format(path)
             assert path.is_file(), "The path {} is not a file.".format(path)
-            assert path.suffix == ".pro", "The path {} seems not to be a KiCAD project file.".format(path)
+            assert (
+                path.suffix == ".pro"
+            ), "The path {} seems not to be a KiCAD project file.".format(path)
         print("Archiving {}".format(path.relative_to(os.curdir)))
         project = kicad_utils.KiCadProject(path)
         project.archive_symbols(choose_copy_conflict_solution, dry_run=settings.dry)
@@ -59,8 +60,8 @@ def main(args=None):
 
 def collect_settings(args):
     parser = argparse.ArgumentParser(
-        description=__doc__,
-        formatter_class=argparse.RawTextHelpFormatter)
+        description=__doc__, formatter_class=argparse.RawTextHelpFormatter
+    )
     parser.add_argument("path", help="Path to the KiCAD project file")
     parser.add_argument("-d", "--dry", action="store_true")
     parser.add_argument("-l", "--logging", action="store_true")
@@ -73,10 +74,9 @@ def collect_settings(args):
 
 
 def choose_copy_conflict_solution(
-    symbol_name: str,
-    source_lib: kicad_utils.Library,
-    archive_lib: kicad_utils.Library) -> kicad_utils.CopyConflictSolution:
-    
+    symbol_name: str, source_lib: kicad_utils.Library, archive_lib: kicad_utils.Library
+) -> kicad_utils.CopyConflictSolution:
+
     msg = (
         f"The symbol '{symbol_name}' already exists in the archive, but has a",
         "different definition. Please choose the option to solve this conflict:",
@@ -85,17 +85,15 @@ def choose_copy_conflict_solution(
         "  2. use the already archived symbol",
         "  3. update the symbol in the archive",
         "  4. abort archiving the symbols.",
-        "The first option is the most secure.", 
-        "The other options should only be used if you really know what you are doing. "
+        "The first option is the most secure.",
+        "The other options should only be used if you really know what you are doing. ",
     )
     print("\n".join(msg))
     option = ""
     while not isinstance(option, int):
         option = input("Enter your option [1/2/3/4]: ").strip()
         try:
-            if option:
-                option = int(option)
-            if not option or option  > 3:
+            if not option or int(option) > 3:
                 print("Aborted.")
                 sys.exit(0)
         except ValueError:
@@ -103,8 +101,9 @@ def choose_copy_conflict_solution(
     return {
         1: kicad_utils.CopyConflictSolution.CREATE_NEW,
         2: kicad_utils.CopyConflictSolution.USE_DEST,
-        3: kicad_utils.CopyConflictSolution.UPDATE_DEST
+        3: kicad_utils.CopyConflictSolution.UPDATE_DEST,
     }[option]
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

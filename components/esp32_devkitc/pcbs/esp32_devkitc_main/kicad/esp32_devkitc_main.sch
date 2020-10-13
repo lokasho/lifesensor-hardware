@@ -816,4 +816,12 @@ Wire Wire Line
 	9550 3650 10750 3650
 Wire Wire Line
 	9550 3750 10750 3750
+Text Notes 10550 3300 0    50   ~ 0
+Display SPI Bus is fastest with these pins \n(DISP_MOSI, DISP_MISO, DISP_SCLK)\n\n
+Text Notes 10400 3450 0    50   ~ 0
+TODO: double check GPIO0 bootloader capability
+Text Notes 8750 4900 0    50   ~ 0
+TODO: Check SD signals for conflicts with esp memory bus
+Text Notes 8750 6050 0    50   ~ 0
+TODO: \n- Add power plug\n- Add button connector\n- Add LED connector (header LED+GND)3x\n- Check 1206 parts
 $EndSCHEMATC

@@ -13,23 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L esp32_devkitc_main:+5VA #PWR01
-U 1 1 580C1B61
-P 15150 1500
-F 0 "#PWR01" H 15150 1350 50  0001 C CNN
-F 1 "+5VA" H 15150 1650 50  0000 C CNN
-F 2 "" H 15150 1500 50  0000 C CNN
-F 3 "" H 15150 1500 50  0000 C CNN
-	1    15150 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15150 1500 15150 1550
 Wire Wire Line
 	15150 1550 14100 1550
 Wire Wire Line
-	15500 1650 14100 1650
+	15150 1650 14100 1650
 $Comp
 L esp32_devkitc_main:GND #PWR02
 U 1 1 580C1D11
@@ -73,22 +60,9 @@ Wire Wire Line
 	13500 2750 13600 2750
 Connection ~ 13500 3450
 Wire Wire Line
-	12100 2350 13600 2350
+	12450 2350 13600 2350
 Wire Wire Line
 	12450 1550 13600 1550
-Wire Wire Line
-	12450 1500 12450 1550
-$Comp
-L esp32_devkitc_main:+3.3VA #PWR04
-U 1 1 580C1BC1
-P 12450 1500
-F 0 "#PWR04" H 12450 1350 50  0001 C CNN
-F 1 "+3.3VA" H 12450 1650 50  0000 C CNN
-F 2 "" H 12450 1500 50  0000 C CNN
-F 3 "" H 12450 1500 50  0000 C CNN
-	1    12450 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13500 1950 13600 1950
 Connection ~ 13500 2750
@@ -115,9 +89,9 @@ Wire Wire Line
 Wire Wire Line
 	14100 2850 15150 2850
 Wire Wire Line
-	14100 2550 15300 2550
+	14100 2550 15150 2550
 Wire Wire Line
-	14100 2650 15300 2650
+	14100 2650 15150 2650
 Wire Wire Line
 	14100 2250 15150 2250
 Wire Wire Line
@@ -248,42 +222,12 @@ Wire Wire Line
 	13500 2750 13500 3450
 Wire Wire Line
 	14200 2150 14200 2450
-$Comp
-L esp32_devkitc_main:+5VD #PWR0101
-U 1 1 5EA6E5C1
-P 15500 1500
-F 0 "#PWR0101" H 15500 1350 50  0001 C CNN
-F 1 "+5VD" H 15500 1650 50  0000 C CNN
-F 2 "" H 15500 1500 50  0001 C CNN
-F 3 "" H 15500 1500 50  0001 C CNN
-	1    15500 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15500 1500 15500 1650
-$Comp
-L esp32_devkitc_main:+3.3V #PWR0102
-U 1 1 5EA72FFE
-P 12100 1500
-F 0 "#PWR0102" H 12100 1350 50  0001 C CNN
-F 1 "+3.3V" H 12100 1650 50  0000 C CNN
-F 2 "" H 12100 1500 50  0001 C CNN
-F 3 "" H 12100 1500 50  0001 C CNN
-	1    12100 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12100 1500 12100 2350
 Text Label 12450 1550 0    50   ~ 0
 SENS_3V3_ANA
 Text Label 15150 1550 2    50   ~ 0
 SENS_5V_ANA
 Text Label 15150 1650 2    50   ~ 0
 SENS_5V_DIG
-Text Notes 12450 1100 0    50   ~ 0
-ATTENTION: max. 30mA for both 3.3V rails together allowed on RPi.
-Text Notes 12450 1200 0    50   ~ 0
-ATTENTION: max. 300mA for both 5V rails together allowed on RPi.
 Text Label 12450 3350 0    50   ~ 0
 GPIO26
 Text Label 12450 3250 0    50   ~ 0
@@ -338,65 +282,14 @@ F 3 "" H 15450 5950 60  0001 C CNN
 	1    15450 5950
 	1    0    0    -1  
 $EndComp
-$Comp
-L esp32_devkitc_main:R_Small R1
-U 1 1 5EA7E07E
-P 15400 2550
-F 0 "R1" V 15350 2400 50  0000 C CNN
-F 1 "n.p." V 15350 2700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 15400 2550 50  0001 C CNN
-F 3 "~" H 15400 2550 50  0001 C CNN
-	1    15400 2550
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	14100 2750 15300 2750
-Wire Wire Line
-	15500 2750 15650 2750
-Wire Wire Line
-	15650 2750 15650 2650
-Wire Wire Line
-	15500 2550 15650 2550
-Connection ~ 15650 2550
-Wire Wire Line
-	15650 2550 15850 2550
-Wire Wire Line
-	15500 2650 15650 2650
-Connection ~ 15650 2650
-Wire Wire Line
-	15650 2650 15650 2550
-Text Label 15850 2550 2    50   ~ 0
-~CS
-$Comp
-L esp32_devkitc_main:R_Small R2
-U 1 1 5EA881A8
-P 15400 2650
-F 0 "R2" V 15350 2500 50  0000 C CNN
-F 1 "n.p." V 15350 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 15400 2650 50  0001 C CNN
-F 3 "~" H 15400 2650 50  0001 C CNN
-	1    15400 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L esp32_devkitc_main:R_Small R3
-U 1 1 5EA8833D
-P 15400 2750
-F 0 "R3" V 15350 2600 50  0000 C CNN
-F 1 "n.p." V 15350 2900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 15400 2750 50  0001 C CNN
-F 3 "~" H 15400 2750 50  0001 C CNN
-	1    15400 2750
-	0    1    1    0   
-$EndComp
+	14100 2750 15150 2750
 Wire Notes Line width 12
 	11950 600  15950 600 
 Wire Notes Line width 12
 	15950 600  15950 5100
 Wire Notes Line width 12
 	15950 5100 11950 5100
-Wire Notes Line width 12
-	11950 5100 11950 600 
 Wire Notes Line width 12
 	15950 5200 15950 6200
 Wire Notes Line width 12
@@ -408,13 +301,519 @@ Wire Notes Line width 12
 $Comp
 L esp32_devkitc_main:ESP32-DEVKITC-32D U1
 U 1 1 5F45B769
-P 6100 6750
-F 0 "U1" H 6100 7950 50  0000 C CNN
-F 1 "ESP32-DEVKITC-32D" H 6100 7850 50  0000 C CNN
-F 2 "lib_footprint:MODULE_ESP32-DEVKITC-32D" H 6100 6750 50  0001 L BNN
-F 3 "4" H 6100 6750 50  0001 L BNN
-F 4 "Espressif Systems" H 6100 6750 50  0001 L BNN "Field4"
-	1    6100 6750
+P 8750 3050
+F 0 "U1" H 8750 4250 50  0000 C CNN
+F 1 "ESP32-DEVKITC-32D" H 8750 4150 50  0000 C CNN
+F 2 "lib_footprint:MODULE_ESP32-DEVKITC-32D" H 8750 3050 50  0001 L BNN
+F 3 "4" H 8750 3050 50  0001 L BNN
+F 4 "Espressif Systems" H 8750 3050 50  0001 L BNN "Field4"
+	1    8750 3050
 	1    0    0    -1  
 $EndComp
+$Comp
+L esp32_devkitc_main:GND #PWR06
+U 1 1 5F73EEFF
+P 7550 3450
+F 0 "#PWR06" H 7550 3200 50  0001 C CNN
+F 1 "GND" H 7550 3300 50  0000 C CNN
+F 2 "" H 7550 3450 50  0000 C CNN
+F 3 "" H 7550 3450 50  0000 C CNN
+	1    7550 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 2050 7400 2050
+Wire Wire Line
+	6600 2950 7400 2950
+Text Label 6150 2350 0    50   ~ 0
+SENS_INT_BPM
+Text Label 6150 2550 0    50   ~ 0
+SENS_INT_ECG
+Text Label 6600 2750 0    50   ~ 0
+SENS_START
+Text Label 6600 2950 0    50   ~ 0
+~SENS_RST_BPM
+Text Label 6700 2050 0    50   ~ 0
+SENS_3V3_ANA
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5F74E0F0
+P 7500 2050
+F 0 "FB1" V 7250 2050 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 7350 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7430 2050 50  0001 C CNN
+F 3 "~" H 7500 2050 50  0001 C CNN
+	1    7500 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 2850 6600 2850
+Wire Wire Line
+	7400 3050 6600 3050
+Text Label 10350 3350 2    50   ~ 0
+~SENS_CS_SPO2
+Text Label 6600 3050 0    50   ~ 0
+~SENS_RST_SPO2
+Text Label 6600 2850 0    50   ~ 0
+~SENS_RST_ECG
+Text Label 6150 2450 0    50   ~ 0
+SENS_INT_SPO2
+Text Label 9000 4200 2    50   ~ 0
+SENS_5V_ANA
+Text Label 9000 4300 2    50   ~ 0
+SENS_5V_DIG
+$Comp
+L esp32_devkitc_main:GND #PWR07
+U 1 1 5F7CEAF7
+P 9600 4200
+F 0 "#PWR07" H 9600 3950 50  0001 C CNN
+F 1 "GND" H 9600 4050 50  0000 C CNN
+F 2 "" H 9600 4200 50  0000 C CNN
+F 3 "" H 9600 4200 50  0000 C CNN
+	1    9600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 2150 9550 2150
+Wire Wire Line
+	9550 2750 9600 2750
+Wire Wire Line
+	9600 2750 9600 2150
+Text Label 12450 2350 0    50   ~ 0
+SENS_3V3_DIG
+Wire Wire Line
+	6700 3250 7950 3250
+Wire Wire Line
+	6700 3550 7950 3550
+Wire Wire Line
+	6700 3350 7950 3350
+Text Label 6700 3350 0    50   ~ 0
+JTAG_TDI
+Text Label 6700 3550 0    50   ~ 0
+JTAG_TDO
+Text Label 6700 3250 0    50   ~ 0
+JTAG_TMS
+Wire Wire Line
+	7600 2050 7850 2050
+Text Label 6700 2150 0    50   ~ 0
+SENS_3V3_DIG
+Wire Wire Line
+	6700 2150 7850 2150
+Wire Wire Line
+	7850 2050 7850 2150
+Connection ~ 7850 2150
+Wire Wire Line
+	7850 2150 7950 2150
+NoConn ~ 9550 3850
+$Comp
+L Device:D D1
+U 1 1 5F948E56
+P 7250 3950
+F 0 "D1" H 7250 3700 50  0000 C CNN
+F 1 "D" H 7250 3800 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA-SMB_Universal_Handsoldering" H 7250 3950 50  0001 C CNN
+F 3 "~" H 7250 3950 50  0001 C CNN
+	1    7250 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 3950 7100 3950
+Wire Wire Line
+	7400 3950 7750 3950
+Wire Wire Line
+	7750 4200 7750 3950
+Wire Wire Line
+	7750 4200 9000 4200
+Connection ~ 7750 3950
+Wire Wire Line
+	7750 3950 7950 3950
+Wire Wire Line
+	7750 4300 7750 4200
+Wire Wire Line
+	7750 4300 9000 4300
+Connection ~ 7750 4200
+Text Label 6700 3950 0    50   ~ 0
+5V_in
+Text Notes 12900 1250 0    50   ~ 0
+ATTENTION: Do NOT connect RPi and esp32 \ncomponent on same  interconnect as they \nboth provide the 3.3V and 5V power rails! 
+Text Label 6700 3650 0    50   ~ 0
+SENS_MOSI
+Text Label 6700 3750 0    50   ~ 0
+SENS_MISO
+Text Label 6700 3850 0    50   ~ 0
+SENS_SCLK
+Wire Wire Line
+	7950 3850 6700 3850
+Wire Wire Line
+	7950 3750 6700 3750
+Wire Wire Line
+	7950 3650 7550 3650
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5FA232EF
+P 2700 4650
+F 0 "J1" H 2750 5100 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 2750 5000 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 2700 4650 50  0001 C CNN
+F 3 "~" H 2700 4650 50  0001 C CNN
+	1    2700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4650 2200 4650
+Wire Wire Line
+	2500 4750 1100 4750
+Text Label 1750 4650 2    50   ~ 0
+JTAG_~TRST
+$Comp
+L esp32_devkitc_main:R_Small R2
+U 1 1 5F7F8499
+P 1000 4750
+F 0 "R2" V 950 4600 50  0000 C CNN
+F 1 "n.p." V 950 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1000 4750 50  0001 C CNN
+F 3 "~" H 1000 4750 50  0001 C CNN
+	1    1000 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	900  4750 750  4750
+$Comp
+L esp32_devkitc_main:R_Small R1
+U 1 1 5F7F98EC
+P 2100 4650
+F 0 "R1" V 2050 4500 50  0000 C CNN
+F 1 "0" V 2050 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2100 4650 50  0001 C CNN
+F 3 "~" H 2100 4650 50  0001 C CNN
+	1    2100 4650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2000 4650 1750 4650
+$Comp
+L esp32_devkitc_main:GND #PWR04
+U 1 1 5F826BBD
+P 750 4750
+F 0 "#PWR04" H 750 4500 50  0001 C CNN
+F 1 "GND" V 750 4650 50  0000 R CNN
+F 2 "" H 750 4750 50  0001 C CNN
+F 3 "" H 750 4750 50  0001 C CNN
+	1    750  4750
+	0    1    -1   0   
+$EndComp
+Text Label 1750 4750 2    50   ~ 0
+JTAG_~SRST
+Text Label 1800 4450 0    50   ~ 0
+SENS_3V3_DIG
+Wire Wire Line
+	1800 4450 2500 4450
+$Comp
+L esp32_devkitc_main:GND #PWR01
+U 1 1 5F790E13
+P 2400 4950
+F 0 "#PWR01" H 2400 4700 50  0001 C CNN
+F 1 "GND" H 2400 4800 50  0000 C CNN
+F 2 "" H 2400 4950 50  0000 C CNN
+F 3 "" H 2400 4950 50  0000 C CNN
+	1    2400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4850 2400 4950
+Wire Wire Line
+	2400 4850 2500 4850
+Wire Wire Line
+	2400 4850 2400 4550
+Wire Wire Line
+	2400 4550 2500 4550
+Connection ~ 2400 4850
+Wire Wire Line
+	3000 4550 3200 4550
+Wire Wire Line
+	3200 4850 3000 4850
+Wire Wire Line
+	3200 4650 3000 4650
+Wire Wire Line
+	3200 4750 3000 4750
+Text Label 3200 4750 0    50   ~ 0
+JTAG_TDI
+Text Label 3200 4650 0    50   ~ 0
+JTAG_TDO
+Text Label 3200 4850 0    50   ~ 0
+JTAG_TMS
+Text Label 3200 4550 0    50   ~ 0
+JTAG_TCK
+$Comp
+L esp32_devkitc_main:R_Small R3
+U 1 1 5F7DF904
+P 3950 4450
+F 0 "R3" V 3900 4300 50  0000 C CNN
+F 1 "0" V 3900 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3950 4450 50  0001 C CNN
+F 3 "~" H 3950 4450 50  0001 C CNN
+	1    3950 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 4450 4200 4450
+$Comp
+L esp32_devkitc_main:GND #PWR05
+U 1 1 5F7ED315
+P 4200 4450
+F 0 "#PWR05" H 4200 4200 50  0001 C CNN
+F 1 "GND" V 4200 4350 50  0000 R CNN
+F 2 "" H 4200 4450 50  0001 C CNN
+F 3 "" H 4200 4450 50  0001 C CNN
+	1    4200 4450
+	0    -1   -1   0   
+$EndComp
+Text Label 3200 4450 0    50   ~ 0
+JTAG_RTCK
+Wire Wire Line
+	3000 4450 3850 4450
+Wire Wire Line
+	7950 2550 6150 2550
+Wire Wire Line
+	7950 2450 6150 2450
+Wire Wire Line
+	7950 2350 6150 2350
+Text Label 10300 3450 2    50   ~ 0
+~SENS_CS_BPM
+Text Label 10300 3550 2    50   ~ 0
+~SENS_CS_ECG
+Wire Wire Line
+	9550 3550 10300 3550
+Wire Wire Line
+	9550 3450 10300 3450
+Text Notes 10300 1950 0    50   ~ 0
+place close to display connector
+Text Label 10650 2250 2    50   ~ 0
+DISP_MOSI
+Text Label 10650 2850 2    50   ~ 0
+DISP_MISO
+Text Label 10650 2950 2    50   ~ 0
+DISP_SCLK
+Wire Wire Line
+	9550 2950 10650 2950
+Wire Wire Line
+	9550 2850 10650 2850
+Wire Wire Line
+	9550 2250 9800 2250
+Text Label 3550 5950 2    50   ~ 0
+DISP_MOSI
+Text Label 3550 6050 2    50   ~ 0
+DISP_MISO
+Text Label 3550 5850 2    50   ~ 0
+DISP_SCLK
+Wire Wire Line
+	3000 5850 3550 5850
+Wire Wire Line
+	3000 6050 3550 6050
+Wire Wire Line
+	3000 5950 3550 5950
+Text Label 4350 5500 2    50   ~ 0
+SENS_3V3_DIG
+Wire Wire Line
+	4350 5500 3700 5500
+$Comp
+L Device:Jumper_NC_Dual JP1
+U 1 1 5FD4406C
+P 3700 5750
+F 0 "JP1" V 3650 5900 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 3700 5900 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm_NumberLabels" H 3700 5750 50  0001 C CNN
+F 3 "~" H 3700 5750 50  0001 C CNN
+	1    3700 5750
+	0    1    1    0   
+$EndComp
+Text Label 4350 6000 2    50   ~ 0
+SENS_5V_DIG
+Wire Wire Line
+	3700 6000 4350 6000
+Wire Wire Line
+	3000 5750 3600 5750
+Wire Wire Line
+	1600 6050 2500 6050
+Wire Wire Line
+	1600 5750 2500 5750
+$Comp
+L esp32_devkitc_main:GND #PWR0102
+U 1 1 5FD76621
+P 2350 6250
+F 0 "#PWR0102" H 2350 6000 50  0001 C CNN
+F 1 "GND" H 2350 6100 50  0000 C CNN
+F 2 "" H 2350 6250 50  0000 C CNN
+F 3 "" H 2350 6250 50  0000 C CNN
+	1    2350 6250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J2
+U 1 1 5FD810F3
+P 2700 5850
+F 0 "J2" H 2750 6200 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 2750 6100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 2700 5850 50  0001 C CNN
+F 3 "~" H 2700 5850 50  0001 C CNN
+	1    2700 5850
+	1    0    0    -1  
+$EndComp
+Text Label 1600 5750 0    50   ~ 0
+DISP_CS_DISP
+Text Label 1600 6050 0    50   ~ 0
+DISP_INT_TOUCH
+Wire Wire Line
+	2500 5850 2350 5850
+Wire Wire Line
+	3550 6850 3000 6850
+Wire Wire Line
+	3550 6950 3000 6950
+Wire Wire Line
+	3550 7050 3000 7050
+Text Label 3550 6850 2    50   ~ 0
+PROC_SDA
+Text Label 3550 7050 2    50   ~ 0
+PROC_SCL
+$Comp
+L esp32_devkitc_main:GND #PWR0103
+U 1 1 5FE4C164
+P 3550 6950
+F 0 "#PWR0103" H 3550 6700 50  0001 C CNN
+F 1 "GND" H 3550 6800 50  0000 C CNN
+F 2 "" H 3550 6950 50  0000 C CNN
+F 3 "" H 3550 6950 50  0000 C CNN
+	1    3550 6950
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5FE6695B
+P 2800 6950
+F 0 "J3" H 2950 7250 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2950 7150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2800 6950 50  0001 C CNN
+F 3 "~" H 2800 6950 50  0001 C CNN
+	1    2800 6950
+	1    0    0    -1  
+$EndComp
+Text Label 10750 3750 2    50   ~ 0
+PROC_SCL
+Text Label 10750 3650 2    50   ~ 0
+PROC_SDA
+$Comp
+L esp32_devkitc_main:R_Small R14
+U 1 1 5FC63EC6
+P 7500 3050
+F 0 "R14" V 7450 2900 50  0000 C CNN
+F 1 "0" V 7450 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7500 3050 50  0001 C CNN
+F 3 "~" H 7500 3050 50  0001 C CNN
+	1    7500 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 3050 7600 3050
+Wire Wire Line
+	9600 4200 9600 2750
+Connection ~ 9600 2750
+Wire Wire Line
+	7600 2750 7950 2750
+Wire Wire Line
+	7950 2850 7600 2850
+Wire Wire Line
+	7600 2950 7950 2950
+$Comp
+L esp32_devkitc_main:R_Small R15
+U 1 1 60147723
+P 7500 2950
+F 0 "R15" V 7450 2800 50  0000 C CNN
+F 1 "0" V 7450 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7500 2950 50  0001 C CNN
+F 3 "~" H 7500 2950 50  0001 C CNN
+	1    7500 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L esp32_devkitc_main:R_Small R13
+U 1 1 60147B66
+P 7500 2850
+F 0 "R13" V 7450 2700 50  0000 C CNN
+F 1 "0" V 7450 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7500 2850 50  0001 C CNN
+F 3 "~" H 7500 2850 50  0001 C CNN
+	1    7500 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L esp32_devkitc_main:R_Small R12
+U 1 1 60147F32
+P 7500 2750
+F 0 "R12" V 7450 2600 50  0000 C CNN
+F 1 "0" V 7450 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7500 2750 50  0001 C CNN
+F 3 "~" H 7500 2750 50  0001 C CNN
+	1    7500 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L esp32_devkitc_main:R_Small R21
+U 1 1 601BD0ED
+P 9900 2250
+F 0 "R21" V 9850 2100 50  0000 C CNN
+F 1 "100" V 9850 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9900 2250 50  0001 C CNN
+F 3 "~" H 9900 2250 50  0001 C CNN
+	1    9900 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10000 2250 10650 2250
+$Comp
+L esp32_devkitc_main:R_Small R22
+U 1 1 601BE07A
+P 7450 3650
+F 0 "R22" V 7400 3500 50  0000 C CNN
+F 1 "100" V 7400 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7450 3650 50  0001 C CNN
+F 3 "~" H 7450 3650 50  0001 C CNN
+	1    7450 3650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7350 3650 6700 3650
+Wire Wire Line
+	7550 3450 7950 3450
+Wire Wire Line
+	2350 5850 2350 6250
+Wire Wire Line
+	1600 5950 2500 5950
+Text Label 1600 5950 0    50   ~ 0
+DISP_CS_TOUCH
+Wire Wire Line
+	10650 3050 9550 3050
+Text Label 10650 3050 2    50   ~ 0
+DISP_CS_DISP
+Wire Wire Line
+	10800 2650 9550 2650
+Wire Wire Line
+	10800 2550 9550 2550
+Text Label 10800 2550 2    50   ~ 0
+DISP_CS_TOUCH
+Text Label 10800 2650 2    50   ~ 0
+DISP_INT_TOUCH
+Text Label 6700 2250 0    50   ~ 0
+JTAG_~TRST
+Wire Wire Line
+	7950 2250 6700 2250
+Wire Wire Line
+	6600 2750 7400 2750
+Wire Wire Line
+	9550 3350 10350 3350
+Wire Notes Line width 12
+	11950 5100 11950 600 
+Wire Wire Line
+	9550 3650 10750 3650
+Wire Wire Line
+	9550 3750 10750 3750
 $EndSCHEMATC

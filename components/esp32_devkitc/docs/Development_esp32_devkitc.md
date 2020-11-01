@@ -89,4 +89,63 @@ A 20 pin ARM JTAG header is connected according to https://raw.githubusercontent
 
 
 ---
+# ESP32 DEVKITC Pinout
+### Inputs/ External Interrupts
+SENS_INT_BPM, SENS_INT_SPO2, SENS_INT_ECG  
+DISP_INT_TOUCH 
 
+### Outputs
+~SENS_RST_ECG, ~SENS_RST_BPM, ~SENS_RST_SPO2, SENS_START  
+~SENS_CS_ECG, ~SENS_CS_BPM,~SENS_CS_SPO2  
+DISP_CS_DISP, DISP_CS_TOUCH  
+
+### Display BUS on VSPI (speed optimized) 
+DISP_MOSI, DISP_MISO, DISP_SCLK 
+
+
+### Debug 
+JTAG_~TRST, JTAG_TMS, JTAG_TDI, JTAG_TDO, PROC_SDA, PROC_SCL 
+
+### PROC
+PROC_SDA, PROC_SCL 
+
+GPIO table expanded from [randomnerdtutorals](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)  
+
+|GPIO|Input|Output|Notes|Function|Comments|
+|---|---|---|---|---|---|
+|0|pulled up|OK|outputs PWM signal at boot, is pulled high|||
+|1|TX pin|OK|debug output at boot |||
+|2|OK|OK|connected to on-board LED|~SENS_CS_ECG||
+|3|OK|RX pin|HIGH at boot |DISP_CS_TOUCH|Problematic when receiving usart data|
+|4|OK|OK||~SENS_CS_SPO2||
+|5|OK|OK|outputs PWM signal at boot |DISP_CS_DISP||
+|6|x|x|connected to the integrated SPI flash|||
+|7|x|x|connected to the integrated SPI flash|||
+|8|x|x|connected to the integrated SPI flash|||
+|9|x|x|connected to the integrated SPI flash|||
+|10|x|x|connected to the integrated SPI flash|||
+|11|x|x|connected to the integrated SPI flash|||
+|12|OK|OK|boot fail if pulled high|JTAG_TDI|programming; preset;|
+|13|OK|OK||JTAG_TDO|programming; preset;|
+|14|OK|OK|outputs PWM signal at boot|JTAG_TMS|programming; preset;|
+|15|OK|OK|outputs PWM signal at boot|~SENS_CS_BPM||
+|16|OK|OK||PROC_SCL||
+|17|OK|OK||PROC_SDA||
+|18|OK|OK||DISP_SCLK|VSPI Speed optimized|
+|19|OK|OK||DISP_MISO|VSPI Speed optimized|
+|21|OK|OK||~SENS_RST_BPM||
+|22|OK|OK||~SENS_RST_SPO2||
+|23|OK|OK||DISP_MOSI|VSPI Speed optimized|
+|25|OK|OK||SENS_MOSI|HSPI remapped|
+|26|OK|OK||SENS_MISO|HSPI remapped|
+|27|OK|OK||SENS_SCLK|HSPI remapped|
+|32|OK|OK||SENS_START||
+|33|OK|OK||~SENS_RST_ECG||
+|34|OK||input only|SENS_INT_ECG|Input only compatible |
+|35|OK||input only|DISP_INT_TOUCH|Input only compatible |
+|36|OK||input only; SENSOR_VP|SENS_INT_BPM|Input only compatible |
+|39|OK||input only; SENSOR_VN|SENS_INT_SPO2|Input only compatible |
+|EN||||JTAG_~TRST|programming; preset;|
+|3V3||||SENS_3V3_DIG||
+|EXT_5V||||5V_in||
+|GND1,2,3||||GND||

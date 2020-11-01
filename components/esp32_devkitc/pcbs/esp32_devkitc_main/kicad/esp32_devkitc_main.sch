@@ -409,8 +409,8 @@ $Comp
 L Device:D D1
 U 1 1 5F948E56
 P 7250 3950
-F 0 "D1" H 7250 3700 50  0000 C CNN
-F 1 "D" H 7250 3800 50  0000 C CNN
+F 0 "D1" H 7250 4050 50  0000 C CNN
+F 1 "D" H 7250 4100 50  0000 C CNN
 F 2 "Diode_SMD:D_SMA-SMB_Universal_Handsoldering" H 7250 3950 50  0001 C CNN
 F 3 "~" H 7250 3950 50  0001 C CNN
 	1    7250 3950
@@ -820,8 +820,12 @@ Text Notes 10550 3300 0    50   ~ 0
 Display SPI Bus is fastest with these pins \n(DISP_MOSI, DISP_MISO, DISP_SCLK)\n\n
 Text Notes 10400 3450 0    50   ~ 0
 TODO: double check GPIO0 bootloader capability
-Text Notes 8750 4900 0    50   ~ 0
-TODO: Check SD signals for conflicts with esp memory bus
-Text Notes 8750 6050 0    50   ~ 0
+Text Notes 8200 5800 0    50   ~ 0
+TODO:\nMove SPI Flash Pins 
+Text Notes 5950 5150 0    50   ~ 0
 TODO: \n- Add power plug\n- Add button connector\n- Add LED connector (header LED+GND)3x\n- Check 1206 parts
+Text Notes 8150 5500 0    50   ~ 0
+The pins D0, D1, D2, D3, CMD and CLK (GPIO6-GPIO11) are used\ninternally for communication between ESP32 and SPI flash memory.\nThey are grouped on both sides near the USB connector. Avoid using\nthese pins, as it may disrupt access to the SPI flash memory / SPI \nRAM.\n\nhttps://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html\n
+Text Notes 5800 6300 0    50   ~ 0
+QUESTIONS: \n- JTAG SDA&SCL Moved instead of IO22 and IO21\n- RXD0 is high at boot, maybe shouldnt be cs_touch\n(https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)\n
 $EndSCHEMATC

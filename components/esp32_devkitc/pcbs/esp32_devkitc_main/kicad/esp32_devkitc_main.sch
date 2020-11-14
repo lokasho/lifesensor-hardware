@@ -795,20 +795,10 @@ Wire Notes Line width 12
 	11950 5100 11950 600 
 Text Notes 10700 3050 0    43   ~ 0
 Display SPI Bus is fastest \nwith these pins (VSPI)\n(DISP_MOSI, DISP_MISO, DISP_SCLK)\n\n
-Text Notes 5950 5550 0    50   ~ 0
-TODO:\nMove SPI Flash Pins 
-Text Notes 5950 5150 0    50   ~ 0
-TODO: \n- Add power plug\n- Add button connector\n- Add LED connector (header LED+GND)3x\n- Check 1206 parts
 Text Notes 8150 5500 0    50   ~ 0
 The pins D0, D1, D2, D3, CMD and CLK (GPIO6-GPIO11) are used\ninternally for communication between ESP32 and SPI flash memory.\nThey are grouped on both sides near the USB connector. Avoid using\nthese pins, as it may disrupt access to the SPI flash memory / SPI \nRAM.\n\nhttps://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html\n
-Text Notes 5800 6300 0    50   ~ 0
-QUESTIONS: \n- JTAG SDA&SCL Moved instead of IO22 and IO21\n- RXD0 is high at boot, maybe shouldnt be cs_touch\n(https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)\n
 Text Notes 5950 5350 0    50   ~ 0
 TODO: \ncheck pinout of J1 with existing jtag header\n
-Text Notes 9000 6150 0    50   ~ 0
-Move:\nSCL\nSENS MOSI\nSENS MISO\nSENS CLK\n
-Text Notes 5950 5650 0    50   ~ 0
-I2C possibility
 Wire Wire Line
 	7950 2650 6150 2650
 Wire Wire Line
@@ -911,4 +901,12 @@ Text Label 2250 7800 0    50   ~ 0
 LED2
 Text Label 2250 7900 0    50   ~ 0
 LED3
+Text Notes 5950 5150 0    50   ~ 0
+TODO: \n\n- Add button connector?\n- LED connector (header LED+GND)3x?\n
+Text Notes 4650 3350 0    50   ~ 0
+TODO: FIX JTAG Pins (TCK Missing, TDO wrong)
+Text Notes 4900 2250 0    50   ~ 0
+EN Pin should have pull up with lowpass
+Text Notes 3700 4700 0    50   ~ 0
+JTAG has 100Ohm Resistors in manual\nhttps://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
 $EndSCHEMATC

@@ -345,10 +345,10 @@ $EndComp
 Wire Wire Line
 	7400 2850 6600 2850
 Wire Wire Line
-	10000 2350 10900 2350
+	10000 3150 10900 3150
 Text Label 10350 3350 2    50   ~ 0
 ~SENS_CS_SPO2
-Text Label 10900 2350 2    50   ~ 0
+Text Label 10900 3150 2    50   ~ 0
 ~SENS_RST_SPO2
 Text Label 6600 2850 0    50   ~ 0
 ~SENS_RST_ECG
@@ -381,11 +381,7 @@ Wire Wire Line
 	6700 3250 7950 3250
 Wire Wire Line
 	6700 3550 7950 3550
-Wire Wire Line
-	6700 3350 7950 3350
-Text Label 6700 3350 0    50   ~ 0
-JTAG_TDI
-Text Label 6700 3550 0    50   ~ 0
+Text Label 10800 3650 2    50   ~ 0
 JTAG_TDO
 Text Label 6700 3250 0    50   ~ 0
 JTAG_TMS
@@ -525,20 +521,20 @@ Wire Wire Line
 	2400 4550 2500 4550
 Connection ~ 2400 4850
 Wire Wire Line
-	3000 4550 3200 4550
+	3000 4550 3850 4550
 Wire Wire Line
-	3200 4850 3000 4850
+	4300 4850 4050 4850
 Wire Wire Line
-	3200 4650 3000 4650
+	4300 4650 4050 4650
 Wire Wire Line
-	3200 4750 3000 4750
-Text Label 3200 4750 0    50   ~ 0
+	4300 4750 4050 4750
+Text Label 4300 4750 0    50   ~ 0
 JTAG_TDI
-Text Label 3200 4650 0    50   ~ 0
+Text Label 4300 4650 0    50   ~ 0
 JTAG_TDO
-Text Label 3200 4850 0    50   ~ 0
+Text Label 4300 4850 0    50   ~ 0
 JTAG_TMS
-Text Label 3200 4550 0    50   ~ 0
+Text Label 4300 4550 0    50   ~ 0
 JTAG_TCK
 $Comp
 L esp32_devkitc_main:R_Small R3
@@ -574,16 +570,10 @@ Wire Wire Line
 	7950 2450 6150 2450
 Wire Wire Line
 	7950 2350 6150 2350
-Text Label 10300 3650 2    50   ~ 0
-~SENS_CS_BPM
 Text Label 10300 3550 2    50   ~ 0
 ~SENS_CS_ECG
 Wire Wire Line
 	9550 3550 10300 3550
-Wire Wire Line
-	9550 3650 10300 3650
-Text Notes 10300 1950 0    50   ~ 0
-place close to display connector
 Text Label 10650 2250 2    50   ~ 0
 DISP_MOSI
 Text Label 10650 2850 2    50   ~ 0
@@ -693,23 +683,21 @@ F 3 "~" H 2800 6950 50  0001 C CNN
 	1    2800 6950
 	1    0    0    -1  
 $EndComp
-Text Label 10750 3250 2    50   ~ 0
+Text Label 10750 2350 2    50   ~ 0
 PROC_SCL
-Text Label 10750 3150 2    50   ~ 0
-PROC_SDA
 $Comp
 L esp32_devkitc_main:R_Small R14
 U 1 1 5FC63EC6
-P 9900 2350
-F 0 "R14" V 9850 2200 50  0000 C CNN
-F 1 "0" V 9850 2500 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 9900 2350 50  0001 C CNN
-F 3 "~" H 9900 2350 50  0001 C CNN
-	1    9900 2350
+P 9900 3150
+F 0 "R14" V 9850 3000 50  0000 C CNN
+F 1 "0" V 9850 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 9900 3150 50  0001 C CNN
+F 3 "~" H 9900 3150 50  0001 C CNN
+	1    9900 3150
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	9550 2350 9800 2350
+	9550 3150 9800 3150
 Wire Wire Line
 	9600 4200 9600 2750
 Connection ~ 9600 2750
@@ -786,8 +774,6 @@ DISP_INT_TOUCH
 Text Label 6700 2250 0    50   ~ 0
 JTAG_~TRST
 Wire Wire Line
-	7950 2250 6700 2250
-Wire Wire Line
 	6600 2750 7400 2750
 Wire Wire Line
 	9550 3350 10350 3350
@@ -795,16 +781,12 @@ Wire Notes Line width 12
 	11950 5100 11950 600 
 Text Notes 10700 3050 0    43   ~ 0
 Display SPI Bus is fastest \nwith these pins (VSPI)\n(DISP_MOSI, DISP_MISO, DISP_SCLK)\n\n
-Text Notes 8150 5500 0    50   ~ 0
+Text Notes 7300 5000 0    50   ~ 0
 The pins D0, D1, D2, D3, CMD and CLK (GPIO6-GPIO11) are used\ninternally for communication between ESP32 and SPI flash memory.\nThey are grouped on both sides near the USB connector. Avoid using\nthese pins, as it may disrupt access to the SPI flash memory / SPI \nRAM.\n\nhttps://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html\n
-Text Notes 5950 5350 0    50   ~ 0
-TODO: \ncheck pinout of J1 with existing jtag header\n
 Wire Wire Line
 	7950 2650 6150 2650
 Wire Wire Line
-	9550 3250 10750 3250
-Wire Wire Line
-	10750 3150 9550 3150
+	9550 2350 10750 2350
 NoConn ~ 9550 3750
 NoConn ~ 9550 3950
 NoConn ~ 7950 3650
@@ -813,100 +795,124 @@ NoConn ~ 7950 3850
 $Comp
 L esp32_devkitc_main:R_Small R15
 U 1 1 60147723
-P 10000 2650
-F 0 "R15" V 9950 2500 50  0000 C CNN
-F 1 "0" V 9950 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 10000 2650 50  0001 C CNN
-F 3 "~" H 10000 2650 50  0001 C CNN
-	1    10000 2650
+P 9900 3250
+F 0 "R15" V 9850 3100 50  0000 C CNN
+F 1 "0" V 9850 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 9900 3250 50  0001 C CNN
+F 3 "~" H 9900 3250 50  0001 C CNN
+	1    9900 3250
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	9900 2650 9550 2650
-Text Label 10900 2650 2    50   ~ 0
+	9800 3250 9550 3250
+Text Label 10900 3250 2    50   ~ 0
 ~SENS_RST_BPM
 Wire Wire Line
-	10900 2650 10100 2650
+	10900 3250 10000 3250
 $Comp
 L esp32_devkitc_main:GND #PWR09
 U 1 1 5FB10B32
-P 3400 8750
-F 0 "#PWR09" H 3400 8500 50  0001 C CNN
-F 1 "GND" V 3400 8650 50  0000 R CNN
-F 2 "" H 3400 8750 50  0001 C CNN
-F 3 "" H 3400 8750 50  0001 C CNN
-	1    3400 8750
+P 3400 7750
+F 0 "#PWR09" H 3400 7500 50  0001 C CNN
+F 1 "GND" V 3400 7650 50  0000 R CNN
+F 2 "" H 3400 7750 50  0001 C CNN
+F 3 "" H 3400 7750 50  0001 C CNN
+	1    3400 7750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3400 8750 3050 8750
+	3400 7750 3050 7750
 $Comp
-L Connector_Generic:Conn_01x02 J5
+L Connector_Generic:Conn_01x02 J4
 U 1 1 5FADF030
-P 2850 8650
-F 0 "J5" H 2768 8867 50  0000 C CNN
-F 1 "Conn_01x02" H 2768 8776 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 2850 8650 50  0001 C CNN
-F 3 "~" H 2850 8650 50  0001 C CNN
-	1    2850 8650
+P 2850 7650
+F 0 "J4" H 2768 7867 50  0000 C CNN
+F 1 "Conn_01x02" H 2768 7776 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 2850 7650 50  0001 C CNN
+F 3 "~" H 2850 7650 50  0001 C CNN
+	1    2850 7650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 8650 3500 8650
-Text Label 3500 8650 2    50   ~ 0
+	3050 7650 3500 7650
+Text Label 3500 7650 2    50   ~ 0
 5V_in
+Text Notes 7500 6950 0    50   ~ 0
+TODO: \n\n- Add button connector?\n- Add LED connector? (header LED+GND)3x\n
+Text Notes 2050 4050 0    50   ~ 0
+JTAG has 100Ohm Resistors in manual\nhttps://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf p14
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J4
-U 1 1 5FB5A650
-P 2750 7800
-F 0 "J4" H 2800 8250 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 2800 8150 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 2750 7800 50  0001 C CNN
-F 3 "~" H 2750 7800 50  0001 C CNN
-	1    2750 7800
-	1    0    0    -1  
+L esp32_devkitc_main:R_Small R4
+U 1 1 5FBDBC54
+P 3950 4550
+F 0 "R4" V 3900 4400 50  0000 C CNN
+F 1 "100" V 3900 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3950 4550 50  0001 C CNN
+F 3 "~" H 3950 4550 50  0001 C CNN
+	1    3950 4550
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3050 7700 3200 7700
-Wire Wire Line
-	3200 7700 3200 7800
-Wire Wire Line
-	3200 7800 3050 7800
-Wire Wire Line
-	3050 7900 3200 7900
-Wire Wire Line
-	3200 7900 3200 7800
-Connection ~ 3200 7800
+	4050 4550 4300 4550
 $Comp
-L esp32_devkitc_main:GND #PWR08
-U 1 1 5FBA08A9
-P 3200 7900
-F 0 "#PWR08" H 3200 7650 50  0001 C CNN
-F 1 "GND" V 3200 7800 50  0000 R CNN
-F 2 "" H 3200 7900 50  0001 C CNN
-F 3 "" H 3200 7900 50  0001 C CNN
-	1    3200 7900
-	1    0    0    -1  
+L esp32_devkitc_main:R_Small R5
+U 1 1 5FBE6318
+P 3950 4650
+F 0 "R5" V 3900 4500 50  0000 C CNN
+F 1 "100" V 3900 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3950 4650 50  0001 C CNN
+F 3 "~" H 3950 4650 50  0001 C CNN
+	1    3950 4650
+	0    1    1    0   
 $EndComp
-Connection ~ 3200 7900
+$Comp
+L esp32_devkitc_main:R_Small R6
+U 1 1 5FBEE9BD
+P 3950 4750
+F 0 "R6" V 3900 4600 50  0000 C CNN
+F 1 "100" V 3900 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3950 4750 50  0001 C CNN
+F 3 "~" H 3950 4750 50  0001 C CNN
+	1    3950 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L esp32_devkitc_main:R_Small R7
+U 1 1 5FBF7099
+P 3950 4850
+F 0 "R7" V 3900 4700 50  0000 C CNN
+F 1 "100" V 3900 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3950 4850 50  0001 C CNN
+F 3 "~" H 3950 4850 50  0001 C CNN
+	1    3950 4850
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	2250 7700 2550 7700
+	3850 4750 3000 4750
 Wire Wire Line
-	2550 7800 2250 7800
+	3850 4650 3000 4650
 Wire Wire Line
-	2550 7900 2250 7900
-Text Label 2250 7700 0    50   ~ 0
-LED1
-Text Label 2250 7800 0    50   ~ 0
-LED2
-Text Label 2250 7900 0    50   ~ 0
-LED3
-Text Notes 5950 5150 0    50   ~ 0
-TODO: \n\n- Add button connector?\n- LED connector (header LED+GND)3x?\n
-Text Notes 4650 3350 0    50   ~ 0
-TODO: FIX JTAG Pins (TCK Missing, TDO wrong)
-Text Notes 4900 2250 0    50   ~ 0
-EN Pin should have pull up with lowpass
-Text Notes 3700 4700 0    50   ~ 0
-JTAG has 100Ohm Resistors in manual\nhttps://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
+	3850 4850 3000 4850
+Text Label 6700 3350 0    50   ~ 0
+JTAG_TDI
+Wire Wire Line
+	6700 3350 7950 3350
+Text Label 6700 3550 0    50   ~ 0
+JTAG_TCK
+Wire Wire Line
+	9550 3450 10300 3450
+Text Label 10300 3450 2    50   ~ 0
+~SENS_CS_BPM
+Wire Wire Line
+	10750 2650 9550 2650
+Text Label 10750 2650 2    50   ~ 0
+PROC_SDA
+Wire Wire Line
+	10800 3650 9550 3650
+Wire Wire Line
+	6700 2250 7950 2250
+Text Notes 7300 5750 0    50   ~ 0
+Strapping Pins:\nGPIO 0 (is pulled down to enter bootloader)\nGPIO 2(needs to be floating)\nGPIO 4\nGPIO 5\nGPIO 12 (dont pull high while booting)\nGPIO 15
+Text Notes 7550 7200 0    50   ~ 0
+QUESTIONS: \nResistors for MOSI but not MISO?
 $EndSCHEMATC

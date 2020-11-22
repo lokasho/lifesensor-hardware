@@ -79,13 +79,13 @@ A 20 pin ARM JTAG header is connected according to https://raw.githubusercontent
 | DevKitC Pin | JTAG signal  | header pin |
 |---|---|---|
 | 3V3  | VTref | 1 |
-| EN | nTRST | 3 |
-| IO12 | TDI | 5 |
-| IO14 | TMS | 7 |
-| IO13 | TCK | 9 |
+| EN | nTRST | 5 |
+| IO12 | TDI | 8 |
+| IO14 | TMS | 10 |
+| IO13 | TCK | 4 |
 | (GND) | RTCK | 11 |
-| IO15 | TDO | 13 | 
-| GND  | GND | 4 |
+| IO15 | TDO | 6 | 
+| GND  | GND | 3,9 (7)|
 
 
 ---
@@ -100,52 +100,51 @@ DISP_INT_TOUCH
 DISP_CS_DISP, DISP_CS_TOUCH  
 
 ### Display BUS on VSPI (speed optimized) 
-DISP_MOSI, DISP_MISO, DISP_SCLK 
-
+DISP_MOSI, DISP_MISO, DISP_SCLK  
 
 ### Debug 
-JTAG_~TRST, JTAG_TMS, JTAG_TDI, JTAG_TDO, PROC_SDA, PROC_SCL 
+JTAG_~TRST, JTAG_TMS, JTAG_TCK, JTAG_TDI, JTAG_TDO  
 
 ### PROC
-PROC_SDA, PROC_SCL 
+PROC_SDA, PROC_SCL   
 
 GPIO table expanded from [randomnerdtutorals](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)  
 
-|GPIO|Input|Output|Notes|Function|Comments|
-|---|---|---|---|---|---|
-|0|pulled up|OK|outputs PWM signal at boot, is pulled high|||
-|1|TX pin|OK|debug output at boot |||
-|2|OK|OK|connected to on-board LED|~SENS_CS_ECG||
-|3|OK|RX pin|HIGH at boot |DISP_CS_TOUCH|Problematic when receiving usart data|
-|4|OK|OK||~SENS_CS_SPO2||
-|5|OK|OK|outputs PWM signal at boot |DISP_CS_DISP||
-|6|x|x|connected to the integrated SPI flash|||
-|7|x|x|connected to the integrated SPI flash|||
-|8|x|x|connected to the integrated SPI flash|||
-|9|x|x|connected to the integrated SPI flash|||
-|10|x|x|connected to the integrated SPI flash|||
-|11|x|x|connected to the integrated SPI flash|||
-|12|OK|OK|boot fail if pulled high|JTAG_TDI|programming; preset;|
-|13|OK|OK||JTAG_TDO|programming; preset;|
-|14|OK|OK|outputs PWM signal at boot|JTAG_TMS|programming; preset;|
-|15|OK|OK|outputs PWM signal at boot|~SENS_CS_BPM||
-|16|OK|OK||PROC_SCL||
-|17|OK|OK||PROC_SDA||
-|18|OK|OK||DISP_SCLK|VSPI Speed optimized|
-|19|OK|OK||DISP_MISO|VSPI Speed optimized|
-|21|OK|OK||~SENS_RST_BPM||
-|22|OK|OK||~SENS_RST_SPO2||
-|23|OK|OK||DISP_MOSI|VSPI Speed optimized|
-|25|OK|OK||SENS_MOSI|HSPI remapped|
-|26|OK|OK||SENS_MISO|HSPI remapped|
-|27|OK|OK||SENS_SCLK|HSPI remapped|
-|32|OK|OK||SENS_START||
-|33|OK|OK||~SENS_RST_ECG||
-|34|OK||input only|SENS_INT_ECG|Input only compatible |
-|35|OK||input only|DISP_INT_TOUCH|Input only compatible |
-|36|OK||input only; SENSOR_VP|SENS_INT_BPM|Input only compatible |
-|39|OK||input only; SENSOR_VN|SENS_INT_SPO2|Input only compatible |
-|EN||||JTAG_~TRST|programming; preset;|
-|3V3||||SENS_3V3_DIG||
-|EXT_5V||||5V_in||
-|GND1,2,3||||GND||
+|GPIO|Input|Output|Notes|Function|
+|---|---|---|---|---|
+|0|pulled up|OK|outputs PWM signal at boot, is pulled high|~SENS_CS_BPM|
+|1|TX pin|OK|debug output at boot ||
+|2|OK|OK|Needs to be floating while being flashed; |~SENS_CS_ECG|
+|3|OK|RX pin|HIGH at boot |DISP_CS_TOUCH|
+|4|OK|OK||~SENS_CS_SPO2|
+|5|OK|OK|outputs PWM signal at boot,VSPI_CS |DISP_CS_DISP|
+|6|x|x|connected to the integrated SPI flash||
+|7|x|x|connected to the integrated SPI flash||
+|8|x|x|connected to the integrated SPI flash||
+|9|x|x|connected to the integrated SPI flash||
+|10|x|x|connected to the integrated SPI flash||
+|11|x|x|connected to the integrated SPI flash||
+|12|OK|OK|boot fail if pulled high;MTDI,HSPI_MISO|JTAG_TDI|
+|13|OK|OK|MTCK, HSPI_MOSI|JTAG_TCK|
+|14|OK|OK|outputs PWM signal at boot,MTMS, HSPI_CLK|JTAG_TMS|
+|15|OK|OK|outputs PWM signal at boot,MTDO,HSPI_CS|JTAG_TDO|
+|16|OK|OK||~SENS_RST_BPM|
+|17|OK|OK||~SENS_RST_SPO2|
+|18|OK|OK|VSPI_CLK|DISP_SCLK|
+|19|OK|OK|VSP_MISO|DISP_MISO|
+|21|OK|OK|I2C_SDA|PROC_SDA|
+|22|OK|OK|I2C_SCL|PROC_SCL|
+|23|OK|OK|VSPI_MOSI|DISP_MOSI|
+|25|OK|OK||SENS_MOSI|
+|26|OK|OK||SENS_MISO|
+|27|OK|OK||SENS_SCLK|
+|32|OK|OK||SENS_START|
+|33|OK|OK||~SENS_RST_ECG|
+|34|OK||input only|SENS_INT_ECG|
+|35|OK||input only|DISP_INT_TOUCH|
+|36|OK||input only; SENSOR_VP|SENS_INT_BPM|
+|39|OK||input only; SENSOR_VN|SENS_INT_SPO2|
+|EN|||Connected to RTS, DTR reset circuit|JTAG_~TRST|
+|3V3|||3.3V|SENS_3V3_DIG|
+|EXT_5V||||5V_in|
+|GND1,2,3|||GND|GND|

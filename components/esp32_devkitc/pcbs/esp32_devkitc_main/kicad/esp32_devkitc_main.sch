@@ -838,7 +838,7 @@ Wire Wire Line
 Text Label 3500 7650 2    50   ~ 0
 5V_in
 Text Notes 7500 6950 0    50   ~ 0
-TODO: \n\n- Add button connector?\n- Add LED connector? (header LED+GND)3x\n
+TODO: \n\n- Add button connector?\n- Add LED connector? (header LED+GND)3x\n- Add GPIO expander\n- Change P1 Text\n- Interrupt wire for gpio/Sense_start\n- JP1 more central\n- replace j4 barrel connector with correct footprint e.g. https://www.snapeda.com/parts/PJ-037B/CUI%20Devices/view-part/493700/\n
 Text Notes 2050 4050 0    50   ~ 0
 JTAG has 100Ohm Resistors in manual\nhttps://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf p14
 $Comp

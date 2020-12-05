@@ -652,37 +652,13 @@ DISP_INT_TOUCH
 Wire Wire Line
 	2500 5850 2350 5850
 Wire Wire Line
-	3550 6850 3000 6850
+	2000 7650 2550 7650
 Wire Wire Line
-	3550 6950 3000 6950
-Wire Wire Line
-	3550 7050 3000 7050
-Text Label 3550 6850 2    50   ~ 0
+	3600 7650 3050 7650
+Text Label 2000 7650 0    50   ~ 0
 PROC_SDA
-Text Label 3550 7050 2    50   ~ 0
+Text Label 3600 7650 2    50   ~ 0
 PROC_SCL
-$Comp
-L esp32_devkitc_main:GND #PWR0103
-U 1 1 5FE4C164
-P 3550 6950
-F 0 "#PWR0103" H 3550 6700 50  0001 C CNN
-F 1 "GND" H 3550 6800 50  0000 C CNN
-F 2 "" H 3550 6950 50  0000 C CNN
-F 3 "" H 3550 6950 50  0000 C CNN
-	1    3550 6950
-	0    -1   1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x03_Male J3
-U 1 1 5FE6695B
-P 2800 6950
-F 0 "J3" H 2950 7250 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 2950 7150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2800 6950 50  0001 C CNN
-F 3 "~" H 2800 6950 50  0001 C CNN
-	1    2800 6950
-	1    0    0    -1  
-$EndComp
 Text Label 10750 2350 2    50   ~ 0
 PROC_SCL
 $Comp
@@ -812,19 +788,19 @@ Wire Wire Line
 $Comp
 L esp32_devkitc_main:GND #PWR09
 U 1 1 5FB10B32
-P 3400 7750
-F 0 "#PWR09" H 3400 7500 50  0001 C CNN
-F 1 "GND" V 3400 7650 50  0000 R CNN
-F 2 "" H 3400 7750 50  0001 C CNN
-F 3 "" H 3400 7750 50  0001 C CNN
-	1    3400 7750
+P 3350 8400
+F 0 "#PWR09" H 3350 8150 50  0001 C CNN
+F 1 "GND" V 3350 8300 50  0000 R CNN
+F 2 "" H 3350 8400 50  0001 C CNN
+F 3 "" H 3350 8400 50  0001 C CNN
+	1    3350 8400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3400 7750 3050 7750
+	3350 8400 3000 8400
 Wire Wire Line
-	3050 7650 3500 7650
-Text Label 3500 7650 2    50   ~ 0
+	3000 8300 3450 8300
+Text Label 3450 8300 2    50   ~ 0
 5V_in
 Text Notes 2050 4050 0    50   ~ 0
 JTAG has 100Ohm Resistors in manual\nhttps://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf p14
@@ -915,17 +891,6 @@ Text Label 10500 7700 0    50   ~ 0
 SENS_3V3_DIG
 Wire Wire Line
 	10500 7700 9700 7700
-Wire Wire Line
-	8300 8000 7900 8000
-Wire Wire Line
-	7900 8000 7900 8100
-Wire Wire Line
-	7900 8100 8300 8100
-Wire Wire Line
-	8300 8200 7900 8200
-Wire Wire Line
-	7900 8200 7900 8100
-Connection ~ 7900 8100
 Text Label 7450 8300 0    50   ~ 0
 PROC_SCL
 Wire Wire Line
@@ -937,26 +902,26 @@ PROC_SDA
 $Comp
 L esp32_devkitc_main:GND #PWR0101
 U 1 1 5FD37EE3
-P 7900 8100
-F 0 "#PWR0101" H 7900 7850 50  0001 C CNN
-F 1 "GND" H 7900 7950 50  0000 C CNN
-F 2 "" H 7900 8100 50  0000 C CNN
-F 3 "" H 7900 8100 50  0000 C CNN
-	1    7900 8100
-	0    1    1    0   
+P 6400 8600
+F 0 "#PWR0101" H 6400 8350 50  0001 C CNN
+F 1 "GND" H 6400 8450 50  0000 C CNN
+F 2 "" H 6400 8600 50  0000 C CNN
+F 3 "" H 6400 8600 50  0000 C CNN
+	1    6400 8600
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8300 8800 7650 8800
 Text Label 7650 8800 0    50   ~ 0
-GPIO1
+EXPGPIO1
 Wire Wire Line
 	8300 8900 7650 8900
 Text Label 7650 8900 0    50   ~ 0
-GPIO2
+EXPGPIO2
 Wire Wire Line
 	8300 9000 7650 9000
 Text Label 7650 9000 0    50   ~ 0
-GPIO3
+EXPGPIO3
 $Comp
 L esp32_devkitc_main:GND #PWR0104
 U 1 1 5FD9CC3C
@@ -976,126 +941,189 @@ Wire Wire Line
 	8300 7900 7000 7900
 Wire Wire Line
 	7950 2750 6650 2750
-Text Label 1950 8400 0    50   ~ 0
-GPIO2
 Wire Wire Line
-	2600 8400 1950 8400
-Text Label 1950 8300 0    50   ~ 0
-GPIO1
+	2550 6950 1900 6950
+Text Label 1900 7250 0    50   ~ 0
+EXPGPIO4
 Wire Wire Line
-	2600 8300 1950 8300
-Text Label 1950 8600 0    50   ~ 0
-GPIO4
+	2550 7250 1900 7250
+Text Label 1900 7150 0    50   ~ 0
+EXPGPIO3
 Wire Wire Line
-	2600 8600 1950 8600
-Text Label 1950 8500 0    50   ~ 0
-GPIO3
+	2550 7150 1900 7150
 Wire Wire Line
-	2600 8500 1950 8500
-Wire Wire Line
-	3300 8800 3300 8900
-Wire Wire Line
-	3100 8800 3300 8800
+	3050 7550 3250 7550
 $Comp
 L Connector_Generic:Conn_01x02 J4
 U 1 1 5FADF030
-P 2850 7650
-F 0 "J4" H 2768 7867 50  0000 C CNN
-F 1 "CUI_PJ-102AH_Horizontal" H 2768 7776 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 2850 7650 50  0001 C CNN
-F 3 "~" H 2850 7650 50  0001 C CNN
-	1    2850 7650
+P 2800 8300
+F 0 "J4" H 2718 8517 50  0000 C CNN
+F 1 "CUI_PJ-102AH_Horizontal" H 2718 8426 50  0000 C CNN
+F 2 "lib_footprint:CUI_PJ-037B" H 2800 8300 50  0001 C CNN
+F 3 "~" H 2800 8300 50  0001 C CNN
+	1    2800 8300
 	-1   0    0    -1  
 $EndComp
 Text Label 6650 2750 0    50   ~ 0
 GPIOEXP_INT
 Text Label 7000 7900 0    50   ~ 0
 GPIOEXP_INT
-Text Notes 7500 6950 0    50   ~ 0
-TODO: \n\n- Add button connector?\n- Add LED connector? (header LED+GND)3x\n- Add GPIO expander\n- Change P1 Text\n- Interrupt wire for gpio/Sense_start\n- JP1 more central\n- replace j4 barrel connector with different footprint e.g. https://www.snapeda.com/parts/PJ-037B/CUI%20Devices/view-part/493700/ to avoid third hole\n\n
-$Comp
-L Connector_Generic:Conn_02x08_Odd_Even J5
-U 1 1 5FDD3908
-P 2800 8600
-F 0 "J5" H 2850 9150 50  0000 C CNN
-F 1 "Button/LED Connector" H 2850 9050 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 2800 8600 50  0001 C CNN
-F 3 "~" H 2800 8600 50  0001 C CNN
-	1    2800 8600
-	1    0    0    -1  
-$EndComp
+Text Notes 7300 6600 0    50   ~ 0
+Done:\n- Add button connector\n- Add LED connector\n- Add GPIO expander\n- Merged I2C Header with extra GPIO header \n- Change P1 Text\n- Interrupt wire for gpio/Sense_start\n- JP1 more central\n- replace j4 barrel connector with different footprint e.g. https://www.snapeda.com/parts/PJ-037B/CUI%20Devices/view-part/493700/ \n
 Wire Wire Line
 	9700 8800 10350 8800
 Text Label 10350 8800 2    50   ~ 0
-GPIO5
+EXPGPIO5
 Wire Wire Line
 	9700 8900 10350 8900
 Text Label 10350 8900 2    50   ~ 0
-GPIO6
+EXPGPIO6
 Text Label 10350 8700 2    50   ~ 0
-GPIO4
+EXPGPIO4
 Wire Wire Line
 	9700 8700 10350 8700
 $Comp
 L esp32_devkitc_main:GND #PWR0105
 U 1 1 5FE6E45E
-P 3300 9100
-F 0 "#PWR0105" H 3300 8850 50  0001 C CNN
-F 1 "GND" H 3300 8950 50  0000 C CNN
-F 2 "" H 3300 9100 50  0000 C CNN
-F 3 "" H 3300 9100 50  0000 C CNN
-	1    3300 9100
+P 3450 7350
+F 0 "#PWR0105" H 3450 7100 50  0001 C CNN
+F 1 "GND" H 3450 7200 50  0000 C CNN
+F 2 "" H 3450 7350 50  0000 C CNN
+F 3 "" H 3450 7350 50  0000 C CNN
+	1    3450 7350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9700 9000 10350 9000
 Text Label 10350 9000 2    50   ~ 0
-GPIO7
+EXPGPIO7
 Wire Wire Line
-	3300 8300 3300 8400
-Connection ~ 3300 8800
+	3250 7050 3250 7150
 Wire Wire Line
-	3100 8300 3300 8300
-Connection ~ 3300 8400
+	3050 7050 3250 7050
+Connection ~ 3250 7150
 Wire Wire Line
-	3300 8400 3300 8500
+	3250 7150 3250 7250
 Wire Wire Line
-	3100 8400 3300 8400
+	3050 7150 3250 7150
 Wire Wire Line
-	3100 8500 3300 8500
-Connection ~ 3300 8500
+	3050 7250 3250 7250
+Connection ~ 3250 7250
 Wire Wire Line
-	3300 8500 3300 8600
+	3250 7250 3250 7350
 Wire Wire Line
-	3100 8600 3300 8600
-Connection ~ 3300 8600
+	3050 7350 3250 7350
+Connection ~ 3250 7350
 Wire Wire Line
-	3300 8600 3300 8700
+	3250 7350 3250 7450
 Wire Wire Line
-	3100 8700 3300 8700
-Connection ~ 3300 8700
+	3050 7450 3250 7450
+Connection ~ 3250 7450
 Wire Wire Line
-	3300 8700 3300 8800
+	3250 7450 3250 7550
 Wire Wire Line
-	3100 8900 3300 8900
-Connection ~ 3300 8900
+	3250 7250 3450 7250
 Wire Wire Line
-	3100 9000 3300 9000
+	3450 7350 3450 7250
+Text Label 1900 7450 0    50   ~ 0
+EXPGPIO6
 Wire Wire Line
-	3300 8900 3300 9000
-Connection ~ 3300 9000
+	2550 7450 1900 7450
+Text Label 1900 7350 0    50   ~ 0
+EXPGPIO5
 Wire Wire Line
-	3300 9100 3300 9000
-Text Label 1950 8800 0    50   ~ 0
-GPIO6
+	2550 7350 1900 7350
+Text Label 1900 7550 0    50   ~ 0
+EXPGPIO7
 Wire Wire Line
-	2600 8800 1950 8800
-Text Label 1950 8700 0    50   ~ 0
-GPIO5
+	2550 7550 1900 7550
 Wire Wire Line
-	2600 8700 1950 8700
-Text Label 1950 8900 0    50   ~ 0
-GPIO7
+	2550 7050 1900 7050
 Wire Wire Line
-	2600 8900 1950 8900
+	3250 7050 3250 6950
+Wire Wire Line
+	3250 6950 3050 6950
+Connection ~ 3250 7050
+Text Label 1900 7050 0    50   ~ 0
+EXPGPIO2
+Text Label 1900 6950 0    50   ~ 0
+EXPGPIO1
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J3
+U 1 1 5FDD3908
+P 2750 7250
+F 0 "J3" H 2800 7800 50  0000 C CNN
+F 1 "Button/LED/I2C Connector" H 2800 7700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 2750 7250 50  0001 C CNN
+F 3 "~" H 2750 7250 50  0001 C CNN
+	1    2750 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Dual JP3
+U 1 1 5FE36A9A
+P 6600 8100
+F 0 "JP3" V 6550 8150 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 6650 8150 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm_NumberLabels" H 6600 8100 50  0001 C CNN
+F 3 "~" H 6600 8100 50  0001 C CNN
+	1    6600 8100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 8350 6600 8450
+Connection ~ 6600 8450
+Wire Wire Line
+	6600 8450 6800 8450
+Wire Wire Line
+	6400 8450 6600 8450
+Text Label 5750 7700 0    50   ~ 0
+SENS_3V3_DIG
+Wire Wire Line
+	6600 7700 6600 7850
+Wire Wire Line
+	6600 7700 6800 7700
+Wire Wire Line
+	6800 7700 6800 7950
+Connection ~ 6600 7700
+$Comp
+L Device:Jumper_NC_Dual JP4
+U 1 1 5FE275EF
+P 6800 8200
+F 0 "JP4" V 6700 8250 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 6800 8250 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm_NumberLabels" H 6800 8200 50  0001 C CNN
+F 3 "~" H 6800 8200 50  0001 C CNN
+	1    6800 8200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 8200 8300 8200
+Wire Wire Line
+	6700 8100 8300 8100
+Wire Wire Line
+	6500 8000 8300 8000
+Wire Wire Line
+	5750 7700 6400 7700
+Wire Wire Line
+	6400 7700 6600 7700
+Connection ~ 6400 7700
+$Comp
+L Device:Jumper_NC_Dual JP2
+U 1 1 5FE44C9F
+P 6400 8000
+F 0 "JP2" V 6400 8150 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 6500 8100 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm_NumberLabels" H 6400 8000 50  0001 C CNN
+F 3 "~" H 6400 8000 50  0001 C CNN
+	1    6400 8000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 8250 6400 8450
+Wire Wire Line
+	6400 7750 6400 7700
+Wire Wire Line
+	6400 8600 6400 8450
+Connection ~ 6400 8450
 $EndSCHEMATC

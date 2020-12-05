@@ -90,25 +90,34 @@ A 20 pin ARM JTAG header is connected according to https://raw.githubusercontent
 
 ---
 # ESP32 DEVKITC Pinout
+
 ### Inputs/ External Interrupts
 SENS_INT_BPM, SENS_INT_SPO2, SENS_INT_ECG  
 DISP_INT_TOUCH 
 
 ### Outputs
-~SENS_RST_ECG, ~SENS_RST_BPM, ~SENS_RST_SPO2, SENS_START  
-~SENS_CS_ECG, ~SENS_CS_BPM,~SENS_CS_SPO2  
+~SENS_RST_ECG, ~SENS_RST_BPM, ~SENS_RST_SPO2
+~SENS_CS_ECG, ~SENS_CS_BPM,~SENS_CS_SPO2 
 DISP_CS_DISP, DISP_CS_TOUCH  
 
 ### Display BUS on VSPI (speed optimized) 
-DISP_MOSI, DISP_MISO, DISP_SCLK  
+DISP_MOSI, DISP_MISO, DISP_SCLK 
+
 
 ### Debug 
-JTAG_~TRST, JTAG_TMS, JTAG_TCK, JTAG_TDI, JTAG_TDO  
+JTAG_~TRST, JTAG_TMS, JTAG_TCK, JTAG_TDI, JTAG_TDO
 
 ### PROC
-PROC_SDA, PROC_SCL   
+PROC_SDA, PROC_SCL
 
-GPIO table expanded from [randomnerdtutorals](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)  
+
+
+## External GPIOs via I2C GPIO Expander
+SENS_START, EXPGPIO1, EXPGPIO2, EXPGPIO3, EXPGPIO4, EXPGPIO5, EXPGPIO6, EXPGPIO7 
+
+
+
+
 
 |GPIO|Input|Output|Notes|Function|
 |---|---|---|---|---|
@@ -138,7 +147,7 @@ GPIO table expanded from [randomnerdtutorals](https://randomnerdtutorials.com/es
 |25|OK|OK||SENS_MOSI|
 |26|OK|OK||SENS_MISO|
 |27|OK|OK||SENS_SCLK|
-|32|OK|OK||SENS_START|
+|32|OK|OK||GPIOEXP_INT|
 |33|OK|OK||~SENS_RST_ECG|
 |34|OK||input only|SENS_INT_ECG|
 |35|OK||input only|DISP_INT_TOUCH|

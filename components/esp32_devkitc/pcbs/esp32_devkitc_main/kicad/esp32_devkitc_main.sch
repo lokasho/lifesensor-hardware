@@ -327,7 +327,7 @@ Text Label 6150 2350 0    50   ~ 0
 SENS_INT_BPM
 Text Label 6150 2550 0    50   ~ 0
 SENS_INT_ECG
-Text Label 6600 2750 0    50   ~ 0
+Text Label 6950 8700 0    50   ~ 0
 SENS_START
 Text Label 6700 2050 0    50   ~ 0
 SENS_3V3_ANA
@@ -702,7 +702,7 @@ Wire Wire Line
 	9600 4200 9600 2750
 Connection ~ 9600 2750
 Wire Wire Line
-	7600 2750 7950 2750
+	7950 8700 8300 8700
 Wire Wire Line
 	7950 2850 7600 2850
 $Comp
@@ -719,12 +719,12 @@ $EndComp
 $Comp
 L esp32_devkitc_main:R_Small R12
 U 1 1 60147F32
-P 7500 2750
-F 0 "R12" V 7450 2600 50  0000 C CNN
-F 1 "0" V 7450 2900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 7500 2750 50  0001 C CNN
-F 3 "~" H 7500 2750 50  0001 C CNN
-	1    7500 2750
+P 7850 8700
+F 0 "R12" V 7800 8550 50  0000 C CNN
+F 1 "0" V 7800 8850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 7850 8700 50  0001 C CNN
+F 3 "~" H 7850 8700 50  0001 C CNN
+	1    7850 8700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -774,7 +774,7 @@ DISP_INT_TOUCH
 Text Label 6700 2250 0    50   ~ 0
 JTAG_~TRST
 Wire Wire Line
-	6600 2750 7400 2750
+	6950 8700 7750 8700
 Wire Wire Line
 	9550 3350 10350 3350
 Wire Notes Line width 12
@@ -822,23 +822,10 @@ F 3 "" H 3400 7750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 7750 3050 7750
-$Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 5FADF030
-P 2850 7650
-F 0 "J4" H 2768 7867 50  0000 C CNN
-F 1 "Conn_01x02" H 2768 7776 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 2850 7650 50  0001 C CNN
-F 3 "~" H 2850 7650 50  0001 C CNN
-	1    2850 7650
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3050 7650 3500 7650
 Text Label 3500 7650 2    50   ~ 0
 5V_in
-Text Notes 7500 6950 0    50   ~ 0
-TODO: \n\n- Add button connector?\n- Add LED connector? (header LED+GND)3x\n- Add GPIO expander\n- Change P1 Text\n- Interrupt wire for gpio/Sense_start\n- JP1 more central\n- replace j4 barrel connector with correct footprint e.g. https://www.snapeda.com/parts/PJ-037B/CUI%20Devices/view-part/493700/\n
 Text Notes 2050 4050 0    50   ~ 0
 JTAG has 100Ohm Resistors in manual\nhttps://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf p14
 $Comp
@@ -913,6 +900,202 @@ Wire Wire Line
 	6700 2250 7950 2250
 Text Notes 7300 5750 0    50   ~ 0
 Strapping Pins:\nGPIO 0 (is pulled down to enter bootloader)\nGPIO 2(needs to be floating)\nGPIO 4\nGPIO 5\nGPIO 12 (dont pull high while booting)\nGPIO 15
-Text Notes 7550 7200 0    50   ~ 0
-QUESTIONS: \nResistors for MOSI but not MISO?
+$Comp
+L PCF8574ADWR:PCF8574ADWR U2
+U 1 1 5FCCF6B2
+P 9000 8500
+F 0 "U2" H 9000 9570 50  0000 C CNN
+F 1 "PCF8574ADWR" H 9000 9479 50  0000 C CNN
+F 2 "SOIC127P1030X265-16N" H 9000 8300 50  0001 L BNN
+F 3 "" H 9000 8500 50  0001 L BNN
+	1    9000 8500
+	1    0    0    -1  
+$EndComp
+Text Label 10500 7700 0    50   ~ 0
+SENS_3V3_DIG
+Wire Wire Line
+	10500 7700 9700 7700
+Wire Wire Line
+	8300 8000 7900 8000
+Wire Wire Line
+	7900 8000 7900 8100
+Wire Wire Line
+	7900 8100 8300 8100
+Wire Wire Line
+	8300 8200 7900 8200
+Wire Wire Line
+	7900 8200 7900 8100
+Connection ~ 7900 8100
+Text Label 7450 8300 0    50   ~ 0
+PROC_SCL
+Wire Wire Line
+	8300 8300 7450 8300
+Wire Wire Line
+	7450 8400 8300 8400
+Text Label 7450 8400 0    50   ~ 0
+PROC_SDA
+$Comp
+L esp32_devkitc_main:GND #PWR0101
+U 1 1 5FD37EE3
+P 7900 8100
+F 0 "#PWR0101" H 7900 7850 50  0001 C CNN
+F 1 "GND" H 7900 7950 50  0000 C CNN
+F 2 "" H 7900 8100 50  0000 C CNN
+F 3 "" H 7900 8100 50  0000 C CNN
+	1    7900 8100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 8800 7650 8800
+Text Label 7650 8800 0    50   ~ 0
+GPIO1
+Wire Wire Line
+	8300 8900 7650 8900
+Text Label 7650 8900 0    50   ~ 0
+GPIO2
+Wire Wire Line
+	8300 9000 7650 9000
+Text Label 7650 9000 0    50   ~ 0
+GPIO3
+$Comp
+L esp32_devkitc_main:GND #PWR0104
+U 1 1 5FD9CC3C
+P 9800 9300
+F 0 "#PWR0104" H 9800 9050 50  0001 C CNN
+F 1 "GND" H 9800 9150 50  0000 C CNN
+F 2 "" H 9800 9300 50  0000 C CNN
+F 3 "" H 9800 9300 50  0000 C CNN
+	1    9800 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 9300 9800 9200
+Wire Wire Line
+	9800 9200 9700 9200
+Wire Wire Line
+	8300 7900 7000 7900
+Wire Wire Line
+	7950 2750 6650 2750
+Text Label 1950 8400 0    50   ~ 0
+GPIO2
+Wire Wire Line
+	2600 8400 1950 8400
+Text Label 1950 8300 0    50   ~ 0
+GPIO1
+Wire Wire Line
+	2600 8300 1950 8300
+Text Label 1950 8600 0    50   ~ 0
+GPIO4
+Wire Wire Line
+	2600 8600 1950 8600
+Text Label 1950 8500 0    50   ~ 0
+GPIO3
+Wire Wire Line
+	2600 8500 1950 8500
+Wire Wire Line
+	3300 8800 3300 8900
+Wire Wire Line
+	3100 8800 3300 8800
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5FADF030
+P 2850 7650
+F 0 "J4" H 2768 7867 50  0000 C CNN
+F 1 "CUI_PJ-102AH_Horizontal" H 2768 7776 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 2850 7650 50  0001 C CNN
+F 3 "~" H 2850 7650 50  0001 C CNN
+	1    2850 7650
+	-1   0    0    -1  
+$EndComp
+Text Label 6650 2750 0    50   ~ 0
+GPIOEXP_INT
+Text Label 7000 7900 0    50   ~ 0
+GPIOEXP_INT
+Text Notes 7500 6950 0    50   ~ 0
+TODO: \n\n- Add button connector?\n- Add LED connector? (header LED+GND)3x\n- Add GPIO expander\n- Change P1 Text\n- Interrupt wire for gpio/Sense_start\n- JP1 more central\n- replace j4 barrel connector with different footprint e.g. https://www.snapeda.com/parts/PJ-037B/CUI%20Devices/view-part/493700/ to avoid third hole\n\n
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J5
+U 1 1 5FDD3908
+P 2800 8600
+F 0 "J5" H 2850 9150 50  0000 C CNN
+F 1 "Button/LED Connector" H 2850 9050 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 2800 8600 50  0001 C CNN
+F 3 "~" H 2800 8600 50  0001 C CNN
+	1    2800 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 8800 10350 8800
+Text Label 10350 8800 2    50   ~ 0
+GPIO5
+Wire Wire Line
+	9700 8900 10350 8900
+Text Label 10350 8900 2    50   ~ 0
+GPIO6
+Text Label 10350 8700 2    50   ~ 0
+GPIO4
+Wire Wire Line
+	9700 8700 10350 8700
+$Comp
+L esp32_devkitc_main:GND #PWR0105
+U 1 1 5FE6E45E
+P 3300 9100
+F 0 "#PWR0105" H 3300 8850 50  0001 C CNN
+F 1 "GND" H 3300 8950 50  0000 C CNN
+F 2 "" H 3300 9100 50  0000 C CNN
+F 3 "" H 3300 9100 50  0000 C CNN
+	1    3300 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 9000 10350 9000
+Text Label 10350 9000 2    50   ~ 0
+GPIO7
+Wire Wire Line
+	3300 8300 3300 8400
+Connection ~ 3300 8800
+Wire Wire Line
+	3100 8300 3300 8300
+Connection ~ 3300 8400
+Wire Wire Line
+	3300 8400 3300 8500
+Wire Wire Line
+	3100 8400 3300 8400
+Wire Wire Line
+	3100 8500 3300 8500
+Connection ~ 3300 8500
+Wire Wire Line
+	3300 8500 3300 8600
+Wire Wire Line
+	3100 8600 3300 8600
+Connection ~ 3300 8600
+Wire Wire Line
+	3300 8600 3300 8700
+Wire Wire Line
+	3100 8700 3300 8700
+Connection ~ 3300 8700
+Wire Wire Line
+	3300 8700 3300 8800
+Wire Wire Line
+	3100 8900 3300 8900
+Connection ~ 3300 8900
+Wire Wire Line
+	3100 9000 3300 9000
+Wire Wire Line
+	3300 8900 3300 9000
+Connection ~ 3300 9000
+Wire Wire Line
+	3300 9100 3300 9000
+Text Label 1950 8800 0    50   ~ 0
+GPIO6
+Wire Wire Line
+	2600 8800 1950 8800
+Text Label 1950 8700 0    50   ~ 0
+GPIO5
+Wire Wire Line
+	2600 8700 1950 8700
+Text Label 1950 8900 0    50   ~ 0
+GPIO7
+Wire Wire Line
+	2600 8900 1950 8900
 $EndSCHEMATC

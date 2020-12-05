@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name esp32_devkitc_main)(type Legacy)(uri ${KIPRJMOD}/lib_schematic/esp32_devkitc_main.lib)(options "")(descr ""))
+  (lib (name PCF8574ADWR)(type Legacy)(uri ${KIPRJMOD}/lib_schematic/PCF8574ADWR.lib)(options "")(descr ""))
 )

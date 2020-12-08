@@ -619,19 +619,15 @@ Wire Wire Line
 	3700 6000 4350 6000
 Wire Wire Line
 	3000 5750 3600 5750
-Wire Wire Line
-	1600 6050 2500 6050
-Wire Wire Line
-	1600 5750 2500 5750
 $Comp
 L esp32_devkitc_main:GND #PWR0102
 U 1 1 5FD76621
-P 2350 6250
-F 0 "#PWR0102" H 2350 6000 50  0001 C CNN
-F 1 "GND" H 2350 6100 50  0000 C CNN
-F 2 "" H 2350 6250 50  0000 C CNN
-F 3 "" H 2350 6250 50  0000 C CNN
-	1    2350 6250
+P 2450 6100
+F 0 "#PWR0102" H 2450 5850 50  0001 C CNN
+F 1 "GND" H 2450 5950 50  0000 C CNN
+F 2 "" H 2450 6100 50  0000 C CNN
+F 3 "" H 2450 6100 50  0000 C CNN
+	1    2450 6100
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -645,19 +641,13 @@ F 3 "~" H 2700 5850 50  0001 C CNN
 	1    2700 5850
 	1    0    0    -1  
 $EndComp
-Text Label 1600 5750 0    50   ~ 0
-DISP_CS_DISP
-Text Label 1600 6050 0    50   ~ 0
-DISP_INT_TOUCH
 Wire Wire Line
-	2500 5850 2350 5850
+	1900 7050 2550 7050
 Wire Wire Line
-	2000 7650 2550 7650
-Wire Wire Line
-	3600 7650 3050 7650
-Text Label 2000 7650 0    50   ~ 0
+	1900 6950 2550 6950
+Text Label 1900 7050 0    50   ~ 0
 PROC_SDA
-Text Label 3600 7650 2    50   ~ 0
+Text Label 1900 6950 0    50   ~ 0
 PROC_SCL
 Text Label 10750 2350 2    50   ~ 0
 PROC_SCL
@@ -731,12 +721,6 @@ Wire Wire Line
 	7350 2950 6700 2950
 Wire Wire Line
 	7550 3450 7950 3450
-Wire Wire Line
-	2350 5850 2350 6250
-Wire Wire Line
-	1600 5950 2500 5950
-Text Label 1600 5950 0    50   ~ 0
-DISP_CS_TOUCH
 Wire Wire Line
 	10650 3050 9550 3050
 Text Label 10650 3050 2    50   ~ 0
@@ -942,17 +926,15 @@ Wire Wire Line
 Wire Wire Line
 	7950 2750 6650 2750
 Wire Wire Line
-	2550 6950 1900 6950
-Text Label 1900 7250 0    50   ~ 0
+	2550 7150 1900 7150
+Text Label 3700 7350 2    50   ~ 0
 EXPGPIO4
 Wire Wire Line
-	2550 7250 1900 7250
-Text Label 1900 7150 0    50   ~ 0
+	3050 7350 3700 7350
+Text Label 1900 7350 0    50   ~ 0
 EXPGPIO3
 Wire Wire Line
-	2550 7150 1900 7150
-Wire Wire Line
-	3050 7550 3250 7550
+	2550 7350 1900 7350
 $Comp
 L Connector_Generic:Conn_01x02 J4
 U 1 1 5FADF030
@@ -985,12 +967,12 @@ Wire Wire Line
 $Comp
 L esp32_devkitc_main:GND #PWR0105
 U 1 1 5FE6E45E
-P 3450 7350
-F 0 "#PWR0105" H 3450 7100 50  0001 C CNN
-F 1 "GND" H 3450 7200 50  0000 C CNN
-F 2 "" H 3450 7350 50  0000 C CNN
-F 3 "" H 3450 7350 50  0000 C CNN
-	1    3450 7350
+P 3250 7750
+F 0 "#PWR0105" H 3250 7500 50  0001 C CNN
+F 1 "GND" H 3250 7600 50  0000 C CNN
+F 2 "" H 3250 7750 50  0000 C CNN
+F 3 "" H 3250 7750 50  0000 C CNN
+	1    3250 7750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -998,55 +980,25 @@ Wire Wire Line
 Text Label 10350 9000 2    50   ~ 0
 EXPGPIO7
 Wire Wire Line
-	3250 7050 3250 7150
-Wire Wire Line
 	3050 7050 3250 7050
-Connection ~ 3250 7150
-Wire Wire Line
-	3250 7150 3250 7250
-Wire Wire Line
-	3050 7150 3250 7150
-Wire Wire Line
-	3050 7250 3250 7250
-Connection ~ 3250 7250
-Wire Wire Line
-	3250 7250 3250 7350
-Wire Wire Line
-	3050 7350 3250 7350
-Connection ~ 3250 7350
-Wire Wire Line
-	3250 7350 3250 7450
-Wire Wire Line
-	3050 7450 3250 7450
-Connection ~ 3250 7450
-Wire Wire Line
-	3250 7450 3250 7550
-Wire Wire Line
-	3250 7250 3450 7250
-Wire Wire Line
-	3450 7350 3450 7250
-Text Label 1900 7450 0    50   ~ 0
+Text Label 3700 7550 2    50   ~ 0
 EXPGPIO6
 Wire Wire Line
-	2550 7450 1900 7450
-Text Label 1900 7350 0    50   ~ 0
-EXPGPIO5
-Wire Wire Line
-	2550 7350 1900 7350
+	3050 7550 3700 7550
 Text Label 1900 7550 0    50   ~ 0
-EXPGPIO7
+EXPGPIO5
 Wire Wire Line
 	2550 7550 1900 7550
 Wire Wire Line
-	2550 7050 1900 7050
+	3050 7150 3700 7150
 Wire Wire Line
 	3250 7050 3250 6950
 Wire Wire Line
 	3250 6950 3050 6950
 Connection ~ 3250 7050
-Text Label 1900 7050 0    50   ~ 0
+Text Label 3700 7150 2    50   ~ 0
 EXPGPIO2
-Text Label 1900 6950 0    50   ~ 0
+Text Label 1900 7150 0    50   ~ 0
 EXPGPIO1
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J3
@@ -1126,4 +1078,61 @@ Wire Wire Line
 Wire Wire Line
 	6400 8600 6400 8450
 Connection ~ 6400 8450
+Wire Wire Line
+	3250 7050 3250 7250
+Wire Wire Line
+	3050 7250 3250 7250
+Connection ~ 3250 7250
+Wire Wire Line
+	3250 7250 3250 7450
+Wire Wire Line
+	3050 7450 3250 7450
+Connection ~ 3250 7450
+$Comp
+L esp32_devkitc_main:GND #PWR0103
+U 1 1 5FE3CF02
+P 2350 7750
+F 0 "#PWR0103" H 2350 7500 50  0001 C CNN
+F 1 "GND" H 2350 7600 50  0000 C CNN
+F 2 "" H 2350 7750 50  0000 C CNN
+F 3 "" H 2350 7750 50  0000 C CNN
+	1    2350 7750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 7250 2350 7250
+Wire Wire Line
+	2350 7250 2350 7450
+Wire Wire Line
+	2550 7450 2350 7450
+Connection ~ 2350 7450
+Wire Wire Line
+	3050 7650 3700 7650
+Text Label 3700 7650 2    50   ~ 0
+EXPGPIO7
+Wire Wire Line
+	2350 7450 2350 7650
+Wire Wire Line
+	2350 7750 2350 7650
+Connection ~ 2350 7650
+Wire Wire Line
+	2550 7650 2350 7650
+Wire Wire Line
+	3250 7450 3250 7750
+Text Label 1600 5850 0    50   ~ 0
+DISP_CS_DISP
+Wire Wire Line
+	1600 5850 2500 5850
+Text Label 1600 5950 0    50   ~ 0
+DISP_CS_TOUCH
+Wire Wire Line
+	1600 5950 2500 5950
+Text Label 1600 5750 0    50   ~ 0
+DISP_INT_TOUCH
+Wire Wire Line
+	1600 5750 2500 5750
+Wire Wire Line
+	2450 6100 2450 6050
+Wire Wire Line
+	2450 6050 2500 6050
 $EndSCHEMATC

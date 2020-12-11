@@ -32,5 +32,5 @@ def create_component(settings: create_utils.Settings):
     create_utils.update_file_name_and_content(comp_dir, settings)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
